@@ -1,3 +1,4 @@
+import { APP_VERSION } from "../constants.js";
 import AuthPanel from "./AuthPanel.jsx";
 
 export default function AboutPanel({
@@ -54,6 +55,7 @@ export default function AboutPanel({
         <div className="backup-tools">
           <h3 className="subsection-title">Data Tools</h3>
           <p className="song-meta">{dataStatus}</p>
+          <p className="app-version-line">App version v{APP_VERSION}</p>
           <div className="backup-grid">
             <button className="primary" type="button" onClick={onRefreshData}>
               Refresh List

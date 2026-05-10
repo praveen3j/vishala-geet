@@ -1,4 +1,4 @@
-import { APP_NAME, APP_VERSION } from "../constants.js";
+import { APP_NAME } from "../constants.js";
 
 export default function AppHeader({ canInstall, onInstall }) {
   return (
@@ -16,15 +16,10 @@ export default function AppHeader({ canInstall, onInstall }) {
           </svg>
         </div>
         <div className="brand-copy">
-          <div className="title-row">
-            <h1>
-              <span className="app-name-full">{APP_NAME}</span>
-              <span className="app-name-short">Geet</span>
-            </h1>
-            <span className="version-pill" aria-label={`App version ${APP_VERSION}`}>
-              v{APP_VERSION}
-            </span>
-          </div>
+          <h1>
+            <span className="app-name-full">{APP_NAME}</span>
+            <span className="app-name-short">Geet</span>
+          </h1>
           <p className="subtitle">Mom&apos;s favorite songs.</p>
         </div>
       </div>
