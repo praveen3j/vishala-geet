@@ -29,6 +29,8 @@ export default function App() {
   const [deferredInstallPrompt, setDeferredInstallPrompt] = useState(null);
   const [session, setSession] = useState(null);
   const [authEmail, setAuthEmail] = useState("");
+  const [authOtp, setAuthOtp] = useState("");
+  const [authStep, setAuthStep] = useState("email");
   const [authLoading, setAuthLoading] = useState(false);
   const [backendOnline, setBackendOnline] = useState(false);
 
@@ -390,38 +392,81 @@ export default function App() {
     }
   }
 
-  async function signInAdmin() {
+  function validatedAdminEmail() {
     const email = authEmail.trim().toLowerCase();
     if (!email) {
       showToast("Enter an admin email address.");
-      return;
+      return null;
     }
 
     const admin = adminForEmail(email);
     if (!admin) {
       showToast("That email is not in the admin list.");
-      return;
+      return null;
     }
 
     if (!supabase) {
       showToast("Backend is not configured yet.");
-      return;
+      return null;
     }
+
+    return { admin, email };
+  }
+
+  async function requestAdminOtp() {
+    const result = validatedAdminEmail();
+    if (!result) return;
 
     setAuthLoading(true);
     try {
       const redirectTo = window.location.href.split(/[?#]/)[0];
       const { error } = await supabase.auth.signInWithOtp({
-        email,
-        options: { emailRedirectTo: redirectTo }
+        email: result.email,
+        options: { emailRedirectTo: redirectTo, shouldCreateUser: true }
       });
       if (error) throw error;
-      showToast(`Sign-in link sent to ${admin.name}.`);
+      setAuthOtp("");
+      setAuthStep("code");
+      showToast(`OTP sent to ${result.admin.name}.`);
     } catch {
-      showToast("Could not send the sign-in link.");
+      showToast("Could not send the OTP code.");
     } finally {
       setAuthLoading(false);
     }
+  }
+
+  async function verifyAdminOtp() {
+    const result = validatedAdminEmail();
+    if (!result) return;
+
+    const token = authOtp.replace(/\D/g, "");
+    if (token.length !== 6) {
+      showToast("Enter the 6-digit OTP code.");
+      return;
+    }
+
+    setAuthLoading(true);
+    try {
+      const { data, error } = await supabase.auth.verifyOtp({
+        email: result.email,
+        token,
+        type: "email"
+      });
+      if (error) throw error;
+      setSession(data.session || null);
+      setAuthOtp("");
+      setAuthStep("email");
+      showToast(`Signed in as ${result.admin.name}.`);
+    } catch {
+      showToast("That OTP code did not work.");
+    } finally {
+      setAuthLoading(false);
+    }
+  }
+
+  function useAnotherAdminEmail() {
+    setAuthOtp("");
+    setAuthStep("email");
   }
 
   async function signOutAdmin() {
@@ -430,6 +475,8 @@ export default function App() {
     try {
       await supabase.auth.signOut();
       setSession(null);
+      setAuthOtp("");
+      setAuthStep("email");
       showToast("Signed out.");
     } catch {
       showToast("Could not sign out.");
@@ -547,17 +594,22 @@ export default function App() {
           adminProfile={adminProfile}
           authEmail={authEmail}
           authLoading={authLoading}
+          authOtp={authOtp}
+          authStep={authStep}
           backendEnabled={backendEnabled}
           dataStatus={dataStatus}
           importInputRef={importInputRef}
           onAuthEmailChange={setAuthEmail}
+          onAuthOtpChange={setAuthOtp}
           onExportCsv={exportCsv}
           onExportJson={exportJson}
           onImportClick={() => importInputRef.current?.click()}
           onImportFile={importJsonFile}
           onRefreshData={refreshData}
-          onSignIn={signInAdmin}
+          onRequestOtp={requestAdminOtp}
           onSignOut={signOutAdmin}
+          onUseAnotherEmail={useAnotherAdminEmail}
+          onVerifyOtp={verifyAdminOtp}
           userEmail={userEmail}
         />
       )}

@@ -520,6 +520,15 @@ textarea:focus {
   align-items: end;
 }
 
+.admin-otp-form {
+  display: grid;
+  gap: 10px;
+}
+
+.admin-auth-actions {
+  margin-top: 2px;
+}
+
 .subsection-title {
   margin: 0 0 8px;
   font-size: 1rem;

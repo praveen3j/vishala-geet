@@ -4,17 +4,22 @@ export default function AboutPanel({
   adminProfile,
   authEmail,
   authLoading,
+  authOtp,
+  authStep,
   backendEnabled,
   dataStatus,
   importInputRef,
   onAuthEmailChange,
+  onAuthOtpChange,
   onExportCsv,
   onExportJson,
   onImportClick,
   onImportFile,
   onRefreshData,
-  onSignIn,
+  onRequestOtp,
   onSignOut,
+  onUseAnotherEmail,
+  onVerifyOtp,
   userEmail
 }) {
   return (
@@ -35,10 +40,15 @@ export default function AboutPanel({
           adminProfile={adminProfile}
           authEmail={authEmail}
           authLoading={authLoading}
+          authOtp={authOtp}
+          authStep={authStep}
           backendEnabled={backendEnabled}
           onAuthEmailChange={onAuthEmailChange}
-          onSignIn={onSignIn}
+          onAuthOtpChange={onAuthOtpChange}
+          onRequestOtp={onRequestOtp}
           onSignOut={onSignOut}
+          onUseAnotherEmail={onUseAnotherEmail}
+          onVerifyOtp={onVerifyOtp}
           userEmail={userEmail}
         />
         <div className="backup-tools">

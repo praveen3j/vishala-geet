@@ -8,7 +8,7 @@ A phone-friendly web app for finding page numbers in Vishala Javvaji's devotiona
 - Search across Book 1 and Book 2 with alternate spellings and first-line hints.
 - Keep the song list in a shared Supabase backend when configured.
 - Let normal users search only.
-- Let admin users add, edit, and delete shared songs after email sign-in.
+- Let admin users add, edit, and delete shared songs after email OTP sign-in.
 - Work as an installable web app from the hosted GitHub Pages URL.
 
 ## Admins
@@ -52,6 +52,17 @@ VITE_SUPABASE_ANON_KEY=your-publishable-key
    `VITE_SUPABASE_URL` and `VITE_SUPABASE_ANON_KEY`. The key variable can contain the Supabase publishable key.
 
 Without these variables, the app still builds and runs from the JSON fallback files. Admin login and shared Add/Edit/Delete are enabled only after Supabase is configured.
+
+## Admin OTP Email
+
+The admin login flow uses Supabase email OTP. In Supabase, go to **Authentication → Emails → Templates → Magic Link** and make sure the email body includes `{{ .Token }}` so admins receive a 6-digit code. A simple template can say:
+
+```html
+<h2>Vishala Geet admin code</h2>
+<p>Your one-time login code is: {{ .Token }}</p>
+```
+
+Supabase allows one OTP request about every 60 seconds by default. If an email does not arrive, check spam/junk first and then check the Supabase Auth email logs or SMTP settings.
 
 ## Maintaining Songs
 
