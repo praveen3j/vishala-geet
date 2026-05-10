@@ -2,18 +2,9 @@ import EmptyState from "./EmptyState.jsx";
 import SongCard from "./SongCard.jsx";
 import { isPlaceholderEntry } from "../lib/songs.js";
 
-export default function SearchPanel({
-  entries,
-  matches,
-  onAddFirst,
-  onAddMissing,
-  onDelete,
-  onEdit,
-  query,
-  setQuery
-}) {
+export default function SearchPanel({ entries, matches, onAddFirst, onAddMissing, onEdit, query, setQuery }) {
   const total = entries.length;
-  const titleSearchable = entries.filter(entry => !isPlaceholderEntry(entry)).length;
+  const titleSearchable = entries.filter((entry) => !isPlaceholderEntry(entry)).length;
   const pageOnly = total - titleSearchable;
 
   const matchSummary = getMatchSummary({ matches, pageOnly, query, titleSearchable, total });
@@ -31,20 +22,22 @@ export default function SearchPanel({
               autoComplete="off"
               placeholder="Type or speak a song name"
               value={query}
-              onChange={event => setQuery(event.target.value)}
+              onChange={(event) => setQuery(event.target.value)}
             />
           </div>
         </div>
         <div className="summary">
           <span>{matchSummary}</span>
-          <span>{total} {total === 1 ? "song" : "songs"}</span>
+          <span>
+            {total} {total === 1 ? "song" : "songs"}
+          </span>
         </div>
       </div>
       <div className="results">
         {!total && (
           <EmptyState
             title="Add your first song"
-            text="Tap Add and enter the song name with its page number."
+            text="Tap Add and enter the song name with its book and page number."
             actionText="Add Song"
             onAction={onAddFirst}
           />
@@ -59,8 +52,8 @@ export default function SearchPanel({
         )}
         {Boolean(matches.length) && (
           <div className="result-list">
-            {matches.map(entry => (
-              <SongCard key={entry.id} entry={entry} onDelete={onDelete} onEdit={onEdit} />
+            {matches.map((entry) => (
+              <SongCard key={entry.id} entry={entry} onEdit={onEdit} />
             ))}
           </div>
         )}
@@ -71,7 +64,8 @@ export default function SearchPanel({
 
 function getMatchSummary({ matches, pageOnly, query, titleSearchable, total }) {
   if (!total) return "No songs added yet.";
-  if (query) return `${matches.length} ${matches.length === 1 ? "match" : "matches"} found.`;
-  if (pageOnly) return `Showing all songs. ${titleSearchable} searchable by title, ${pageOnly} page-only.`;
+  if (query) return matches.length + " " + (matches.length === 1 ? "match" : "matches") + " found.";
+  if (pageOnly)
+    return "Showing all songs. " + titleSearchable + " searchable by title, " + pageOnly + " page-only.";
   return "Showing all songs.";
 }

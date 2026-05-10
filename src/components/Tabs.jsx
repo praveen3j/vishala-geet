@@ -3,7 +3,7 @@ import { TABS } from "../constants.js";
 export default function Tabs({ activeTab, onChange }) {
   return (
     <nav className="tabs" aria-label="Song index sections">
-      {TABS.map(tab => (
+      {TABS.map((tab) => (
         <button
           key={tab.id}
           className="tab-button"

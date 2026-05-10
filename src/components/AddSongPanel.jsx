@@ -11,6 +11,7 @@ export default function AddSongPanel({ editingEntry, isActive, onResetDraft, onS
       setForm({
         id: editingEntry.id,
         name: editingEntry.name,
+        book: editingEntry.book || "Book 1",
         page: editingEntry.page,
         aliases: editingEntry.aliases || "",
         notes: editingEntry.notes || ""
@@ -22,7 +23,7 @@ export default function AddSongPanel({ editingEntry, isActive, onResetDraft, onS
   }, [editingEntry, isActive, prefillName]);
 
   function updateField(field, value) {
-    setForm(current => ({ ...current, [field]: value }));
+    setForm((current) => ({ ...current, [field]: value }));
   }
 
   function resetForm() {
@@ -41,16 +42,27 @@ export default function AddSongPanel({ editingEntry, isActive, onResetDraft, onS
         <h2 id="formTitle" className="form-title">
           {form.id ? "Edit Song" : "Add Song"}
         </h2>
+        <div className="field">
+          <label htmlFor="songName">New song name</label>
+          <input
+            id="songName"
+            required
+            placeholder="Example: Jai Jai Ram"
+            autoComplete="off"
+            value={form.name}
+            onChange={(event) => updateField("name", event.target.value)}
+          />
+        </div>
         <div className="two-up">
           <div className="field">
-            <label htmlFor="songName">New song name</label>
+            <label htmlFor="bookName">Book</label>
             <input
-              id="songName"
+              id="bookName"
               required
-              placeholder="Example: Jai Jai Ram"
+              placeholder="Example: Book 1"
               autoComplete="off"
-              value={form.name}
-              onChange={event => updateField("name", event.target.value)}
+              value={form.book}
+              onChange={(event) => updateField("book", event.target.value)}
             />
           </div>
           <div className="field">
@@ -61,7 +73,7 @@ export default function AddSongPanel({ editingEntry, isActive, onResetDraft, onS
               placeholder="Example: 42"
               autoComplete="off"
               value={form.page}
-              onChange={event => updateField("page", event.target.value)}
+              onChange={(event) => updateField("page", event.target.value)}
             />
           </div>
         </div>
@@ -71,7 +83,7 @@ export default function AddSongPanel({ editingEntry, isActive, onResetDraft, onS
             id="alternateNames"
             placeholder="Optional: spelling variations or first line"
             value={form.aliases}
-            onChange={event => updateField("aliases", event.target.value)}
+            onChange={(event) => updateField("aliases", event.target.value)}
           />
           <small>Use this if people remember the same song by another name.</small>
         </div>
@@ -81,7 +93,7 @@ export default function AddSongPanel({ editingEntry, isActive, onResetDraft, onS
             id="songNotes"
             placeholder="Optional"
             value={form.notes}
-            onChange={event => updateField("notes", event.target.value)}
+            onChange={(event) => updateField("notes", event.target.value)}
           />
         </div>
         <div className="actions">

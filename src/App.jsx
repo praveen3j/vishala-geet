@@ -5,9 +5,9 @@ import AppHeader from "./components/AppHeader.jsx";
 import SearchPanel from "./components/SearchPanel.jsx";
 import Tabs from "./components/Tabs.jsx";
 import Toast from "./components/Toast.jsx";
-import { APP_NAME, DATA_URL } from "./constants.js";
+import { APP_NAME, BOOK_DATA_URLS } from "./constants.js";
 import { csvCell, downloadFile } from "./lib/downloads.js";
-import { cleanEntry, filterEntries, isValidEntry, makeId } from "./lib/songs.js";
+import { bookLabel, cleanEntry, filterEntries, isValidEntry, makeId } from "./lib/songs.js";
 import { readStoredSongs, removeStoredSongs, saveStoredSongs } from "./lib/storage.js";
 
 export default function App() {
@@ -28,38 +28,44 @@ export default function App() {
     dataVersionRef.current = dataVersion;
   }, [dataVersion]);
 
-  const showToast = useCallback(message => {
+  const showToast = useCallback((message) => {
     clearTimeout(toastTimerRef.current);
     setToastMessage(message);
     toastTimerRef.current = window.setTimeout(() => setToastMessage(""), 2200);
   }, []);
 
-  const mergeManagedEntries = useCallback(
-    (managedEntries, nextDataVersion) => {
-      setEntries(currentEntries => {
-        const localEntries = currentEntries.filter(entry => entry.source !== "managed");
-        const nextEntries = [...managedEntries, ...localEntries];
-        saveStoredSongs(nextEntries, nextDataVersion);
-        return nextEntries;
-      });
-      setDataVersion(nextDataVersion);
-    },
-    []
-  );
+  const mergeManagedEntries = useCallback((managedEntries, nextDataVersion) => {
+    setEntries((currentEntries) => {
+      const localEntries = currentEntries.filter((entry) => entry.source !== "managed");
+      const nextEntries = [...managedEntries, ...localEntries];
+      saveStoredSongs(nextEntries, nextDataVersion);
+      return nextEntries;
+    });
+    setDataVersion(nextDataVersion);
+  }, []);
 
   const loadManagedData = useCallback(
     async (showMessage = false, currentDataVersion = dataVersionRef.current) => {
       try {
-        const response = await fetch(`${DATA_URL}?updated=${Date.now()}`, { cache: "no-store" });
-        if (!response.ok) throw new Error("Data file not available");
+        const books = await Promise.all(
+          BOOK_DATA_URLS.map(async (url) => {
+            const response = await fetch(`${url}?updated=${Date.now()}`, { cache: "no-store" });
+            if (!response.ok) throw new Error("Data file not available");
+            return response.json();
+          })
+        );
 
-        const data = await response.json();
-        const nextDataVersion = Number(data.version || 0);
-        const imported = Array.isArray(data.entries) ? data.entries : [];
-        const cleaned = imported
-          .filter(isValidEntry)
-          .map((entry, index) => cleanEntry(entry, "managed", index))
-          .filter(entry => entry.name && entry.page);
+        const nextDataVersion = books.reduce((total, data) => total + Number(data.version || 0), 0);
+        const cleaned = books.flatMap((data, bookIndex) => {
+          const imported = Array.isArray(data.entries) ? data.entries : [];
+          const book = data.book || `Book ${bookIndex + 1}`;
+          return imported
+            .filter(isValidEntry)
+            .map((entry, index) =>
+              cleanEntry({ ...entry, book: entry.book || book }, "managed", `${bookIndex}-${index}`)
+            )
+            .filter((entry) => entry.name && entry.page);
+        });
 
         if (nextDataVersion > currentDataVersion || showMessage) {
           mergeManagedEntries(cleaned, nextDataVersion);
@@ -78,7 +84,7 @@ export default function App() {
       const parsed = stored.raw ? JSON.parse(stored.raw) : { entries: [], dataVersion: 0 };
       const rawEntries = Array.isArray(parsed) ? parsed : parsed.entries;
       const savedEntries = Array.isArray(rawEntries)
-        ? rawEntries.filter(isValidEntry).map(entry => cleanEntry(entry))
+        ? rawEntries.filter(isValidEntry).map((entry) => cleanEntry(entry))
         : [];
       const savedDataVersion = Array.isArray(parsed) ? 0 : Number(parsed.dataVersion || 0);
 
@@ -119,11 +125,13 @@ export default function App() {
   const matches = useMemo(() => filterEntries(entries, query), [entries, query]);
 
   const dataStatus = useMemo(() => {
-    const managedCount = entries.filter(entry => entry.source === "managed").length;
+    const managedCount = entries.filter((entry) => entry.source === "managed").length;
     const localCount = entries.length - managedCount;
     const versionText = dataVersion ? `Version ${dataVersion}` : "No maintained list loaded yet";
     const extra = localCount ? `, plus ${localCount} phone-added ${localCount === 1 ? "song" : "songs"}` : "";
-    return `${versionText}. ${managedCount} maintained ${managedCount === 1 ? "song" : "songs"}${extra}.`;
+    const bookCount = new Set(entries.map(bookLabel)).size;
+    const bookText = bookCount ? ` across ${bookCount} ${bookCount === 1 ? "book" : "books"}` : "";
+    return `${versionText}. ${managedCount} maintained ${managedCount === 1 ? "song" : "songs"}${bookText}${extra}.`;
   }, [dataVersion, entries]);
 
   async function installApp() {
@@ -156,20 +164,9 @@ export default function App() {
     setPrefillName("");
   }
 
-  function deleteEntry(entry) {
-    const confirmed = confirm(`Delete "${entry.name}" from the index?`);
-    if (!confirmed) return;
-
-    setEntries(currentEntries => {
-      const nextEntries = currentEntries.filter(item => item.id !== entry.id);
-      saveStoredSongs(nextEntries, dataVersionRef.current);
-      return nextEntries;
-    });
-    showToast("Song deleted.");
-  }
-
   function saveSong(form) {
     const songName = form.name.trim();
+    const book = String(form.book || "Book 1").trim() || "Book 1";
     const page = form.page.trim();
 
     if (!songName || !page) {
@@ -181,6 +178,7 @@ export default function App() {
     const nextEntry = {
       id,
       name: songName,
+      book: bookLabel({ book }),
       page,
       aliases: form.aliases.trim(),
       notes: form.notes.trim(),
@@ -188,13 +186,13 @@ export default function App() {
       updatedAt: new Date().toISOString()
     };
 
-    setEntries(currentEntries => {
-      const existingEntry = currentEntries.find(entry => entry.id === id);
+    setEntries((currentEntries) => {
+      const existingEntry = currentEntries.find((entry) => entry.id === id);
       const nextSong = {
         ...nextEntry,
         source: existingEntry ? existingEntry.source : "local"
       };
-      const existingIndex = currentEntries.findIndex(entry => entry.id === id);
+      const existingIndex = currentEntries.findIndex((entry) => entry.id === id);
       const nextEntries =
         existingIndex >= 0
           ? currentEntries.map((entry, index) => (index === existingIndex ? nextSong : entry))
@@ -224,9 +222,15 @@ export default function App() {
   }
 
   function exportCsv() {
-    const header = ["Song Name", "Page Number", "Other Names", "Notes"];
-    const rows = entries.map(entry => [entry.name, entry.page, entry.aliases, entry.notes]);
-    const csv = [header, ...rows].map(row => row.map(csvCell).join(",")).join("\n");
+    const header = ["Book", "Song Name", "Page Number", "Other Names", "Notes"];
+    const rows = entries.map((entry) => [
+      bookLabel(entry),
+      entry.name,
+      entry.page,
+      entry.aliases,
+      entry.notes
+    ]);
+    const csv = [header, ...rows].map((row) => row.map(csvCell).join(",")).join("\n");
     downloadFile("vishala-geet.csv", csv, "text/csv");
     showToast("CSV exported.");
   }
@@ -244,8 +248,8 @@ export default function App() {
 
         const cleaned = imported
           .filter(isValidEntry)
-          .map(entry => cleanEntry(entry, entry.source || "local"))
-          .filter(entry => entry.name && entry.page);
+          .map((entry) => cleanEntry(entry, entry.source || "local"))
+          .filter((entry) => entry.name && entry.page);
 
         if (!cleaned.length) {
           showToast("No valid songs found in the file.");
@@ -281,7 +285,6 @@ export default function App() {
           matches={matches}
           onAddFirst={openAddPanel}
           onAddMissing={addMissingSong}
-          onDelete={deleteEntry}
           onEdit={editEntry}
           query={query}
           setQuery={setQuery}

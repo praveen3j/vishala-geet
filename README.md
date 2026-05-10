@@ -4,9 +4,9 @@ A simple phone-friendly web app for finding page numbers in Vishala Geet, a favo
 
 ## What it does
 
-- Search a song name and see the page number.
-- Load a maintained song list from `assets/songs-data.json`.
-- Add, edit, or delete entries on the phone when needed.
+- Search a song name and see the book and page number.
+- Load maintained song lists from `assets/book1.json` and `assets/book2.json`.
+- Add or edit entries on the phone when needed.
 - Export and import a backup.
 - Work offline after it is installed from a hosted web address.
 
@@ -17,22 +17,24 @@ A simple phone-friendly web app for finding page numbers in Vishala Geet, a favo
 - `src/lib/` contains storage, search, and export helpers.
 - `src/styles.css` contains the app styling.
 - `public/assets/app-icon.svg` is the app icon.
-- `public/assets/songs-data.json` is the maintained song list.
+- `public/assets/book1.json` and `public/assets/book2.json` are the maintained song lists.
 - `public/manifest.webmanifest` makes it installable.
 - `public/sw.js` is copied by Vite to `/sw.js` in the hosted build, so the service worker can control the whole app.
 
 ## Maintaining Songs
 
-Add songs to `public/assets/songs-data.json` using this shape:
+Add songs to the matching book file in `public/assets/` using this shape:
 
 ```json
 {
   "version": 2,
+  "book": "Book 1",
   "updatedAt": "2026-05-10",
   "entries": [
     {
       "id": "song-001",
       "name": "Song name",
+      "book": "Book 1",
       "page": "42",
       "aliases": "Optional alternate name",
       "notes": ""
@@ -41,7 +43,7 @@ Add songs to `public/assets/songs-data.json` using this shape:
 }
 ```
 
-Increase `version` whenever the list changes. The phone app loads the latest maintained list when it opens, and the **About > Refresh List** button can check again.
+Increase that book file's `version` whenever its list changes. Add a new URL to `BOOK_DATA_URLS` in `src/constants.js` when adding another book. The phone app loads the latest maintained list when it opens, and the **About > Refresh List** button can check again.
 
 The current maintained list comes from the supplied JSON song data. Rows include romanized spellings and extra search words in `aliases`, so searches can match common spelling variations.
 

@@ -16,11 +16,10 @@ export default function AboutPanel({
         <p className="profile-name">Vishala Javvaji</p>
         <p className="profile-subtitle">Song collection</p>
         <p className="about-copy">
-          I am Vishala Javvaji, and this is my devotional song collection. I am fluent in Hindi, Telugu,
-          and English, and I hold a BA degree. I enjoy singing devotional songs, kolatam, and veena. I
-          practice yoga, follow a healthy diet, and like to maintain a healthy lifestyle. I also love
-          volunteering at temples, especially for events connected with devotional music, kolatam, and
-          veena.
+          I am Vishala Javvaji, and this is my devotional song collection. I am fluent in Hindi, Telugu, and
+          English, and I hold a BA degree. I enjoy singing devotional songs, kolatam, and veena. I practice
+          yoga, follow a healthy diet, and like to maintain a healthy lifestyle. I also love volunteering at
+          temples, especially for events connected with devotional music, kolatam, and veena.
         </p>
         <div className="backup-tools">
           <h3 className="subsection-title">Backup Tools</h3>
@@ -47,7 +46,9 @@ export default function AboutPanel({
           accept="application/json,.json"
           onChange={onImportFile}
         />
-        <p className="notice">Tip: On your Pixel, use Chrome&apos;s keyboard microphone in the search box to speak a song name.</p>
+        <p className="notice">
+          Tip: On your Pixel, use Chrome&apos;s keyboard microphone in the search box to speak a song name.
+        </p>
       </div>
     </section>
   );

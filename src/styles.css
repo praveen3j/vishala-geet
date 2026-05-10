@@ -15,7 +15,14 @@
   --danger-soft: #fff0ed;
   --shadow: 0 12px 32px rgba(50, 28, 64, 0.11);
   --radius: 8px;
-  font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  font-family:
+    Inter,
+    ui-sans-serif,
+    system-ui,
+    -apple-system,
+    BlinkMacSystemFont,
+    "Segoe UI",
+    sans-serif;
 }
 
 * {
@@ -36,7 +43,12 @@ body {
   min-height: 100%;
   overflow: hidden;
   background:
-    linear-gradient(180deg, rgba(124, 45, 109, 0.14), rgba(196, 138, 46, 0.07) 260px, rgba(248, 244, 251, 0) 520px),
+    linear-gradient(
+      180deg,
+      rgba(124, 45, 109, 0.14),
+      rgba(196, 138, 46, 0.07) 260px,
+      rgba(248, 244, 251, 0) 520px
+    ),
     var(--bg);
   color: var(--ink);
 }
@@ -243,7 +255,9 @@ textarea {
   background: #fff;
   color: var(--ink);
   outline: 0;
-  transition: border-color 0.18s ease, box-shadow 0.18s ease;
+  transition:
+    border-color 0.18s ease,
+    box-shadow 0.18s ease;
 }
 
 input {
@@ -353,8 +367,9 @@ textarea:focus {
 .page-badge span {
   display: block;
   color: rgba(255, 255, 255, 0.72);
-  font-size: 0.7rem;
+  font-size: 0.68rem;
   font-weight: 800;
+  line-height: 1.15;
   text-transform: uppercase;
 }
 
@@ -362,8 +377,9 @@ textarea:focus {
   display: block;
   max-width: 86px;
   overflow-wrap: anywhere;
-  font-size: 1.22rem;
-  line-height: 1.1;
+  margin-top: 2px;
+  font-size: 1.24rem;
+  line-height: 1.05;
 }
 
 .song-main {
@@ -374,7 +390,6 @@ textarea:focus {
   .search-line {
     grid-template-columns: 1fr;
   }
-
 }
 
 .song-title {
@@ -382,6 +397,13 @@ textarea:focus {
   overflow-wrap: anywhere;
   font-size: 1.08rem;
   line-height: 1.25;
+  font-weight: 850;
+}
+
+.page-line {
+  margin: 0 0 4px;
+  color: var(--gold);
+  font-size: 0.86rem;
   font-weight: 850;
 }
 
@@ -404,11 +426,6 @@ textarea:focus {
   background: var(--surface-soft);
   color: var(--accent-strong);
   font-weight: 800;
-}
-
-.mini-button.delete {
-  background: var(--danger-soft);
-  color: var(--danger);
 }
 
 .empty {
@@ -502,7 +519,9 @@ textarea:focus {
   opacity: 0;
   pointer-events: none;
   transform: translate(-50%, 16px);
-  transition: opacity 0.18s ease, transform 0.18s ease;
+  transition:
+    opacity 0.18s ease,
+    transform 0.18s ease;
 }
 
 .toast.is-visible {
