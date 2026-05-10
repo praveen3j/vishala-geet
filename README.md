@@ -1,69 +1,81 @@
 # Vishala Geet
 
-A simple phone-friendly web app for finding page numbers in Vishala Geet, a favorite songs collection.
+A phone-friendly web app for finding page numbers in Vishala Javvaji's devotional song collection.
 
 ## What it does
 
-- Search a song name and see the book and page number.
-- Load maintained song lists from `assets/book1.json` and `assets/book2.json`.
-- Add or edit entries on the phone when needed.
-- Export and import a backup.
-- Work offline after it is installed from a hosted web address.
+- Search a song name and see the book and page number, such as `Book 1, Page 20`.
+- Search across Book 1 and Book 2 with alternate spellings and first-line hints.
+- Keep the song list in a shared Supabase backend when configured.
+- Let normal users search only.
+- Let admin users add, edit, and delete shared songs after email sign-in.
+- Work as an installable web app from the hosted GitHub Pages URL.
+
+## Admins
+
+The app treats these emails as admins:
+
+- `praveenjav@outlook.com` - Praveen
+- `vishala1966@gmail.com` - Vishala
+
+The frontend checks these emails for showing admin controls. Supabase row-level security also checks the same emails through `public.admin_users`, so non-admins cannot write to the shared song table.
 
 ## Project Structure
 
 - `src/` contains the React app.
 - `src/components/` contains reusable UI pieces.
-- `src/lib/` contains storage, search, and export helpers.
+- `src/lib/` contains storage, search, auth, backend, and export helpers.
 - `src/styles.css` contains the app styling.
 - `public/assets/app-icon.svg` is the app icon.
-- `public/assets/book1.json` and `public/assets/book2.json` are the maintained song lists.
+- `public/assets/book1.json` and `public/assets/book2.json` are the static fallback song lists.
 - `public/manifest.webmanifest` makes it installable.
-- `public/sw.js` is copied by Vite to `/sw.js` in the hosted build, so the service worker can control the whole app.
+- `public/sw.js` is copied by Vite to `/sw.js` in the hosted build.
+- `supabase/schema.sql` creates the shared backend tables and security rules.
+- `supabase/seed-songs.sql` imports the current Book 1 and Book 2 data into Supabase.
+- `scripts/generate-supabase-seed.mjs` regenerates the seed file from the JSON assets.
+
+## Supabase Setup
+
+1. Create a Supabase project.
+2. Open Supabase SQL Editor and run `supabase/schema.sql`.
+3. In SQL Editor, run `supabase/seed-songs.sql` to load the current 340 songs.
+4. In Supabase Auth settings, add the site URL and redirect URL:
+   `https://praveen3j.github.io/vishala-geet/`
+5. Copy `.env.example` to `.env.local` for local development and fill in. Use the base Supabase URL, not the `/rest/v1/` API path. For the key, use the browser-safe publishable key from Supabase API Keys:
+
+```bash
+VITE_SUPABASE_URL=your-project-url
+VITE_SUPABASE_ANON_KEY=your-publishable-key
+```
+
+6. In GitHub repo settings, add GitHub Actions variables with the same names:
+   `VITE_SUPABASE_URL` and `VITE_SUPABASE_ANON_KEY`. The key variable can contain the Supabase publishable key.
+
+Without these variables, the app still builds and runs from the JSON fallback files. Admin login and shared Add/Edit/Delete are enabled only after Supabase is configured.
 
 ## Maintaining Songs
 
-Add songs to the matching book file in `public/assets/` using this shape:
+After Supabase is configured, use the app as an admin to add, edit, or delete songs. The changes are saved in the backend and will be visible to everyone using the hosted app.
 
-```json
-{
-  "version": 2,
-  "book": "Book 1",
-  "updatedAt": "2026-05-10",
-  "entries": [
-    {
-      "id": "song-001",
-      "name": "Song name",
-      "book": "Book 1",
-      "page": "42",
-      "aliases": "Optional alternate name",
-      "notes": ""
-    }
-  ]
-}
+The JSON files in `public/assets/` are now fallback data and a seed source. If you edit those files directly, regenerate the seed SQL:
+
+```bash
+npm run seed:sql
 ```
 
-Increase that book file's `version` whenever its list changes. Add a new URL to `BOOK_DATA_URLS` in `src/constants.js` when adding another book. The phone app loads the latest maintained list when it opens, and the **About > Refresh List** button can check again.
+Then run the updated `supabase/seed-songs.sql` in Supabase only if you want to replace the backend song table with the JSON data.
 
-The current maintained list comes from the supplied JSON song data. Rows include romanized spellings and extra search words in `aliases`, so searches can match common spelling variations.
+## Pixel Install
 
-## Pixel install
+Open the hosted link in Chrome on your Pixel:
 
-Host these files on a simple HTTPS static host, then open the link in Chrome on your Pixel.
+`https://praveen3j.github.io/vishala-geet/`
 
-Good simple options:
-
-- Netlify Drop
-- GitHub Pages
-- Cloudflare Pages
-
-After opening the hosted link on your Pixel:
+Then:
 
 1. Tap Chrome's three-dot menu.
 2. Tap **Add to Home screen** or **Install app**.
 3. Open **Vishala Geet** from your home screen.
-
-Your songs are stored on that phone's browser/app storage. Use **About > Export Backup** after adding many songs.
 
 ## Development
 
@@ -73,7 +85,7 @@ Install dependencies once:
 npm install
 ```
 
-On the Oracle laptop, the local `.npmrc` may be needed for the internal npm registry. It is ignored by git and should not be shared outside Oracle.
+Local `.npmrc` files are ignored by git and should not be committed.
 
 Run locally:
 
@@ -88,7 +100,3 @@ npm run build
 ```
 
 Push or merge to `release` to deploy through GitHub Pages. Keep `main` for development work, then promote stable changes to `release` when ready. The workflow in `.github/workflows/deploy.yml` builds the app and publishes `dist/`.
-
-After the first workflow run, the public site should be available at:
-
-`https://praveen3j.github.io/vishala-geet/`

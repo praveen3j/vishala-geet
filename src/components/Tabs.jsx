@@ -1,9 +1,11 @@
 import { TABS } from "../constants.js";
 
-export default function Tabs({ activeTab, onChange }) {
+export default function Tabs({ activeTab, canManage, onChange }) {
+  const visibleTabs = TABS.filter((tab) => tab.id !== "add" || canManage);
+
   return (
     <nav className="tabs" aria-label="Song index sections">
-      {TABS.map((tab) => (
+      {visibleTabs.map((tab) => (
         <button
           key={tab.id}
           className="tab-button"
