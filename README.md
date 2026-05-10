@@ -85,4 +85,8 @@ Build for hosting:
 npm run build
 ```
 
-Upload the generated `dist/` folder to a static host.
+Push to `main` to deploy through GitHub Pages. The workflow in `.github/workflows/deploy.yml` builds the app and publishes `dist/`.
+
+After the first workflow run, the public site should be available at:
+
+`https://praveen3j.github.io/vishala-geet/`
