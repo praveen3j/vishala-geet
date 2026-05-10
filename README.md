@@ -13,12 +13,7 @@ A phone-friendly web app for finding page numbers in Vishala Javvaji's devotiona
 
 ## Admins
 
-The app treats these emails as admins:
-
-- `praveenjav@outlook.com` - Praveen
-- `vishala1966@gmail.com` - Vishala
-
-The frontend checks these emails for showing admin controls. Supabase row-level security also checks the same emails through `public.admin_users`, so non-admins cannot write to the shared song table.
+The app supports an approved admin allowlist. Supabase row-level security checks `public.admin_users`, so non-admins cannot write to the shared song table.
 
 ## Project Structure
 
@@ -55,7 +50,7 @@ Without these variables, the app still builds and runs from the JSON fallback fi
 
 ## Admin OTP Email
 
-The admin login flow uses Supabase email OTP. In Supabase, go to **Authentication → Emails → Templates → Magic Link** and make sure the email body includes `{{ .Token }}` so admins receive a 6-digit code. A simple template can say:
+The admin login flow uses Supabase email OTP. In Supabase, go to **Authentication → Emails → Templates → Magic Link** and make sure the email body includes `{{ .Token }}` so admins receive a one-time code. A simple template can say:
 
 ```html
 <h2>Vishala Geet admin code</h2>

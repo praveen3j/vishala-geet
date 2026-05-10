@@ -254,7 +254,7 @@ export default function App() {
   function requireAdmin(action) {
     if (canManage) return true;
     const message = backendEnabled
-      ? `Sign in as Praveen or Vishala to ${action}.`
+      ? `Sign in with an approved admin email to ${action}.`
       : "Backend is not configured yet. Add Supabase keys before editing shared songs.";
     showToast(message);
     setActiveTab("about");
@@ -440,8 +440,8 @@ export default function App() {
     if (!result) return;
 
     const token = authOtp.replace(/\D/g, "");
-    if (token.length !== 6) {
-      showToast("Enter the 6-digit OTP code.");
+    if (token.length < 6 || token.length > 8) {
+      showToast("Enter the OTP code from your email.");
       return;
     }
 

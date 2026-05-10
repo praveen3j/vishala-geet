@@ -1,5 +1,3 @@
-import { ADMIN_USERS } from "../lib/admins.js";
-
 export default function AuthPanel({
   adminProfile,
   authEmail,
@@ -29,7 +27,7 @@ export default function AuthPanel({
     <div className="backup-tools">
       <h3 className="subsection-title">Admin Access</h3>
       <p className="song-meta">
-        Search is open to everyone. Only Praveen and Vishala can add, edit, or delete shared songs.
+        Search is open to everyone. Approved admins can add, edit, or delete shared songs.
       </p>
       {!backendEnabled && (
         <p className="notice">
@@ -63,7 +61,7 @@ export default function AuthPanel({
               type="email"
               inputMode="email"
               autoComplete="email"
-              placeholder={ADMIN_USERS.map((admin) => admin.email).join(" or ")}
+              placeholder="Enter approved admin email"
               value={authEmail}
               onChange={(event) => onAuthEmailChange(event.target.value)}
             />
@@ -75,7 +73,7 @@ export default function AuthPanel({
       )}
       {backendEnabled && !userEmail && authStep === "code" && (
         <form className="admin-otp-form" onSubmit={handleCodeSubmit}>
-          <p className="song-meta">Enter the 6-digit code sent to {authEmail.trim().toLowerCase()}.</p>
+          <p className="song-meta">Enter the code sent to {authEmail.trim().toLowerCase()}.</p>
           <div className="admin-form">
             <div className="field is-compact">
               <label htmlFor="adminOtp">OTP code</label>
@@ -84,11 +82,11 @@ export default function AuthPanel({
                 type="text"
                 inputMode="numeric"
                 autoComplete="one-time-code"
-                maxLength="6"
+                maxLength="8"
                 pattern="[0-9]*"
-                placeholder="123456"
+                placeholder="12345678"
                 value={authOtp}
-                onChange={(event) => onAuthOtpChange(event.target.value.replace(/\D/g, "").slice(0, 6))}
+                onChange={(event) => onAuthOtpChange(event.target.value.replace(/\D/g, "").slice(0, 8))}
               />
             </div>
             <button className="primary" type="submit" disabled={authLoading}>
