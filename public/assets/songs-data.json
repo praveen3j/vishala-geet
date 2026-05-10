@@ -1,0 +1,2406 @@
+{
+  "version": 4,
+  "updatedAt": "2026-05-10",
+  "entries": [
+    {
+      "id": "user-001",
+      "name": "Shukravaramu Yedu",
+      "page": "1",
+      "aliases": "Sukravaramu Edu, Shukravaram Yedu, Shukravaaram, Friday song, Sukravaram, page 1, p1",
+      "notes": "Devotional for Friday",
+      "source": "managed"
+    },
+    {
+      "id": "user-002",
+      "name": "Sri Tulasi Priya",
+      "page": "2",
+      "aliases": "Shree Tulasi Priya, Sri Thulasi Priya, Thulasi Maata, Tulasi Pooja, Sree Tulasi Priya, Shri Tulasi Priya, Sree Thulasi Priya, Shree Thulasi Priya, Shri Thulasi Priya, Thulasi Mata, Thulasi Amma, page 2, p2",
+      "notes": "Tulasi plant worship",
+      "source": "managed"
+    },
+    {
+      "id": "user-003",
+      "name": "Nala Tripura",
+      "page": "3",
+      "aliases": "Nalla Tripura, Nala Thripura, Nalla Thripura, Tripura Sundari, page 3, p3, Devi song, Amma song",
+      "notes": "",
+      "source": "managed"
+    },
+    {
+      "id": "user-004",
+      "name": "Muddu Namala",
+      "page": "4",
+      "aliases": "Mudhu Namala, Muddu Naamala, Muthu Namalu, Muddu Namam, page 4, p4",
+      "notes": "",
+      "source": "managed"
+    },
+    {
+      "id": "user-005",
+      "name": "Lalitamma",
+      "page": "5",
+      "aliases": "Lalithamma, Sri Lalitha, Lalita Amma, Lolithamma, Sree Lalitha, Shree Lalitha, Shri Lalitha, page 5, p5, Lali song, lullaby",
+      "notes": "",
+      "source": "managed"
+    },
+    {
+      "id": "user-006",
+      "name": "Atadugoi",
+      "page": "6",
+      "aliases": "Atadugoy, Athadugoi, Atadugoyi, Atadugai, page 6, p6",
+      "notes": "",
+      "source": "managed"
+    },
+    {
+      "id": "user-007",
+      "name": "Nidura Padamma",
+      "page": "7",
+      "aliases": "Nidra Padamma, Nidhura Padamma, Nidura Padama, Lullaby, page 7, p7",
+      "notes": "",
+      "source": "managed"
+    },
+    {
+      "id": "user-008",
+      "name": "Lali Sri Krishna",
+      "page": "8",
+      "aliases": "Lali Shree Krishna, Lali Sri Krsna, Lali Sri Krushna, Krishna Lali, Lali Sree Krishna, Lali Shri Krishna, Lali Shree Krsna, Lali Shree Krushna, Lali Shree Kishan, Laali Shree Krishna, Lullaby Shree Krishna, Jo Jo Shree Krishna, Lali Sree Krsna, Lali Shri Krsna, Laali Sri Krsna, Lullaby Sri Krsna, Jo Jo Sri Krsna, Lali Sree Krushna, Lali Shri Krushna, Laali Sri Krushna, Lullaby Sri Krushna, Jo Jo Sri Krushna, Krsna Lali, Krushna Lali, Kishan Lali, Krishna Laali, Krishna Lullaby, Krishna Jo Jo, Lali Sri Kishan, Laali Sri Krishna, Lullaby Sri Krishna, Jo Jo Sri Krishna, page 8, p8, Krishna song, Gopala, Lali song, lullaby",
+      "notes": "Lullaby for Krishna",
+      "source": "managed"
+    },
+    {
+      "id": "user-009",
+      "name": "Lali Lali",
+      "page": "9",
+      "aliases": "Laali Laali, Lally Lally, Baby Lali, Baby Laali, Baby Lullaby, Baby Jo Jo, Lullaby Lullaby, Jo Jo Jo Jo, page 9, p9, Lali song, lullaby",
+      "notes": "",
+      "source": "managed"
+    },
+    {
+      "id": "user-010",
+      "name": "Pahimam Rama",
+      "page": "10",
+      "aliases": "Paahimam Rama, Pahimam Raama, Pahimam Ram, Rama Pahimam, Paahimam Raama, Paahimam Ram, Rama Paahimam, page 10, p10, Rama song, Sri Rama",
+      "notes": "",
+      "source": "managed"
+    },
+    {
+      "id": "user-011",
+      "name": "Sharanam Sri",
+      "page": "11",
+      "aliases": "Saranam Sri, Sharanam Shree, Saranam Shree, Sharanam Shri, Saranam Sree, Saranam Shri, Sharanam Sree, page 11, p11",
+      "notes": "",
+      "source": "managed"
+    },
+    {
+      "id": "user-012",
+      "name": "Soubhagyalakshmi",
+      "page": "12",
+      "aliases": "Saubhagyalakshmi, Sowbhagyalakshmi, Sobhagyalakshmi, Lakshmi Raave, Laxmi Raave, Laxmi Devi Raave, page 12, p12, Lakshmi song, Mahalakshmi",
+      "notes": "",
+      "source": "managed"
+    },
+    {
+      "id": "user-013",
+      "name": "Nalla Nallani",
+      "page": "13",
+      "aliases": "Nala Nalani, Nalla Nallany, Nalla Nalla, Krishna Nalla, Krsna Nalla, Krushna Nalla, Kishan Nalla, page 13, p13",
+      "notes": "",
+      "source": "managed"
+    },
+    {
+      "id": "user-014",
+      "name": "Tange Tange",
+      "page": "14",
+      "aliases": "Thange Thange, Tangay Tangay, Tange Tangay, page 14, p14",
+      "notes": "",
+      "source": "managed"
+    },
+    {
+      "id": "user-015",
+      "name": "Sri Karubhu Shubha",
+      "page": "15",
+      "aliases": "Shree Karubhu Shubha, Sri Karubu Subha, Karubhu Subha, Sree Karubhu Shubha, Shri Karubhu Shubha, Sree Karubu Subha, Shree Karubu Subha, Shri Karubu Subha, page 15, p15",
+      "notes": "",
+      "source": "managed"
+    },
+    {
+      "id": "user-016",
+      "name": "Adimoolame",
+      "page": "16",
+      "aliases": "Adimulame, Aadhimoolame, Adimoolama, Adimulam, page 16, p16",
+      "notes": "",
+      "source": "managed"
+    },
+    {
+      "id": "user-017",
+      "name": "Andal Amma",
+      "page": "17",
+      "aliases": "Aandal Amma, Andalama, Anthal Amma, Godadevi, page 17, p17",
+      "notes": "",
+      "source": "managed"
+    },
+    {
+      "id": "user-019",
+      "name": "Veda Bhuvani",
+      "page": "19",
+      "aliases": "Vedha Bhuvani, Veda Buvani, Vedha Buvani, Veda Bhuvana, page 19, p19",
+      "notes": "",
+      "source": "managed"
+    },
+    {
+      "id": "user-021",
+      "name": "Nama Nukta",
+      "page": "21",
+      "aliases": "Naama Nukta, Nama Nuktha, Nama Mukta, page 21, p21",
+      "notes": "",
+      "source": "managed"
+    },
+    {
+      "id": "user-022",
+      "name": "Edu Edu Bhu",
+      "page": "22",
+      "aliases": "Yedu Yedu Bhu, Edu Edu Bu, Yedu Yedu Bu, Edu Edu Bhoo, page 22, p22",
+      "notes": "",
+      "source": "managed"
+    },
+    {
+      "id": "user-024",
+      "name": "Pujinchu Pada",
+      "page": "24",
+      "aliases": "Poojinchu Pada, Pujinchu Padam, Pujinchu Paada, Pujinchu Paadam, page 24, p24",
+      "notes": "",
+      "source": "managed"
+    },
+    {
+      "id": "user-025",
+      "name": "Manchi Muthyamu",
+      "page": "25",
+      "aliases": "Manchi Mutthyamu, Manchi Mutiamu, Manchi Muthyam, Muttiyam, page 25, p25",
+      "notes": "",
+      "source": "managed"
+    },
+    {
+      "id": "user-027",
+      "name": "Krishna Nama",
+      "page": "27",
+      "aliases": "Krushna Nama, Krsna Nama, Krishna Namam, Krishna Naam, Krsna Namam, Krushna Namam, Kishan Namam, Krsna Naam, Krushna Naam, Kishan Naam, Kishan Nama, page 27, p27, Krishna song, Gopala",
+      "notes": "",
+      "source": "managed"
+    },
+    {
+      "id": "user-028",
+      "name": "Balagopala",
+      "page": "28",
+      "aliases": "Baala Gopala, Balagopal, Bala Gopalam, Balagopalu, page 28, p28, Krishna song, Gopala",
+      "notes": "",
+      "source": "managed"
+    },
+    {
+      "id": "user-029",
+      "name": "Nanivida Ganapathi",
+      "page": "29",
+      "aliases": "Nanividha Ganapathi, Nanivida Ganapati, Ganesh Song, Ganapathi, Nanividha Ganapati, Nanividha Ganesh, Nanividha Ganesha, Nanividha Vinayaka, Nanivida Ganesh, Nanivida Ganesha, Nanivida Vinayaka, Ganapati, Ganesh, Ganesha, Vinayaka, page 29, p29",
+      "notes": "Vinayaka Song",
+      "source": "managed"
+    },
+    {
+      "id": "user-030",
+      "name": "Yettalla Ninnu Yetu",
+      "page": "30",
+      "aliases": "Ettalla Ninnu Etu, Yettalla Ninnu Etu, Ettalla Ninnu Yetu, page 30, p30",
+      "notes": "",
+      "source": "managed"
+    },
+    {
+      "id": "user-031",
+      "name": "Bala Tripura Sundari Ramma",
+      "page": "31",
+      "aliases": "Bala Thripura Sundari Ramma, Bala Tripura Sundari, Tripura Sundari, page 31, p31, Devi song, Amma song",
+      "notes": "",
+      "source": "managed"
+    },
+    {
+      "id": "user-033",
+      "name": "Sri Chudi Kodutaku",
+      "page": "33",
+      "aliases": "Shree Chudi Kodutaku, Sri Chudi Koduthaku, Chudi Kodutaku, Sree Chudi Kodutaku, Shri Chudi Kodutaku, Sree Chudi Koduthaku, Shree Chudi Koduthaku, Shri Chudi Koduthaku, page 33, p33",
+      "notes": "",
+      "source": "managed"
+    },
+    {
+      "id": "user-035",
+      "name": "Arambhuluku Aadi",
+      "page": "35",
+      "aliases": "Aarambuluku Aadi, Arambhuluku Adi, Arambuluku Adi, page 35, p35, Devi song, Amma song",
+      "notes": "",
+      "source": "managed"
+    },
+    {
+      "id": "user-037",
+      "name": "Sri Suryanarayana",
+      "page": "37",
+      "aliases": "Shree Suryanarayana, Surya Bhagavan, Aditya, Surya Song, Sree Suryanarayana, Shri Suryanarayana, page 37, p37",
+      "notes": "Sun God worship",
+      "source": "managed"
+    },
+    {
+      "id": "user-038",
+      "name": "Gandhamu Puchadama",
+      "page": "38",
+      "aliases": "Gandhamu Poosadama, Gandham Poosadama, page 38, p38",
+      "notes": "",
+      "source": "managed"
+    },
+    {
+      "id": "user-040",
+      "name": "Mangala Haarati Deva",
+      "page": "40",
+      "aliases": "Mangala Arathi Deva, Mangala Haarathi Deva, Harati Deva, Mangala Harathi Deva, Mangala Harati Deva, Mangala Aarti Deva, Haarathi Deva, Harathi Deva, Arathi Deva, Aarti Deva, page 40, p40, Aarti song, Harati song",
+      "notes": "Arati Song",
+      "source": "managed"
+    },
+    {
+      "id": "user-041",
+      "name": "Krishna Hare Muddu Krishna",
+      "page": "41",
+      "aliases": "Krsna Hare Muddu Krsna, Muddu Krishna Hare, Krushna Hare, Krushna Hare Muddu Krushna, Muddu Krsna Hare, Muddu Krushna Hare, Muddu Kishan Hare, Krishna Hare, Krsna Hare, Kishan Hare Muddu Kishan, page 41, p41, Krishna song, Gopala",
+      "notes": "",
+      "source": "managed"
+    },
+    {
+      "id": "user-043",
+      "name": "Mahalakshmi Mangala",
+      "page": "43",
+      "aliases": "Maha Lakshmi Mangala, Mangala Mahalakshmi, Lakshmi Mangalam, Maha Laxmi Mangala, Maha Laxmi Devi Mangala, Laxmi Mangalam, Laxmi Devi Mangalam, page 43, p43, Lakshmi song, Mahalakshmi, Aarti song, Harati song",
+      "notes": "",
+      "source": "managed"
+    },
+    {
+      "id": "user-045",
+      "name": "Ni Sati Evareyamma",
+      "page": "45",
+      "aliases": "Nee Sati Evareyamma, Ni Sati Evareyama, Nee Sathi Evareyamma, page 45, p45",
+      "notes": "",
+      "source": "managed"
+    },
+    {
+      "id": "user-047",
+      "name": "Siri Siri Lali",
+      "page": "47",
+      "aliases": "Shiri Shiri Lali, Siri Siri Laali, Shiri Shiri Laali, Shiri Shiri Lullaby, Shiri Shiri Jo Jo, Siri Siri Lullaby, Siri Siri Jo Jo, page 47, p47, Lali song, lullaby",
+      "notes": "",
+      "source": "managed"
+    },
+    {
+      "id": "user-048",
+      "name": "Keshava Madhava Gokula",
+      "page": "48",
+      "aliases": "Kesava Madhava Gokula, Keshava Maadhava Gokula, page 48, p48, Krishna song, Gopala",
+      "notes": "",
+      "source": "managed"
+    },
+    {
+      "id": "user-049",
+      "name": "Varaleeyaga Nanalola",
+      "page": "49",
+      "aliases": "Varaliyaga Nanalola, Vara Leeyaga Nanalola, Nanalola, page 49, p49",
+      "notes": "",
+      "source": "managed"
+    },
+    {
+      "id": "user-052",
+      "name": "Singari Pankajalu Kultun",
+      "page": "52",
+      "aliases": "Singari Pankajalu, Pankajalu, page 52, p52",
+      "notes": "",
+      "source": "managed"
+    },
+    {
+      "id": "user-053",
+      "name": "Manasa Sri Andalu",
+      "page": "53",
+      "aliases": "Manasa Shree Andalu, Manasa Sri Anthalu, Andal Manasa, Manasa Sree Andalu, Manasa Shri Andalu, Manasa Sree Anthalu, Manasa Shree Anthalu, Manasa Shri Anthalu, page 53, p53",
+      "notes": "",
+      "source": "managed"
+    },
+    {
+      "id": "user-054",
+      "name": "Abhi Shubha Lagnamu",
+      "page": "53",
+      "aliases": "Abhi Subha Lagnamu, Abhi Shubha Lagnam, Subha Lagnamu, page 53, p53",
+      "notes": "Wedding/Auspicious Song",
+      "source": "managed"
+    },
+    {
+      "id": "user-055",
+      "name": "Deva Deva Vasudeva",
+      "page": "55",
+      "aliases": "Deva Deva Vasudevaya, Vasudeva Deva Deva, Deva Deva, page 55, p55",
+      "notes": "",
+      "source": "managed"
+    },
+    {
+      "id": "user-056",
+      "name": "Alasinchanela Krishna",
+      "page": "56",
+      "aliases": "Alasinchanela Krsna, Alasinchanela Krushna, Alasinchanela, Alasinchanela Kishan, page 56, p56, Krishna song, Gopala",
+      "notes": "",
+      "source": "managed"
+    },
+    {
+      "id": "user-057",
+      "name": "Bogi Pandlu Pose",
+      "page": "56",
+      "aliases": "Bhogi Pandlu Pose, Bogi Pandlu Poore, Bhogi Pandulu, page 56, p56",
+      "notes": "Sankranti song",
+      "source": "managed"
+    },
+    {
+      "id": "user-058",
+      "name": "Shrutini Ni Gati Nivu",
+      "page": "57",
+      "aliases": "Srutini Ni Gati Nivu, Shrutini Nee Gathi Neevu, Gathi Neevu, page 57, p57",
+      "notes": "",
+      "source": "managed"
+    },
+    {
+      "id": "user-059",
+      "name": "Vaishnavi Bhargavi",
+      "page": "58",
+      "aliases": "Vyshavi Bhargavi, Vaishnavi Bhargavy, Bhargavi, page 58, p58",
+      "notes": "",
+      "source": "managed"
+    },
+    {
+      "id": "user-060",
+      "name": "Krishna Kalaya Sundara",
+      "page": "59",
+      "aliases": "Krushna Kalaya Sundara, Krsna Kalaya Sundara, Kalaya Sundara, Kishan Kalaya Sundara, page 59, p59, Krishna song, Gopala",
+      "notes": "",
+      "source": "managed"
+    },
+    {
+      "id": "user-061",
+      "name": "Mangala Haarati De Lakshmi",
+      "page": "60",
+      "aliases": "Mangala Arathi De Lakshmi, Lakshmi Harati, Mangala Harati, Mangala Arathi De Laxmi, Mangala Arathi De Laxmi Devi, Mangala Haarathi De Lakshmi, Mangala Harathi De Lakshmi, Mangala Harati De Lakshmi, Mangala Aarti De Lakshmi, Laxmi Harati, Laxmi Devi Harati, Lakshmi Haarathi, Lakshmi Harathi, Lakshmi Arathi, Lakshmi Aarti, Mangala Haarathi, Mangala Harathi, Mangala Arathi, Mangala Aarti, Mangala Haarati De Laxmi, Mangala Haarati De Laxmi Devi, page 60, p60, Lakshmi song, Mahalakshmi, Aarti song, Harati song",
+      "notes": "",
+      "source": "managed"
+    },
+    {
+      "id": "user-062",
+      "name": "Saptagiri De",
+      "page": "61",
+      "aliases": "Sapthagiri De, Saptagiri Deva, Saptagiri Vaasa, page 61, p61",
+      "notes": "",
+      "source": "managed"
+    },
+    {
+      "id": "user-063",
+      "name": "Omkara Rupini",
+      "page": "62",
+      "aliases": "Omkaara Roopini, Devi Omkara, page 62, p62",
+      "notes": "",
+      "source": "managed"
+    },
+    {
+      "id": "user-064",
+      "name": "Sri Guru Vayupura",
+      "page": "63",
+      "aliases": "Shree Guru Vayupura, Guruvayur, Sri Guruvayupura, Sree Guru Vayupura, Shri Guru Vayupura, Sree Guruvayupura, Shree Guruvayupura, Shri Guruvayupura, page 63, p63",
+      "notes": "",
+      "source": "managed"
+    },
+    {
+      "id": "user-065",
+      "name": "Yadugopal",
+      "page": "64",
+      "aliases": "Yadhu Gopal, Yadhu Gopalam, Yadugopalu, page 64, p64",
+      "notes": "",
+      "source": "managed"
+    },
+    {
+      "id": "user-066",
+      "name": "Nallanayya Alli",
+      "page": "65",
+      "aliases": "Nallanayya Ally, Nalanayya Alli, Nallanayya, page 65, p65",
+      "notes": "",
+      "source": "managed"
+    },
+    {
+      "id": "user-067",
+      "name": "Krishna Maa Intiki",
+      "page": "66",
+      "aliases": "Krushna Maa Intiki, Krsna Maa Intiki, Krishna Ma Intiki, Krsna Ma Intiki, Krushna Ma Intiki, Kishan Ma Intiki, Kishan Maa Intiki, page 66, p66, Krishna song, Gopala",
+      "notes": "",
+      "source": "managed"
+    },
+    {
+      "id": "user-068",
+      "name": "Sangeetha Sahitya",
+      "page": "66",
+      "aliases": "Sangeeta Sahitya, Sangitha Sahithya, Music Song, page 66, p66",
+      "notes": "",
+      "source": "managed"
+    },
+    {
+      "id": "user-069",
+      "name": "Amma Alumelu",
+      "page": "67",
+      "aliases": "Amma Alamelu, Amma Alumelu Manga, Alamelu Manga, page 67, p67",
+      "notes": "",
+      "source": "managed"
+    },
+    {
+      "id": "user-070",
+      "name": "Gruha Pravesha Paata",
+      "page": "68",
+      "aliases": "Griha Pravesha Pata, Gruha Pravesham, House Warming Song, page 68, p68",
+      "notes": "",
+      "source": "managed"
+    },
+    {
+      "id": "user-071",
+      "name": "Sevantha Mi Vela",
+      "page": "69",
+      "aliases": "Sevanthami Vela, Sevanti Song, page 69, p69",
+      "notes": "",
+      "source": "managed"
+    },
+    {
+      "id": "user-072",
+      "name": "Shamudithudu Loka",
+      "page": "70",
+      "aliases": "Samudithudu Loka, Shamudithudu, Samudithudu, page 70, p70",
+      "notes": "",
+      "source": "managed"
+    },
+    {
+      "id": "user-073",
+      "name": "Chetanu Dachinidi",
+      "page": "71",
+      "aliases": "Chetanu Dachinidhi, Chetanu Dachindi, Chetana, page 71, p71",
+      "notes": "",
+      "source": "managed"
+    },
+    {
+      "id": "user-074",
+      "name": "Deva Manava Rupa",
+      "page": "72",
+      "aliases": "Deva Manava Roopa, Manava Rupa Deva, Deva Manava, page 72, p72",
+      "notes": "",
+      "source": "managed"
+    },
+    {
+      "id": "user-075",
+      "name": "Chandana Charchita",
+      "page": "72",
+      "aliases": "Chandana Charchitha, Chandanam Charchita, Ashtapadi, page 72, p72",
+      "notes": "Classic Ashtapadi",
+      "source": "managed"
+    },
+    {
+      "id": "user-076",
+      "name": "Kalyana Venkatesha",
+      "page": "74",
+      "aliases": "Kalyana Venkatesa, Kalyana Venkateswara, Venkateswara Song, Kalyana Srinivasa, page 74, p74",
+      "notes": "",
+      "source": "managed"
+    },
+    {
+      "id": "user-077",
+      "name": "Swami Ante",
+      "page": "75",
+      "aliases": "Swamy Ante, Swami Anthay, Swamy Anthay, page 75, p75",
+      "notes": "",
+      "source": "managed"
+    },
+    {
+      "id": "user-078",
+      "name": "Omkara Bindu",
+      "page": "76",
+      "aliases": "Omkaara Bindu, Omkara Bindu Samyuktam, Omkara Bindhu, page 76, p76",
+      "notes": "",
+      "source": "managed"
+    },
+    {
+      "id": "user-079",
+      "name": "Krishna Krishna Jaya",
+      "page": "77",
+      "aliases": "Krushna Krushna Jaya, Krsna Krsna Jaya, Krishna Jaya Jaya, Krsna Jaya Jaya, Krushna Jaya Jaya, Kishan Jaya Jaya, Kishan Kishan Jaya, page 77, p77, Krishna song, Gopala",
+      "notes": "",
+      "source": "managed"
+    },
+    {
+      "id": "user-080",
+      "name": "Lakshmi Raavemaa",
+      "page": "78",
+      "aliases": "Laxmi Raavemaa, Lakshmi Ravema, Lakshmi Ravamma, Lakshmi Raave, Laxmi Ravema, Laxmi Devi Ravema, Laxmi Ravamma, Laxmi Devi Ravamma, Laxmi Raave, Laxmi Devi Raave, Laxmi Devi Raavemaa, page 78, p78, Lakshmi song, Mahalakshmi",
+      "notes": "",
+      "source": "managed"
+    },
+    {
+      "id": "user-081",
+      "name": "Sri Tirumalavasa",
+      "page": "79",
+      "aliases": "Shree Tirumalavasa, Sree Tirumalavasa, Tirumala Vasa, Venkateswara, Shri Tirumalavasa, page 79, p79",
+      "notes": "",
+      "source": "managed"
+    },
+    {
+      "id": "user-082",
+      "name": "Annapurnadevi Archana",
+      "page": "80",
+      "aliases": "Annapurna Devi, Annapurna Archana, Annapurnamma, page 80, p80, Devi song, Amma song",
+      "notes": "Prayer for Food/Goddess Annapurna",
+      "source": "managed"
+    },
+    {
+      "id": "user-083",
+      "name": "Ambadi Kanhayya",
+      "page": "81",
+      "aliases": "Ambadi Kanhaiya, Ambadi Kanaya, Ambadi Krishna, Ambadi Krsna, Ambadi Krushna, Ambadi Kishan, page 81, p81, Devi song, Amma song",
+      "notes": "",
+      "source": "managed"
+    },
+    {
+      "id": "user-084",
+      "name": "Muthyala Haarathi",
+      "page": "82",
+      "aliases": "Muthyala Harati, Mutyala Arathi, Mutyala Harathi, Muthyala Harathi, Muthyala Arathi, Muthyala Aarti, Mutyala Haarathi, Mutyala Harati, Mutyala Aarti, page 82, p82, Aarti song, Harati song",
+      "notes": "",
+      "source": "managed"
+    },
+    {
+      "id": "user-085",
+      "name": "Jaganmahinakaara",
+      "page": "85",
+      "aliases": "Jaganmahinaakara, Jaganmahina kara, Jaganmahina, page 85, p85",
+      "notes": "",
+      "source": "managed"
+    },
+    {
+      "id": "user-086",
+      "name": "Amara Vaibhavam",
+      "page": "86",
+      "aliases": "Amara Vaibhavama, Amara Vaibavam, page 86, p86",
+      "notes": "",
+      "source": "managed"
+    },
+    {
+      "id": "user-087",
+      "name": "Srirama Nee Naama",
+      "page": "87",
+      "aliases": "Sri Rama Nee Nama, Shree Rama Nee Nama, Rama Nama Song, Sree Rama Nee Nama, Shri Rama Nee Nama, page 87, p87, Rama song, Sri Rama",
+      "notes": "",
+      "source": "managed"
+    },
+    {
+      "id": "user-088",
+      "name": "Piluvave Krishnuni",
+      "page": "88",
+      "aliases": "Piluvave Krushnuni, Piluvave Krsnuni, Krishnuni Piluvave, page 88, p88",
+      "notes": "",
+      "source": "managed"
+    },
+    {
+      "id": "user-089",
+      "name": "Haarathi Chekoni",
+      "page": "89",
+      "aliases": "Harati Chekoni, Harathi Chekoni, Arathi Chekoni, Aarti Chekoni, page 89, p89, Aarti song, Harati song",
+      "notes": "",
+      "source": "managed"
+    },
+    {
+      "id": "user-090",
+      "name": "Mangala Mangala Mahadeva",
+      "page": "90",
+      "aliases": "Mangala Mahadeva, Shiva Mangalam, Mahadeva Mangala, Siva Mangalam, page 90, p90, Shiva song, Mahadeva, Aarti song, Harati song",
+      "notes": "",
+      "source": "managed"
+    },
+    {
+      "id": "user-091",
+      "name": "Vidvo Ala Vijaya",
+      "page": "91",
+      "aliases": "Vidhvo Ala Vijaya, Vijaya Song, page 91, p91",
+      "notes": "",
+      "source": "managed"
+    },
+    {
+      "id": "user-092",
+      "name": "Palikinchu Vamma",
+      "page": "92",
+      "aliases": "Palikinchuvamma, Palikinchu Vama, Palikinchu Amma, page 92, p92",
+      "notes": "",
+      "source": "managed"
+    },
+    {
+      "id": "user-093",
+      "name": "Annapurna Devi",
+      "page": "93",
+      "aliases": "Annapurnadevi, Annapurna Maata, Annapurnamma, Annapurna Mata, Annapurna Amma, page 93, p93, Devi song, Amma song",
+      "notes": "",
+      "source": "managed"
+    },
+    {
+      "id": "user-094",
+      "name": "Shivudide Nadi",
+      "page": "93",
+      "aliases": "Sivudide Nadi, Shivudide Nadhi, Shiva Nadi, Siva Nadi, page 93, p93",
+      "notes": "",
+      "source": "managed"
+    },
+    {
+      "id": "user-095",
+      "name": "Sangeetha Sahitya",
+      "page": "94",
+      "aliases": "Sangeeta Sahitya, Sangitha Sahithya, Sangeetham, page 94, p94",
+      "notes": "",
+      "source": "managed"
+    },
+    {
+      "id": "user-096",
+      "name": "Amba Neekide",
+      "page": "95",
+      "aliases": "Amba Nikide, Amba Neekidhey, Amba Harati, Amba Haarathi, Amba Harathi, Amba Arathi, Amba Aarti, page 95, p95, Devi song, Amma song",
+      "notes": "",
+      "source": "managed"
+    },
+    {
+      "id": "user-097",
+      "name": "Shankari Shiva",
+      "page": "95",
+      "aliases": "Sankari Siva, Shankari Shivudu, Shankari Shiva Shankari, Sankari Shiva, Shankari Siva Shankari, Shankari Siva, page 95, p95, Shiva song, Mahadeva",
+      "notes": "",
+      "source": "managed"
+    },
+    {
+      "id": "user-098",
+      "name": "Amma Ninnu Nammithina",
+      "page": "96",
+      "aliases": "Amma Ninnu Nammitina, Amma Ninu Nammithina, Ninnu Nammiti, page 96, p96",
+      "notes": "",
+      "source": "managed"
+    },
+    {
+      "id": "user-099",
+      "name": "Choodu Rechammi Vacha",
+      "page": "97",
+      "aliases": "Chudu Rechammi Vacha, Choodu Rechammi, Chudu Rechammi, page 97, p97",
+      "notes": "",
+      "source": "managed"
+    },
+    {
+      "id": "user-100",
+      "name": "Venkatachala Nilaya",
+      "page": "98",
+      "aliases": "Venkatachala Nilayam, Venkata Chala Nilaya, Purandara Dasa, page 98, p98",
+      "notes": "",
+      "source": "managed"
+    },
+    {
+      "id": "user-101",
+      "name": "Jnana Lakshmi",
+      "page": "99",
+      "aliases": "Gnana Lakshmi, Jnana Laxmi, Gyana Lakshmi, Gnana Laxmi, Gnana Laxmi Devi, Gyana Laxmi, Gyana Laxmi Devi, Jnana Laxmi Devi, page 99, p99, Lakshmi song, Mahalakshmi",
+      "notes": "",
+      "source": "managed"
+    },
+    {
+      "id": "user-102",
+      "name": "Shabaridhari Sapthagiri",
+      "page": "100",
+      "aliases": "Sabaridhari Saptagiri, Sabarimalai, Ayyappa Song, page 100, p100",
+      "notes": "Ayyappa Swamy",
+      "source": "managed"
+    },
+    {
+      "id": "user-103",
+      "name": "Vichala Vidichi Thiru",
+      "page": "101",
+      "aliases": "Vichala Vidichi Tiru, Vichala Vidichi, Thiru Song, page 101, p101",
+      "notes": "",
+      "source": "managed"
+    },
+    {
+      "id": "user-104",
+      "name": "Vennelara Velugu",
+      "page": "102",
+      "aliases": "Vennelara Velugu Song, Vennela, page 102, p102",
+      "notes": "",
+      "source": "managed"
+    },
+    {
+      "id": "user-105",
+      "name": "Ninu Nammi Kolichi",
+      "page": "103",
+      "aliases": "Ninu Nami Kolichi, Ninnu Nammi Kolichi, Ninnu Nammiti, page 103, p103",
+      "notes": "",
+      "source": "managed"
+    },
+    {
+      "id": "user-106",
+      "name": "Dakshina Gulabi",
+      "page": "104",
+      "aliases": "Dakshina Gulaabi, Dakshina Gulabi Song, Gulabi, page 104, p104",
+      "notes": "",
+      "source": "managed"
+    },
+    {
+      "id": "user-107",
+      "name": "Nallanayya Swamy",
+      "page": "105",
+      "aliases": "Nalanayya Swamy, Nallanayya Swami, Krishna Swamy, Nalanayya Swami, Krsna Swamy, Krushna Swamy, Kishan Swamy, Krishna Swami, page 105, p105",
+      "notes": "",
+      "source": "managed"
+    },
+    {
+      "id": "user-108",
+      "name": "Chukkala Dooralo",
+      "page": "106",
+      "aliases": "Chukkala Dhuralo, Chukkala Doorala, Chukkala, page 106, p106",
+      "notes": "",
+      "source": "managed"
+    },
+    {
+      "id": "user-109",
+      "name": "Cheri Sevithumu",
+      "page": "107",
+      "aliases": "Cheri Sevithum, Cheri Sevithamu, page 107, p107",
+      "notes": "",
+      "source": "managed"
+    },
+    {
+      "id": "user-110",
+      "name": "Raghava Eetiki",
+      "page": "108",
+      "aliases": "Raghava Etiki, Raghava Eetiki Song, Raghava, page 108, p108, Rama song, Sri Rama",
+      "notes": "",
+      "source": "managed"
+    },
+    {
+      "id": "user-111",
+      "name": "Yenni Maayalu",
+      "page": "108",
+      "aliases": "Enni Maayalu, Enni Mayalu, Yenni Mayalu, Krishna Mayalu, Krsna Mayalu, Krushna Mayalu, Kishan Mayalu, page 108, p108",
+      "notes": "",
+      "source": "managed"
+    },
+    {
+      "id": "user-112",
+      "name": "Suthamu Sarade",
+      "page": "109",
+      "aliases": "Suthamu Sharade, Suthamu Sarade Song, Saradamma, page 109, p109",
+      "notes": "",
+      "source": "managed"
+    },
+    {
+      "id": "user-113",
+      "name": "Ajneya Avilana",
+      "page": "110",
+      "aliases": "Ajneya Avilana Song, Ajneya, page 110, p110",
+      "notes": "",
+      "source": "managed"
+    },
+    {
+      "id": "user-114",
+      "name": "Sadanandamu Sarveshwara",
+      "page": "111",
+      "aliases": "Sadanandamu Sarvesvara, Sadanandam Sarveshwara, Shiva Song, Siva Song, page 111, p111",
+      "notes": "",
+      "source": "managed"
+    },
+    {
+      "id": "user-115",
+      "name": "Anandamaanamayenu",
+      "page": "112",
+      "aliases": "Anandamayenu, Anandam Anandam, page 112, p112",
+      "notes": "",
+      "source": "managed"
+    },
+    {
+      "id": "user-116",
+      "name": "Ekadantaya Vakratundaya",
+      "page": "113",
+      "aliases": "Ekadanthaya Vakrathundaya, Ganesha Song, Ekadanta, Vakratunda, page 113, p113",
+      "notes": "Vinayaka",
+      "source": "managed"
+    },
+    {
+      "id": "user-117",
+      "name": "Keshava Narayana Krishna",
+      "page": "115",
+      "aliases": "Kesava Narayana Krishna, Keshava Narayana, Krishna Song, Kesava Narayana Krsna, Kesava Narayana Krushna, Kesava Narayana Kishan, Kesava Narayana Swamy Krishna, Kesava Narayana Krishna Krishna, Keshava Narayana Swamy, Krsna Song, Krushna Song, Kishan Song, Keshava Narayana Krsna, Keshava Narayana Krushna, Keshava Narayana Kishan, Keshava Narayana Swamy Krishna, Keshava Narayana Krishna Krishna, page 115, p115, Gopala",
+      "notes": "",
+      "source": "managed"
+    },
+    {
+      "id": "user-118",
+      "name": "Pasidi Mela Bomma",
+      "page": "116",
+      "aliases": "Pasidi Mela, Pasidi Bomma, page 116, p116",
+      "notes": "",
+      "source": "managed"
+    },
+    {
+      "id": "user-119",
+      "name": "Kanaka Durga Jagadamba",
+      "page": "117",
+      "aliases": "Kanaka Durga, Jagadamba, Kanaka Durga Jagadhamba, page 117, p117, Devi song, Amma song",
+      "notes": "",
+      "source": "managed"
+    },
+    {
+      "id": "user-120",
+      "name": "Alavanti Mogachukka",
+      "page": "118",
+      "aliases": "Alavanti Mogachuka, Mogachukka, page 118, p118",
+      "notes": "",
+      "source": "managed"
+    },
+    {
+      "id": "user-121",
+      "name": "Govindudela Vade Gopala",
+      "page": "119",
+      "aliases": "Govindudela Vade, Gopala, Govindudu, page 119, p119, Krishna song",
+      "notes": "",
+      "source": "managed"
+    },
+    {
+      "id": "user-122",
+      "name": "Chandrakala Sambashiva",
+      "page": "120",
+      "aliases": "Chandrakala Sambasiva, Shiva Song, Siva Song, page 120, p120, Mahadeva, Devi song, Amma song",
+      "notes": "",
+      "source": "managed"
+    },
+    {
+      "id": "user-123",
+      "name": "Veena Nadam Vinupinchu",
+      "page": "121",
+      "aliases": "Veena Nadam, Veena Natham, page 121, p121",
+      "notes": "",
+      "source": "managed"
+    },
+    {
+      "id": "user-124",
+      "name": "Shambho Mahadevaya",
+      "page": "121",
+      "aliases": "Sambho Mahadevaya, Shambo Mahadeva, Shambo Mahadevaya, page 121, p121, Shiva song, Mahadeva, Devi song, Amma song",
+      "notes": "",
+      "source": "managed"
+    },
+    {
+      "id": "user-125",
+      "name": "Shivudu Tandavamu",
+      "page": "124",
+      "aliases": "Sivudu Tandavamu, Shivudu Thandavamu, Shiva Thandavam, Siva Thandavam, page 124, p124",
+      "notes": "",
+      "source": "managed"
+    },
+    {
+      "id": "user-126",
+      "name": "Puja Satmurtara",
+      "page": "124",
+      "aliases": "Pooja Satmurtara, Puja Satmurtara Song, Puja, page 124, p124",
+      "notes": "",
+      "source": "managed"
+    },
+    {
+      "id": "user-127",
+      "name": "Om Omkaara Vani",
+      "page": "125",
+      "aliases": "Om Omkara Vani, Omkara Vani, Omkara Vaani, page 125, p125",
+      "notes": "",
+      "source": "managed"
+    },
+    {
+      "id": "user-128",
+      "name": "Ammayya Dorikava",
+      "page": "126",
+      "aliases": "Ammayya Dorikava Song, Ammayya, page 126, p126",
+      "notes": "",
+      "source": "managed"
+    },
+    {
+      "id": "user-129",
+      "name": "Sri Lalitha Shivajyoti",
+      "page": "126",
+      "aliases": "Shree Lalitha Shivajyothi, Sri Lalita Shivajyoti, Lalitha Jyoti, Sri Lalitha Shivajyothi, Sree Lalitha Shivajyothi, Shri Lalitha Shivajyothi, Sree Lalita Shivajyoti, Shree Lalita Shivajyoti, Shri Lalita Shivajyoti, Sree Lalitha Shivajyoti, Shree Lalitha Shivajyoti, Shri Lalitha Shivajyoti, page 126, p126, Shiva song, Mahadeva, Devi song, Amma song, Lali song, lullaby",
+      "notes": "",
+      "source": "managed"
+    },
+    {
+      "id": "user-130",
+      "name": "Kaliki Devi Simha",
+      "page": "128",
+      "aliases": "Kaliki Devi, Simha Song, page 128, p128, Devi song, Amma song",
+      "notes": "",
+      "source": "managed"
+    },
+    {
+      "id": "user-131",
+      "name": "Suryodacchamma",
+      "page": "129",
+      "aliases": "Suryodachamma, Surya Song, page 129, p129",
+      "notes": "",
+      "source": "managed"
+    },
+    {
+      "id": "user-132",
+      "name": "Sri Rama Namalu",
+      "page": "130",
+      "aliases": "Shree Rama Namalu, Sri Rama Nama, Rama Namam, Sree Rama Namalu, Shri Rama Namalu, Sree Rama Nama, Shree Rama Nama, Shri Rama Nama, page 130, p130, Rama song, Sri Rama",
+      "notes": "",
+      "source": "managed"
+    },
+    {
+      "id": "user-133",
+      "name": "Rama Raghuttama",
+      "page": "131",
+      "aliases": "Rama Raghuthama, Rama Raghuttama Song, Raghuttama, page 131, p131, Rama song, Sri Rama",
+      "notes": "",
+      "source": "managed"
+    },
+    {
+      "id": "user-134",
+      "name": "Takkevammi Manaku",
+      "page": "131",
+      "aliases": "Takkevammi, Manaku Song, page 131, p131",
+      "notes": "",
+      "source": "managed"
+    },
+    {
+      "id": "user-135",
+      "name": "Suddha Parabrahma",
+      "page": "132",
+      "aliases": "Sudha Parabrahma, Suddha Parabrahma Song, Parabrahma, page 132, p132",
+      "notes": "",
+      "source": "managed"
+    },
+    {
+      "id": "user-136",
+      "name": "Paluke Bangaramaye",
+      "page": "133",
+      "aliases": "Paluke Bangaramayi, Paluke Bangaramayee, Ramadasu, page 133, p133, Rama song, Sri Rama",
+      "notes": "Classic Ramadasu Keerthana",
+      "source": "managed"
+    },
+    {
+      "id": "user-137",
+      "name": "Shamudithudu Lokabhira",
+      "page": "134",
+      "aliases": "Samudithudu Lokabhira, Shamudithudu, Samudithudu, page 134, p134",
+      "notes": "",
+      "source": "managed"
+    },
+    {
+      "id": "user-138",
+      "name": "Chandana Devataku",
+      "page": "135",
+      "aliases": "Chandana Devatha, Chandana Song, page 135, p135",
+      "notes": "",
+      "source": "managed"
+    },
+    {
+      "id": "user-139",
+      "name": "Taraka Mantramu",
+      "page": "136",
+      "aliases": "Tharaka Mantramu, Taraka Mantram, Tharaka Manthram, Rama Mantram, page 136, p136",
+      "notes": "Lord Rama prayer",
+      "source": "managed"
+    },
+    {
+      "id": "user-140",
+      "name": "Shambhu Mahadevaya Janaka",
+      "page": "137",
+      "aliases": "Sambhu Mahadevaya, Shambo Mahadeva Janaka, Shiva Janaka, Siva Janaka, page 137, p137, Shiva song, Mahadeva, Devi song, Amma song",
+      "notes": "",
+      "source": "managed"
+    },
+    {
+      "id": "user-141",
+      "name": "Sri Krishna Nanda",
+      "page": "138",
+      "aliases": "Shree Krishna Nanda, Sri Krsna Nanda, Krushna Nanda, Sree Krishna Nanda, Shri Krishna Nanda, Shree Krsna Nanda, Shree Krushna Nanda, Shree Kishan Nanda, Sree Krsna Nanda, Shri Krsna Nanda, Sri Krushna Nanda, Krishna Nanda, Krsna Nanda, Sri Kishan Nanda, page 138, p138, Krishna song, Gopala",
+      "notes": "",
+      "source": "managed"
+    },
+    {
+      "id": "user-142",
+      "name": "Piluvave Gopi",
+      "page": "139",
+      "aliases": "Piluvave Gopy, Piluwave Gopi, Gopi Piluvave, page 139, p139",
+      "notes": "",
+      "source": "managed"
+    },
+    {
+      "id": "user-143",
+      "name": "Sharanam Sharanam Ramachandra",
+      "page": "139",
+      "aliases": "Saranam Saranam Ramachandra, Sharanam Ramachandra, page 139, p139, Rama song, Sri Rama, Shiva song, Mahadeva",
+      "notes": "",
+      "source": "managed"
+    },
+    {
+      "id": "user-144",
+      "name": "Vadi Vadi Digirandi",
+      "page": "140",
+      "aliases": "Wadi Wadi Digirandi, Vadi Vadi Digirandhi, Digirandi, page 140, p140",
+      "notes": "",
+      "source": "managed"
+    },
+    {
+      "id": "user-145",
+      "name": "Dheeraveera Meera Yamuna",
+      "page": "141",
+      "aliases": "Dheera Veera Meera, Dhira Vira Meera, Yamuna Meera, page 141, p141",
+      "notes": "",
+      "source": "managed"
+    },
+    {
+      "id": "user-146",
+      "name": "Janda Pai Kapiraju",
+      "page": "142",
+      "aliases": "Jandapai Kapiraju, Janda Pai Kapi Raju, Hanuman Song, page 142, p142",
+      "notes": "Reference to Hanuman on the flag",
+      "source": "managed"
+    },
+    {
+      "id": "user-147",
+      "name": "Sri Chakra Raja Simhasana",
+      "page": "143",
+      "aliases": "Srichakra Raja, Shree Chakra Raja, Simhasanam, Sri Chakra Raja, Sree Chakra Raja, Shri Chakra Raja, Sree Chakra Raja Simhasana, Shree Chakra Raja Simhasana, Shri Chakra Raja Simhasana, page 143, p143",
+      "notes": "Duplicate entry exists on page 172",
+      "source": "managed"
+    },
+    {
+      "id": "user-148",
+      "name": "Alakaare Sri Bala",
+      "page": "144",
+      "aliases": "Alakare Sri Bala, Alakaare Shree Bala, Alakari, Alakare Sree Bala, Alakare Shree Bala, Alakare Shri Bala, Alakaare Sree Bala, Alakaare Shri Bala, page 144, p144",
+      "notes": "",
+      "source": "managed"
+    },
+    {
+      "id": "user-149",
+      "name": "Aadaro Paadaro Apsara",
+      "page": "145",
+      "aliases": "Adaro Padaro, Aadaro Paadaro, Apsara Song, Padaro, page 145, p145",
+      "notes": "",
+      "source": "managed"
+    },
+    {
+      "id": "user-150",
+      "name": "Swagata Krishna Sharanu",
+      "page": "146",
+      "aliases": "Swagatam Krishna, Swagatha Krishna Sharanu, Sharanu Krishna, Swagatam Krsna, Swagatam Krushna, Swagatam Kishan, Swagatha Krsna Sharanu, Swagatha Krushna Sharanu, Swagatha Kishan Sharanu, Sharanu Krsna, Sharanu Krushna, Sharanu Kishan, Swagata Krsna Sharanu, Swagata Krushna Sharanu, Swagata Kishan Sharanu, page 146, p146, Krishna song, Gopala",
+      "notes": "",
+      "source": "managed"
+    },
+    {
+      "id": "user-151",
+      "name": "Manasa Mandira Vahini",
+      "page": "148",
+      "aliases": "Manasa Mandhira Vahini, Manasa Mandira Vahiny, Vahini, page 148, p148",
+      "notes": "",
+      "source": "managed"
+    },
+    {
+      "id": "user-152",
+      "name": "Maa Madi Nidura Mangala",
+      "page": "149",
+      "aliases": "Ma Madi Nidura, Maa Madhi Nidhura, Mangala Song, page 149, p149, Aarti song, Harati song",
+      "notes": "",
+      "source": "managed"
+    },
+    {
+      "id": "user-153",
+      "name": "Anta Manchi Nammu Ambika",
+      "page": "149",
+      "aliases": "Antha Manchi Nammu, Ambika Nammu, Anta Manchi, page 149, p149, Devi song, Amma song",
+      "notes": "",
+      "source": "managed"
+    },
+    {
+      "id": "user-154",
+      "name": "Ravamma Shiri Mahalakshmi",
+      "page": "150",
+      "aliases": "Ravamma Siri Mahalakshmi, Ravama Shiri Mahalaxmi, Lakshmi Raave, Laxmi Raave, Laxmi Devi Raave, page 150, p150, Lakshmi song, Mahalakshmi",
+      "notes": "",
+      "source": "managed"
+    },
+    {
+      "id": "user-155",
+      "name": "Janani Loka Pavani",
+      "page": "151",
+      "aliases": "Janany Loka Pavani, Janani Loka Pawani, Loka Pavani, page 151, p151",
+      "notes": "",
+      "source": "managed"
+    },
+    {
+      "id": "user-156",
+      "name": "Nanda Gokulamloni",
+      "page": "152",
+      "aliases": "Nanda Gokulam loni, Nandagokulamloni, Krishna Gokulam, Krsna Gokulam, Krushna Gokulam, Kishan Gokulam, page 152, p152",
+      "notes": "",
+      "source": "managed"
+    },
+    {
+      "id": "user-157",
+      "name": "Varashuliyavala Tripura",
+      "page": "153",
+      "aliases": "Varashuliyavala Thripura, Varashuliyavala, Tripura Song, page 153, p153, Devi song, Amma song",
+      "notes": "",
+      "source": "managed"
+    },
+    {
+      "id": "user-158",
+      "name": "Jeevuna Moreyunu Pavanagu",
+      "page": "153",
+      "aliases": "Jeevuna Moreyunu, Pavanagu Song, Jeevuna Morey, page 153, p153",
+      "notes": "",
+      "source": "managed"
+    },
+    {
+      "id": "user-159",
+      "name": "Tirumala Vasa Jagadeesha",
+      "page": "154",
+      "aliases": "Thirumala Vasa Jagadeesha, Tirumalavasa, Jagadeesha, page 154, p154",
+      "notes": "",
+      "source": "managed"
+    },
+    {
+      "id": "user-160",
+      "name": "Pujinchu Padamulu",
+      "page": "155",
+      "aliases": "Poojinchu Padamulu, Pujinchu Paadamulu, Pujinchu Padalu, page 155, p155",
+      "notes": "",
+      "source": "managed"
+    },
+    {
+      "id": "user-161",
+      "name": "Ganapathi Song",
+      "page": "156",
+      "aliases": "Ganapati Song, Ganesh Song, Ganesha, Vinayaka, Ganesha Song, Vinayaka Song, page 156, p156",
+      "notes": "",
+      "source": "managed"
+    },
+    {
+      "id": "user-162",
+      "name": "Sri Deva Devi Shrita Kalpa",
+      "page": "157",
+      "aliases": "Shree Deva Devi, Sri Deva Devi, Shrita Kalpa, Sree Deva Devi, Shri Deva Devi, Sree Deva Devi Shrita Kalpa, Shree Deva Devi Shrita Kalpa, Shri Deva Devi Shrita Kalpa, page 157, p157, Devi song, Amma song",
+      "notes": "",
+      "source": "managed"
+    },
+    {
+      "id": "user-163",
+      "name": "Sri Madhu Mahalakshmi",
+      "page": "158",
+      "aliases": "Shree Madhu Mahalakshmi, Sri Madhu Mahalaxmi, Madhu Lakshmi, Sree Madhu Mahalakshmi, Shri Madhu Mahalakshmi, Sree Madhu Mahalaxmi, Shree Madhu Mahalaxmi, Shri Madhu Mahalaxmi, Madhu Laxmi, Madhu Laxmi Devi, page 158, p158, Lakshmi song, Mahalakshmi",
+      "notes": "",
+      "source": "managed"
+    },
+    {
+      "id": "user-164",
+      "name": "Amba Bhavani Sharade",
+      "page": "159",
+      "aliases": "Amba Bhavani Sharaday, Amba Bhavani Sarade, Sharadamma, page 159, p159, Devi song, Amma song",
+      "notes": "",
+      "source": "managed"
+    },
+    {
+      "id": "user-165",
+      "name": "Tatpurushaakaara",
+      "page": "160",
+      "aliases": "Tatpurushakara, Tathpurushakara, Tatpurushakara Song, page 160, p160",
+      "notes": "",
+      "source": "managed"
+    },
+    {
+      "id": "user-166",
+      "name": "Shubhashakara",
+      "page": "161",
+      "aliases": "Subhashakara, Shubashakara, Shubashakar, page 161, p161",
+      "notes": "",
+      "source": "managed"
+    },
+    {
+      "id": "user-167",
+      "name": "Chandramoulishwara",
+      "page": "161",
+      "aliases": "Chandramouliswara, Chandra Moulishwara, Shiva Song, Siva Song, page 161, p161, Mahadeva",
+      "notes": "",
+      "source": "managed"
+    },
+    {
+      "id": "user-168",
+      "name": "Om Namo Narayana Krishna",
+      "page": "162",
+      "aliases": "Om Namo Narayana, Krishna Narayana, Krushna Narayana, Om Namo Narayana Swamy, Krsna Narayana, Kishan Narayana, Krishna Narayana Swamy, Krishna Narayana Krishna, Krushna Narayana Swamy, Krushna Narayana Krishna, Om Namo Narayana Krsna, Om Namo Narayana Krushna, Om Namo Narayana Kishan, Om Namo Narayana Swamy Krishna, Om Namo Narayana Krishna Krishna, page 162, p162, Krishna song, Gopala",
+      "notes": "",
+      "source": "managed"
+    },
+    {
+      "id": "user-169",
+      "name": "Sri Rama Kodanda Rama",
+      "page": "163",
+      "aliases": "Shree Rama Kodanda Rama, Kodanda Rama, Rama Kodandara, Sree Rama Kodanda Rama, Shri Rama Kodanda Rama, page 163, p163, Rama song, Sri Rama",
+      "notes": "",
+      "source": "managed"
+    },
+    {
+      "id": "user-170",
+      "name": "Amba Sri Devi",
+      "page": "163",
+      "aliases": "Amba Shree Devi, Amba Sridevi, Devi Amba, Amba Sree Devi, Amba Shri Devi, page 163, p163, Devi song, Amma song",
+      "notes": "",
+      "source": "managed"
+    },
+    {
+      "id": "user-171",
+      "name": "Annapurna Danapurna",
+      "page": "164",
+      "aliases": "Annapoorna Dhaunapurna, Annapurna Danapoorna, Annapurnamma, page 164, p164",
+      "notes": "",
+      "source": "managed"
+    },
+    {
+      "id": "user-172",
+      "name": "Saraswati Maata Ananta",
+      "page": "164",
+      "aliases": "Saraswathi Maata, Saraswati Mata, Ananta Saraswati, Saraswathi Mata, Saraswathi Amma, Saraswati Maata, Saraswati Amma, Saraswati Mata Ananta, Saraswati Amma Ananta, page 164, p164",
+      "notes": "",
+      "source": "managed"
+    },
+    {
+      "id": "user-173",
+      "name": "Raja Rajeshwari Sharanam",
+      "page": "165",
+      "aliases": "Raja Rajeswari Saranam, Rajarajeshwari, Devi Sharanam, page 165, p165, Devi song, Amma song",
+      "notes": "",
+      "source": "managed"
+    },
+    {
+      "id": "user-174",
+      "name": "Sharada Kanyaka Bhadrakali",
+      "page": "165",
+      "aliases": "Sarada Kanyaka, Sharada Kanyaka, Bhadrakali Song, page 165, p165, Devi song, Amma song",
+      "notes": "",
+      "source": "managed"
+    },
+    {
+      "id": "user-175",
+      "name": "Ashta Lakshmi Paahimam",
+      "page": "166",
+      "aliases": "Ashta Laxmi Pahimam, Ashtalakshmi Pahimam, Pahimam Lakshmi, Ashta Lakshmi Pahimam, Ashta Laxmi Paahimam, Ashtalakshmi Paahimam, Pahimam Laxmi, Pahimam Laxmi Devi, Paahimam Lakshmi, Ashta Laxmi Devi Paahimam, page 166, p166, Lakshmi song, Mahalakshmi",
+      "notes": "",
+      "source": "managed"
+    },
+    {
+      "id": "user-176",
+      "name": "Sri Sharadamba Namostute",
+      "page": "168",
+      "aliases": "Shree Sharadamba, Sri Saradamba, Sharadamba Namostuthe, Sri Sharadamba, Sree Sharadamba, Shri Sharadamba, Sree Saradamba, Shree Saradamba, Shri Saradamba, Sree Sharadamba Namostute, Shree Sharadamba Namostute, Shri Sharadamba Namostute, page 168, p168, Devi song, Amma song",
+      "notes": "",
+      "source": "managed"
+    },
+    {
+      "id": "user-177",
+      "name": "Padakondu Paadi Paaku",
+      "page": "169",
+      "aliases": "Padakondu Padi Paku, Padakondu Paadi Paaku Song, Padi Paku, page 169, p169",
+      "notes": "",
+      "source": "managed"
+    },
+    {
+      "id": "user-178",
+      "name": "Vishwayati Kamakshi",
+      "page": "170",
+      "aliases": "Vishwayathi Kamakshi, Vishwayati Kamakshy, Kamakshi Devi, page 170, p170, Devi song, Amma song",
+      "notes": "",
+      "source": "managed"
+    },
+    {
+      "id": "user-179",
+      "name": "Bhaja Bhaja Durga",
+      "page": "170",
+      "aliases": "Bhaja Bhaja Durge, Bhaja Bhaja Durga Maata, Durga Song, Bhaja Bhaja Durga Mata, Bhaja Bhaja Durga Amma, page 170, p170, Devi song, Amma song",
+      "notes": "",
+      "source": "managed"
+    },
+    {
+      "id": "user-180",
+      "name": "Thudi Ganapathi Baba",
+      "page": "171",
+      "aliases": "Thudi Ganapati Baba, Ganapathi Baba, Ganesh Baba, Thudi Ganesh Baba, Thudi Ganesha Baba, Thudi Vinayaka Baba, Ganapati Baba, Ganesha Baba, Vinayaka Baba, page 171, p171",
+      "notes": "",
+      "source": "managed"
+    },
+    {
+      "id": "user-181",
+      "name": "Sri Chakraraju (Tamil)",
+      "page": "172",
+      "aliases": "Sri Chakra Raja Tamil, Srichakra Raju, Sri Chakra Raja, Sree Chakra Raja Tamil, Shree Chakra Raja Tamil, Shri Chakra Raja Tamil, Sree Chakra Raja, Shree Chakra Raja, Shri Chakra Raja, Sree Chakraraju (Tamil), Shree Chakraraju (Tamil), Shri Chakraraju (Tamil), page 172, p172",
+      "notes": "Tamil version of the song on page 143",
+      "source": "managed"
+    },
+    {
+      "id": "user-182",
+      "name": "Govinda Dheerarao",
+      "page": "173",
+      "aliases": "Govinda Dheerarao Song, Govinda, page 173, p173, Krishna song, Gopala",
+      "notes": "",
+      "source": "managed"
+    },
+    {
+      "id": "user-183",
+      "name": "Dumdumamu",
+      "page": "175",
+      "aliases": "Dumdumamu Song, Dum dum amu, page 175, p175",
+      "notes": "",
+      "source": "managed"
+    },
+    {
+      "id": "user-184",
+      "name": "Sri Ramachandra Krupalu",
+      "page": "175",
+      "aliases": "Shree Ramachandra Krupalu, Rama Chandra Krupalu, Tulsidas Bhajan, Sree Ramachandra Krupalu, Shri Ramachandra Krupalu, page 175, p175, Rama song, Sri Rama, Shiva song, Mahadeva",
+      "notes": "",
+      "source": "managed"
+    },
+    {
+      "id": "user-185",
+      "name": "Hari Hari Rama",
+      "page": "176",
+      "aliases": "Hari Hari Rama Song, Rama Hari Hari, Hari Hari Ram, page 176, p176, Rama song, Sri Rama",
+      "notes": "",
+      "source": "managed"
+    },
+    {
+      "id": "user-186",
+      "name": "Kaati Nedu Maa Ramula",
+      "page": "177",
+      "aliases": "Kaati Nedu Ma Ramula, Kaati Nedu, Maa Ramula, page 177, p177",
+      "notes": "",
+      "source": "managed"
+    },
+    {
+      "id": "user-187",
+      "name": "Muthyala Haarathi (Duplicate)",
+      "page": "178",
+      "aliases": "Mutyala Harati, Muthyala Haarathi Song, Arathi Song, Mutyala Haarathi, Mutyala Harathi, Mutyala Arathi, Mutyala Aarti, Muthyala Harathi Song, Muthyala Harati Song, Muthyala Arathi Song, Muthyala Aarti Song, Haarathi Song, Harathi Song, Harati Song, Aarti Song, Muthyala Harathi (Duplicate), Muthyala Harati (Duplicate), Muthyala Arathi (Duplicate), Muthyala Aarti (Duplicate), page 178, p178",
+      "notes": "Different version or repeat from page 82",
+      "source": "managed"
+    },
+    {
+      "id": "user-188",
+      "name": "Rama Rama Nivaramu",
+      "page": "179",
+      "aliases": "Rama Rama Nivaramu Song, Rama Rama, Nivaramu, page 179, p179, Rama song, Sri Rama",
+      "notes": "",
+      "source": "managed"
+    },
+    {
+      "id": "user-189",
+      "name": "Sri Rama Sri Manohara",
+      "page": "180",
+      "aliases": "Shree Rama Sri Manohara, Sri Rama Manohara, Rama Manohara, Shree Rama Sree Manohara, Shree Rama Shree Manohara, Shree Rama Shri Manohara, Sree Rama Sri Manohara, Shri Rama Sri Manohara, Sree Rama Manohara, Shree Rama Manohara, Shri Rama Manohara, Sree Rama Sree Manohara, Shri Rama Shri Manohara, page 180, p180, Rama song, Sri Rama",
+      "notes": "",
+      "source": "managed"
+    },
+    {
+      "id": "user-190",
+      "name": "Mangala Ide Gokulana",
+      "page": "180",
+      "aliases": "Mangala Ide Gokulana Song, Gokulana Mangala, Mangalam, page 180, p180, Aarti song, Harati song",
+      "notes": "",
+      "source": "managed"
+    },
+    {
+      "id": "user-191",
+      "name": "Yenni Poolu Kosina",
+      "page": "181",
+      "aliases": "Enni Poolu Kosina, Enni Poolu, Poolu Kosina, page 181, p181",
+      "notes": "",
+      "source": "managed"
+    },
+    {
+      "id": "user-192",
+      "name": "Sri Sai Naama Maalika",
+      "page": "181",
+      "aliases": "Shree Sai Nama Malika, Sai Nama Malika, Sai Baba Song, Sri Sai Nama Malika, Sree Sai Nama Malika, Shri Sai Nama Malika, Sree Sai Naama Maalika, Shree Sai Naama Maalika, Shri Sai Naama Maalika, page 181, p181",
+      "notes": "",
+      "source": "managed"
+    },
+    {
+      "id": "user-193",
+      "name": "Vandanamide Omkaramu",
+      "page": "182",
+      "aliases": "Vandanamidhe Omkaramu, Vandanamide, Omkaramu Vandanam, page 182, p182",
+      "notes": "",
+      "source": "managed"
+    },
+    {
+      "id": "user-194",
+      "name": "Meyey Varalu",
+      "page": "182",
+      "aliases": "Meyey Varalu Song, Varalu, page 182, p182",
+      "notes": "",
+      "source": "managed"
+    },
+    {
+      "id": "user-195",
+      "name": "Varalakshmi Maayamma",
+      "page": "183",
+      "aliases": "Varalaxmi Maayamma, Vara Lakshmi Mayamma, Mayamma, Vara Laxmi Mayamma, Vara Laxmi Devi Mayamma, page 183, p183, Lakshmi song, Mahalakshmi",
+      "notes": "",
+      "source": "managed"
+    },
+    {
+      "id": "user-196",
+      "name": "Kailasa Giri",
+      "page": "184",
+      "aliases": "Kailasagiri, Kailasa Giri Nundi, Shiva Song, Siva Song, page 184, p184, Mahadeva",
+      "notes": "",
+      "source": "managed"
+    },
+    {
+      "id": "user-197",
+      "name": "Lalitha Maama Palaya",
+      "page": "185",
+      "aliases": "Lalitha Mama Palaya, Lalita Mama Palaya, Lalitha Palaya, page 185, p185, Devi song, Amma song, Lali song, lullaby",
+      "notes": "",
+      "source": "managed"
+    },
+    {
+      "id": "user-198",
+      "name": "Vannela Vannela",
+      "page": "186",
+      "aliases": "Vannela Vannela Song, Vannela, Vannela Song, page 186, p186",
+      "notes": "",
+      "source": "managed"
+    },
+    {
+      "id": "user-199",
+      "name": "Lakshmi Padamu",
+      "page": "186",
+      "aliases": "Laxmi Padamu, Lakshmi Padhamu, Padamu Lakshmi, Laxmi Padhamu, Laxmi Devi Padhamu, Padamu Laxmi, Padamu Laxmi Devi, Laxmi Devi Padamu, page 186, p186, Lakshmi song, Mahalakshmi",
+      "notes": "",
+      "source": "managed"
+    },
+    {
+      "id": "user-200",
+      "name": "Ambavaadani",
+      "page": "187",
+      "aliases": "Ambavaadani Song, Amba Vaadani, Ambavadani, page 187, p187, Devi song, Amma song",
+      "notes": "",
+      "source": "managed"
+    },
+    {
+      "id": "user-201",
+      "name": "Rajamma Tripura Sundari",
+      "page": "188",
+      "aliases": "Rajamma Thripura Sundari, Rajamma Tripura, Tripura Sundari, page 188, p188, Devi song, Amma song",
+      "notes": "",
+      "source": "managed"
+    },
+    {
+      "id": "user-202",
+      "name": "Shivarpanam",
+      "page": "189",
+      "aliases": "Sivarpanam, Shiva Arpanam, Shivarpanam Song, Siva Arpanam, page 189, p189, Shiva song, Mahadeva",
+      "notes": "",
+      "source": "managed"
+    },
+    {
+      "id": "user-203",
+      "name": "Sarva Mangala Maangalyaye",
+      "page": "190",
+      "aliases": "Sarva Mangala Mangalye, Sarva Mangala, Devi Mantra, page 190, p190, Aarti song, Harati song",
+      "notes": "",
+      "source": "managed"
+    },
+    {
+      "id": "user-204",
+      "name": "Garuda Gamana Radha",
+      "page": "191",
+      "aliases": "Garuda Gamana, Garuda Gamana Radha Krishna, Radha Krishna, Garuda Gamana Radha Krsna, Garuda Gamana Radha Krushna, Garuda Gamana Radha Kishan, Radha Krsna, Radha Krushna, Radha Kishan, page 191, p191",
+      "notes": "",
+      "source": "managed"
+    },
+    {
+      "id": "user-205",
+      "name": "Shiva Namah Kata",
+      "page": "192",
+      "aliases": "Siva Namah Kata, Shiva Nama Kata, Shiva Namah, Siva Nama Kata, Siva Namah, page 192, p192, Shiva song, Mahadeva",
+      "notes": "",
+      "source": "managed"
+    },
+    {
+      "id": "user-206",
+      "name": "Idi Vidya",
+      "page": "193",
+      "aliases": "Idi Vidya Song, Idi Vidhya, Vidya Song, page 193, p193",
+      "notes": "",
+      "source": "managed"
+    },
+    {
+      "id": "user-207",
+      "name": "Madhura Ninnu",
+      "page": "194",
+      "aliases": "Madhura Ninnu Song, Madhura Ninu, Madhura, page 194, p194",
+      "notes": "",
+      "source": "managed"
+    },
+    {
+      "id": "user-208",
+      "name": "Sri Rama Ni Namamu",
+      "page": "195",
+      "aliases": "Shree Rama Ni Namamu, Sri Rama Nee Namamu, Rama Namamu, Sree Rama Ni Namamu, Shri Rama Ni Namamu, Sree Rama Nee Namamu, Shree Rama Nee Namamu, Shri Rama Nee Namamu, page 195, p195, Rama song, Sri Rama",
+      "notes": "",
+      "source": "managed"
+    },
+    {
+      "id": "user-209",
+      "name": "Sri Satyanarayana",
+      "page": "196",
+      "aliases": "Shree Satyanarayana, Sri Sathyanarayana, Satyanarayana Swamy, Sree Satyanarayana, Shri Satyanarayana, Sree Sathyanarayana, Shree Sathyanarayana, Shri Sathyanarayana, Satyanarayana Swami, page 196, p196",
+      "notes": "",
+      "source": "managed"
+    },
+    {
+      "id": "user-210",
+      "name": "Nanna Nannala",
+      "page": "197",
+      "aliases": "Nanna Nannala Song, Nanna, page 197, p197",
+      "notes": "",
+      "source": "managed"
+    },
+    {
+      "id": "user-211",
+      "name": "Seetha Kalyana",
+      "page": "197",
+      "aliases": "Sitha Kalyana, Sita Kalyanam, Seetha Kalyanam, Sitha Kalyanam, Sita Kalyana, page 197, p197, Rama song, Sri Rama",
+      "notes": "",
+      "source": "managed"
+    },
+    {
+      "id": "user-212",
+      "name": "Kalyana Vaibhogame",
+      "page": "199",
+      "aliases": "Kalyana Vaibhogamay, Kalyana Vaibhogame Song, Vaibhogame, page 199, p199",
+      "notes": "",
+      "source": "managed"
+    },
+    {
+      "id": "user-213",
+      "name": "Chaladaidi Adishanti",
+      "page": "200",
+      "aliases": "Chaladaidi Adishanti Song, Chaladaidi, Adishanti, page 200, p200",
+      "notes": "",
+      "source": "managed"
+    },
+    {
+      "id": "user-214",
+      "name": "Nidari Harichandra",
+      "page": "201",
+      "aliases": "Nidari Harichandra Song, Harichandra, page 201, p201, Shiva song, Mahadeva",
+      "notes": "",
+      "source": "managed"
+    },
+    {
+      "id": "user-215",
+      "name": "Kesava Madhava Gokula (Repeat)",
+      "page": "203",
+      "aliases": "Keshava Madhava, Kesava Madhava Gokula, Gokula Song, page 203, p203, Krishna song, Gopala",
+      "notes": "Similar to page 48",
+      "source": "managed"
+    },
+    {
+      "id": "user-216",
+      "name": "Deva Deva Vasudeva (Repeat)",
+      "page": "203",
+      "aliases": "Deva Deva Vasudeva, Vasudeva, Vasudevaya, page 203, p203",
+      "notes": "Similar to page 55",
+      "source": "managed"
+    },
+    {
+      "id": "user-217",
+      "name": "Namaste Namaste Sada",
+      "page": "204",
+      "aliases": "Namasthe Namasthe Sada, Namaste Namaste, Sada Namaste, page 204, p204",
+      "notes": "",
+      "source": "managed"
+    },
+    {
+      "id": "user-218",
+      "name": "Srivara Lakshmi Jayavat",
+      "page": "205",
+      "aliases": "Shreevara Lakshmi, Sri Vara Lakshmi, Jayavat Song, Shreevara Laxmi, Shreevara Laxmi Devi, Sree Vara Lakshmi, Shree Vara Lakshmi, Shri Vara Lakshmi, Sri Vara Laxmi, Sri Vara Laxmi Devi, Srivara Laxmi Jayavat, Srivara Laxmi Devi Jayavat, page 205, p205, Lakshmi song, Mahalakshmi",
+      "notes": "",
+      "source": "managed"
+    },
+    {
+      "id": "user-219",
+      "name": "Kanakadurga Mammu",
+      "page": "205",
+      "aliases": "Kanaka Durga Mammu, Kanaka Durga, Durga Mammu, page 205, p205, Devi song, Amma song",
+      "notes": "",
+      "source": "managed"
+    },
+    {
+      "id": "user-220",
+      "name": "Lalitha Bhaava Nilaya",
+      "page": "206",
+      "aliases": "Lalitha Bhava Nilaya, Lalita Bhava Nilaya, Bhava Nilaya, page 206, p206, Devi song, Amma song, Lali song, lullaby",
+      "notes": "",
+      "source": "managed"
+    },
+    {
+      "id": "user-221",
+      "name": "Mangala Gauri Devi",
+      "page": "207",
+      "aliases": "Mangala Gowri Devi, Mangala Gauri, Gowri Devi Song, page 207, p207, Devi song, Amma song, Aarti song, Harati song",
+      "notes": "",
+      "source": "managed"
+    },
+    {
+      "id": "user-222",
+      "name": "Parimala Latha",
+      "page": "208",
+      "aliases": "Parimala Latha Song, Parimalalatha, page 208, p208",
+      "notes": "",
+      "source": "managed"
+    },
+    {
+      "id": "user-223",
+      "name": "Omkaramu Tholi",
+      "page": "210",
+      "aliases": "Omkaaramu Tholi, Omkaramu Toli, Omkaram Tholi, page 210, p210",
+      "notes": "",
+      "source": "managed"
+    },
+    {
+      "id": "user-224",
+      "name": "Neerajana",
+      "page": "211",
+      "aliases": "Neerajaana, Neerajanam, Neerajana Song, page 211, p211",
+      "notes": "",
+      "source": "managed"
+    },
+    {
+      "id": "user-225",
+      "name": "Girija Shankara",
+      "page": "211",
+      "aliases": "Girija Sankara, Girija Shankara Song, Girija Shankara Swamy, Girija Shankara Swami, page 211, p211",
+      "notes": "",
+      "source": "managed"
+    },
+    {
+      "id": "user-226",
+      "name": "Adigo Anandamu",
+      "page": "212",
+      "aliases": "Adhigo Anandamu, Adigo Anandam, Anandamu Adigo, page 212, p212",
+      "notes": "",
+      "source": "managed"
+    },
+    {
+      "id": "user-227",
+      "name": "Sri Sai Naadhaya",
+      "page": "213",
+      "aliases": "Shree Sai Naadhaya, Sri Sai Nathaya, Sai Nathaya, Sai Baba, Sree Sai Naadhaya, Shri Sai Naadhaya, Sree Sai Nathaya, Shree Sai Nathaya, Shri Sai Nathaya, page 213, p213",
+      "notes": "",
+      "source": "managed"
+    },
+    {
+      "id": "user-228",
+      "name": "Tulasi Song",
+      "page": "214",
+      "aliases": "Thulasi Song, Tulasi Paata, Brindavanam Song, page 214, p214",
+      "notes": "",
+      "source": "managed"
+    },
+    {
+      "id": "user-229",
+      "name": "Idurara Krishna",
+      "page": "216",
+      "aliases": "Idhurara Krishna, Idurara Krushna, Krishna Idurara, Idhurara Krsna, Idhurara Krushna, Idhurara Kishan, Idurara Krsna, Krsna Idurara, Krushna Idurara, Kishan Idurara, Idurara Kishan, page 216, p216, Krishna song, Gopala",
+      "notes": "",
+      "source": "managed"
+    },
+    {
+      "id": "user-230",
+      "name": "Gobbilla",
+      "page": "218",
+      "aliases": "Gobbilla Song, Gobbillu, Sankranthi Gobbilla, page 218, p218",
+      "notes": "",
+      "source": "managed"
+    },
+    {
+      "id": "user-231",
+      "name": "Anganala Raga",
+      "page": "219",
+      "aliases": "Anganala Raaga, Anganala Raga Song, Anganala, page 219, p219",
+      "notes": "",
+      "source": "managed"
+    },
+    {
+      "id": "user-232",
+      "name": "Srimannarayana",
+      "page": "220",
+      "aliases": "Shri Mannarayana, Sriman Narayana, Annamacharya Keerthana, Sri Mannarayana, Sree Mannarayana, Shree Mannarayana, Sriman Narayana Swamy, Sriman Narayana Krishna, page 220, p220",
+      "notes": "",
+      "source": "managed"
+    },
+    {
+      "id": "user-233",
+      "name": "Betraya Swamy",
+      "page": "220",
+      "aliases": "Betraya Swami, Betraya Swamy Song, Betraya, Betraya Swami Song, page 220, p220",
+      "notes": "",
+      "source": "managed"
+    },
+    {
+      "id": "user-234",
+      "name": "Krishnama Krishnama",
+      "page": "223",
+      "aliases": "Krushnama Krushnama, Krsnama Krsnama, Krishna Krishna, Krsna Krsna, Krushna Krushna, Kishan Kishan, page 223, p223, Krishna song, Gopala",
+      "notes": "",
+      "source": "managed"
+    },
+    {
+      "id": "user-235",
+      "name": "Ni Roopamu Ananthamu",
+      "page": "224",
+      "aliases": "Nee Roopamu Ananthamu, Nee Roopam Anantham, Ananthamu, page 224, p224",
+      "notes": "",
+      "source": "managed"
+    },
+    {
+      "id": "user-236",
+      "name": "Rama Rama Rama Chiluka",
+      "page": "225",
+      "aliases": "Rama Chiluka, Rama Rama Rama Chiluka Song, Chiluka Song, page 225, p225, Rama song, Sri Rama",
+      "notes": "",
+      "source": "managed"
+    },
+    {
+      "id": "user-237",
+      "name": "Sri Shrinivasulu",
+      "page": "226",
+      "aliases": "Shree Shrinivasulu, Sri Srinivasulu, Srinivasulu Song, Sree Shrinivasulu, Shri Shrinivasulu, Sree Srinivasulu, Shree Srinivasulu, Shri Srinivasulu, Sri Srinivasa, Sri Venkateswara, Srinivasa Song, Venkateswara Song, page 226, p226",
+      "notes": "",
+      "source": "managed"
+    },
+    {
+      "id": "user-238",
+      "name": "Mahalakshmi Raavamma",
+      "page": "227",
+      "aliases": "Maha Lakshmi Ravamma, Mahalaxmi Raavamma, Lakshmi Raave, Maha Laxmi Ravamma, Maha Laxmi Devi Ravamma, Laxmi Raave, Laxmi Devi Raave, page 227, p227, Lakshmi song, Mahalakshmi",
+      "notes": "",
+      "source": "managed"
+    },
+    {
+      "id": "user-239",
+      "name": "Sri Chakra Bhu Nivasa",
+      "page": "228",
+      "aliases": "Shree Chakra Bhu Nivasa, Bhu Nivasa, Sree Chakra Bhu Nivasa, Shri Chakra Bhu Nivasa, page 228, p228",
+      "notes": "",
+      "source": "managed"
+    },
+    {
+      "id": "user-240",
+      "name": "Mangalamani Mangalampalli",
+      "page": "228",
+      "aliases": "Mangalamani, Mangalampalli, Mangala Mani, page 228, p228, Aarti song, Harati song",
+      "notes": "",
+      "source": "managed"
+    },
+    {
+      "id": "user-241",
+      "name": "Srinivasaya Vid",
+      "page": "229",
+      "aliases": "Shree nivasaya, Srinivasaya, Srinivasa Vid, Sri nivasaya, Sree nivasaya, Shri nivasaya, Srinivasa, Venkateswara, Venkateswara Vid, page 229, p229",
+      "notes": "",
+      "source": "managed"
+    },
+    {
+      "id": "user-242",
+      "name": "Nischaya Thambula",
+      "page": "230",
+      "aliases": "Nischaya Tambula, Nishchaya Thambula, Tambulam, page 230, p230, Devi song, Amma song",
+      "notes": "",
+      "source": "managed"
+    },
+    {
+      "id": "user-243",
+      "name": "Haarathi Raja Gopa",
+      "page": "231",
+      "aliases": "Harati Raja Gopa, Raja Gopa Harati, Harathi Raja Gopa, Arathi Raja Gopa, Aarti Raja Gopa, Raja Gopa Haarathi, Raja Gopa Harathi, Raja Gopa Arathi, Raja Gopa Aarti, page 231, p231, Aarti song, Harati song",
+      "notes": "",
+      "source": "managed"
+    },
+    {
+      "id": "user-244",
+      "name": "Venkatachalamundu",
+      "page": "231",
+      "aliases": "Venkata Chalamundu, Venkatachalamundu Song, Venkata, page 231, p231",
+      "notes": "",
+      "source": "managed"
+    },
+    {
+      "id": "user-245",
+      "name": "Anandada Paadu",
+      "page": "232",
+      "aliases": "Anandhada Paadu, Anandada Padu, Padu Anandada, page 232, p232",
+      "notes": "",
+      "source": "managed"
+    },
+    {
+      "id": "user-246",
+      "name": "Dharmasankidi",
+      "page": "233",
+      "aliases": "Dharma Sankidi, Dharmasankidi Song, Dharma, page 233, p233",
+      "notes": "",
+      "source": "managed"
+    },
+    {
+      "id": "user-247",
+      "name": "Ala Vaikunthapuramu",
+      "page": "233",
+      "aliases": "Ala Vaikuntapuramu, Ala Vaikunthapuram, Vaikunthapuramu, page 233, p233",
+      "notes": "",
+      "source": "managed"
+    },
+    {
+      "id": "user-248",
+      "name": "Adigo Dwaraka Maayi",
+      "page": "234",
+      "aliases": "Adhigo Dwaraka Maayi, Dwaraka Mayi, Sai Baba Song, page 234, p234",
+      "notes": "",
+      "source": "managed"
+    },
+    {
+      "id": "user-249",
+      "name": "Adi Lakshmi Nee",
+      "page": "235",
+      "aliases": "Aadhi Lakshmi Nee, Adi Laxmi Nee, Lakshmi Nee, Aadhi Laxmi Nee, Aadhi Laxmi Devi Nee, Laxmi Nee, Laxmi Devi Nee, Adi Laxmi Devi Nee, page 235, p235, Lakshmi song, Mahalakshmi",
+      "notes": "",
+      "source": "managed"
+    },
+    {
+      "id": "user-250",
+      "name": "Yenta Chakkani Daani",
+      "page": "235",
+      "aliases": "Enta Chakkani Daani, Yenta Chakkani Dani, Chakkani Daani, page 235, p235",
+      "notes": "",
+      "source": "managed"
+    },
+    {
+      "id": "user-251",
+      "name": "Jaya Jaya Durga",
+      "page": "236",
+      "aliases": "Jaya Jaya Durge, Jaya Jaya Durga Maata, Durga Song, Jaya Jaya Durga Mata, Jaya Jaya Durga Amma, page 236, p236, Devi song, Amma song",
+      "notes": "",
+      "source": "managed"
+    },
+    {
+      "id": "user-252",
+      "name": "Ganapathi Ganapathi",
+      "page": "237",
+      "aliases": "Ganapati Ganapati, Ganesh Ganesh, Ganesha, Ganesha Ganesha, Vinayaka Vinayaka, page 237, p237",
+      "notes": "",
+      "source": "managed"
+    },
+    {
+      "id": "user-253",
+      "name": "Bomma Bomma",
+      "page": "237",
+      "aliases": "Bomma Bomma Song, Bomma, page 237, p237",
+      "notes": "",
+      "source": "managed"
+    },
+    {
+      "id": "user-254",
+      "name": "Gopika Jane",
+      "page": "238",
+      "aliases": "Gopika Jane Song, Gopika, page 238, p238",
+      "notes": "",
+      "source": "managed"
+    },
+    {
+      "id": "user-255",
+      "name": "Brindavaka Sandehamu",
+      "page": "239",
+      "aliases": "Brindavaka Sandeham, Sandehamu, page 239, p239",
+      "notes": "",
+      "source": "managed"
+    },
+    {
+      "id": "user-256",
+      "name": "Maale Saavitramma",
+      "page": "240",
+      "aliases": "Maale Savitramma, Maale Saavithramma, Savitramma, page 240, p240",
+      "notes": "",
+      "source": "managed"
+    },
+    {
+      "id": "user-257",
+      "name": "Hari Harulaku Priya",
+      "page": "240",
+      "aliases": "Hari Harulaku Priya Song, Hari Harulaku, Priya Song, page 240, p240",
+      "notes": "",
+      "source": "managed"
+    },
+    {
+      "id": "user-258",
+      "name": "Gaggamma Mayamma",
+      "page": "241",
+      "aliases": "Gaggamma Maayamma, Gangamma, Mayamma Song, page 241, p241",
+      "notes": "",
+      "source": "managed"
+    },
+    {
+      "id": "user-259",
+      "name": "Kailasagiri Nundi",
+      "page": "242",
+      "aliases": "Kailasa Giri Nundi, Kailasagiri, Shiva Song, Siva Song, page 242, p242, Mahadeva",
+      "notes": "",
+      "source": "managed"
+    },
+    {
+      "id": "user-260",
+      "name": "Shiva Shiva Antara",
+      "page": "243",
+      "aliases": "Siva Siva Antara, Shiva Shiva Anthara, Shiva Shiva, Siva Siva Anthara, Siva Siva, page 243, p243, Shiva song, Mahadeva",
+      "notes": "",
+      "source": "managed"
+    },
+    {
+      "id": "user-261",
+      "name": "Sunni Sunni Chakkni",
+      "page": "243",
+      "aliases": "Sunni Sunni Chakni, Sunni Sunni, Chakkni, page 243, p243",
+      "notes": "",
+      "source": "managed"
+    },
+    {
+      "id": "user-262",
+      "name": "Davane Kada",
+      "page": "244",
+      "aliases": "Davane Kada Song, Davane, page 244, p244",
+      "notes": "",
+      "source": "managed"
+    },
+    {
+      "id": "user-263",
+      "name": "Swami Ante Mitra",
+      "page": "245",
+      "aliases": "Swamy Ante Mitra, Swami Ante, Mitra Song, Swamy Ante, page 245, p245",
+      "notes": "",
+      "source": "managed"
+    },
+    {
+      "id": "user-264",
+      "name": "Challa Galini Pilavara",
+      "page": "246",
+      "aliases": "Challa Galini Pilawara, Challa Galini, Pilavara, page 246, p246",
+      "notes": "",
+      "source": "managed"
+    },
+    {
+      "id": "user-265",
+      "name": "Manasuna Bhaktini",
+      "page": "246",
+      "aliases": "Manasuna Bhakthini, Manasuna Bhaktini Song, Bhaktini, page 246, p246",
+      "notes": "",
+      "source": "managed"
+    },
+    {
+      "id": "user-266",
+      "name": "Jaya Lakshmi Jaya Narayanamma",
+      "page": "247",
+      "aliases": "Jaya Lakshmi, Jaya Narayanamma, Lakshmi Song, Jaya Laxmi, Jaya Laxmi Devi, Laxmi Song, Laxmi Devi Song, Jaya Laxmi Jaya Narayanamma, Jaya Laxmi Devi Jaya Narayanamma, page 247, p247, Mahalakshmi",
+      "notes": "",
+      "source": "managed"
+    },
+    {
+      "id": "user-267",
+      "name": "Lali Muddu Gumma",
+      "page": "248",
+      "aliases": "Laali Muddu Gumma, Lali Mudhu Gumma, Lullaby, Laali Mudhu Gumma, Lullaby Mudhu Gumma, Jo Jo Mudhu Gumma, Lullaby Muddu Gumma, Jo Jo Muddu Gumma, page 248, p248, Lali song",
+      "notes": "",
+      "source": "managed"
+    },
+    {
+      "id": "user-268",
+      "name": "Jaya Haarathi Gangamma",
+      "page": "249",
+      "aliases": "Jaya Harati Gangamma, Gangamma Harati, Harathi Song, Jaya Harathi Gangamma, Jaya Arathi Gangamma, Jaya Aarti Gangamma, Gangamma Haarathi, Gangamma Harathi, Gangamma Arathi, Gangamma Aarti, Haarathi Song, Harati Song, Arathi Song, Aarti Song, page 249, p249",
+      "notes": "",
+      "source": "managed"
+    },
+    {
+      "id": "user-269",
+      "name": "Jaya Jaya Haarathi",
+      "page": "251",
+      "aliases": "Jaya Jaya Harati, Jaya Jaya Harathi Song, Harathi, Jaya Jaya Harathi, Jaya Jaya Arathi, Jaya Jaya Aarti, Jaya Jaya Haarathi Song, Jaya Jaya Harati Song, Jaya Jaya Arathi Song, Jaya Jaya Aarti Song, Haarathi, Harati, Arathi, Aarti, page 251, p251, Aarti song, Harati song",
+      "notes": "",
+      "source": "managed"
+    },
+    {
+      "id": "user-270",
+      "name": "Haarathi Gangamma",
+      "page": "251",
+      "aliases": "Harati Gangamma, Haarathi Gangamma Song, Gangamma, Harathi Gangamma, Arathi Gangamma, Aarti Gangamma, Harathi Gangamma Song, Harati Gangamma Song, Arathi Gangamma Song, Aarti Gangamma Song, page 251, p251, Aarti song, Harati song",
+      "notes": "",
+      "source": "managed"
+    },
+    {
+      "id": "user-271",
+      "name": "Muralidhara Mohana",
+      "page": "252",
+      "aliases": "Muralidhara Mohana Song, Muralidhara, Krishna Song, Krsna Song, Krushna Song, Kishan Song, page 252, p252, Gopala",
+      "notes": "",
+      "source": "managed"
+    },
+    {
+      "id": "user-272",
+      "name": "Jaya Haarathi Gangamma (Repeat)",
+      "page": "252",
+      "aliases": "Jaya Harati Gangamma, Harathi Gangamma, Jaya Haarathi Gangamma, Jaya Harathi Gangamma, Jaya Arathi Gangamma, Jaya Aarti Gangamma, Haarathi Gangamma, Harati Gangamma, Arathi Gangamma, Aarti Gangamma, Jaya Harathi Gangamma (Repeat), Jaya Harati Gangamma (Repeat), Jaya Arathi Gangamma (Repeat), Jaya Aarti Gangamma (Repeat), page 252, p252, Aarti song, Harati song",
+      "notes": "",
+      "source": "managed"
+    },
+    {
+      "id": "user-273",
+      "name": "Karupuru Haarathi",
+      "page": "254",
+      "aliases": "Karpoora Harati, Karupuru Harati, Arathi Song, Karpoora Haarathi, Karpoora Harathi, Karpoora Arathi, Karpoora Aarti, Karupuru Harathi, Karupuru Arathi, Karupuru Aarti, Haarathi Song, Harathi Song, Harati Song, Aarti Song, page 254, p254",
+      "notes": "",
+      "source": "managed"
+    },
+    {
+      "id": "user-274",
+      "name": "Balakrishna Neekide",
+      "page": "255",
+      "aliases": "Bala Krishna Nikide, Balakrishna Neekide Song, Krishna Harati, Bala Krsna Nikide, Bala Krushna Nikide, Bala Kishan Nikide, Krsna Harati, Krushna Harati, Kishan Harati, Krishna Haarathi, Krishna Harathi, Krishna Arathi, Krishna Aarti, page 255, p255, Krishna song, Gopala",
+      "notes": "",
+      "source": "managed"
+    },
+    {
+      "id": "user-275",
+      "name": "Haarathi Govinda Vaikuntadhama",
+      "page": "256",
+      "aliases": "Harati Govinda, Vaikuntadhama Harati, Govinda Harathi, Haarathi Govinda, Harathi Govinda, Arathi Govinda, Aarti Govinda, Vaikuntadhama Haarathi, Vaikuntadhama Harathi, Vaikuntadhama Arathi, Vaikuntadhama Aarti, Govinda Haarathi, Govinda Harati, Govinda Arathi, Govinda Aarti, Harathi Govinda Vaikuntadhama, Harati Govinda Vaikuntadhama, Arathi Govinda Vaikuntadhama, Aarti Govinda Vaikuntadhama, page 256, p256, Krishna song, Gopala, Aarti song, Harati song",
+      "notes": "",
+      "source": "managed"
+    },
+    {
+      "id": "user-276",
+      "name": "Anukshanam Shiva Namame",
+      "page": "256",
+      "aliases": "Anukshanam Siva Namame, Shiva Namame, Anukshanam, Siva Namame, page 256, p256, Shiva song, Mahadeva",
+      "notes": "",
+      "source": "managed"
+    },
+    {
+      "id": "user-277",
+      "name": "Shiva Shivayani Vinne",
+      "page": "257",
+      "aliases": "Siva Sivayani Vinne, Shiva Shivayani, Vinne Song, Shiva Sivayani Vinne, Siva Shivayani, Siva Shivayani Vinne, page 257, p257, Shiva song, Mahadeva",
+      "notes": "",
+      "source": "managed"
+    },
+    {
+      "id": "user-278",
+      "name": "Raja Rajeshwari Devi",
+      "page": "258",
+      "aliases": "Raja Rajeswari Devi, Rajarajeshwari, Devi Song, page 258, p258, Amma song",
+      "notes": "",
+      "source": "managed"
+    },
+    {
+      "id": "user-279",
+      "name": "Jaya Lakshmi Vara Lakshmi",
+      "page": "259",
+      "aliases": "Jaya Laxmi Vara Laxmi, Jayalakshmi Varalakshmi, Lakshmi Song, Laxmi Song, Laxmi Devi Song, Jaya Laxmi Devi Vara Laxmi Devi, page 259, p259, Mahalakshmi",
+      "notes": "",
+      "source": "managed"
+    },
+    {
+      "id": "user-280",
+      "name": "Sri Rama Kalyaname",
+      "page": "260",
+      "aliases": "Shree Rama Kalyaname, Sri Rama Kalyanam, Rama Kalyaname, Sree Rama Kalyaname, Shri Rama Kalyaname, Sree Rama Kalyanam, Shree Rama Kalyanam, Shri Rama Kalyanam, page 260, p260, Rama song, Sri Rama",
+      "notes": "",
+      "source": "managed"
+    },
+    {
+      "id": "user-281",
+      "name": "Choodagalenara Raghu",
+      "page": "261",
+      "aliases": "Chudagalenara Raghu, Choodagalenara, Raghu Song, page 261, p261",
+      "notes": "",
+      "source": "managed"
+    },
+    {
+      "id": "user-282",
+      "name": "Jo Jo Lali Swamy",
+      "page": "262",
+      "aliases": "Jo Jo Laali Swamy, Lullaby, Jo Jo Lali, Jo Jo Laali Swami, Jo Jo Laali, Jo Jo Lullaby, Jo Jo Jo Jo, Jo Jo Lali Swami, Jo Jo Lullaby Swamy, Jo Jo Jo Jo Swamy, page 262, p262, Lali song",
+      "notes": "",
+      "source": "managed"
+    },
+    {
+      "id": "user-283",
+      "name": "Madhava Maadhav",
+      "page": "263",
+      "aliases": "Madhava Madhava, Madhava Maadhav Song, Madhava, page 263, p263, Krishna song, Gopala",
+      "notes": "",
+      "source": "managed"
+    },
+    {
+      "id": "user-284",
+      "name": "Gayatri Vedamayi",
+      "page": "264",
+      "aliases": "Gaayatri Vedamayi, Gayatri Vedhamayi, Gayatri Song, page 264, p264",
+      "notes": "",
+      "source": "managed"
+    },
+    {
+      "id": "user-285",
+      "name": "Krishna Jogi Mandu",
+      "page": "265",
+      "aliases": "Krushna Jogi Mandu, Krsna Jogi Mandu, Krishna Jogi, Krsna Jogi, Krushna Jogi, Kishan Jogi, Kishan Jogi Mandu, page 265, p265, Krishna song, Gopala",
+      "notes": "",
+      "source": "managed"
+    },
+    {
+      "id": "user-286",
+      "name": "Haarathi Govinda Sri Rama",
+      "page": "266",
+      "aliases": "Harati Govinda Sri Rama, Harathi Govinda, Rama Harathi, Harati Govinda Sree Rama, Harati Govinda Shree Rama, Harati Govinda Shri Rama, Harathi Govinda Sri Rama, Arathi Govinda Sri Rama, Aarti Govinda Sri Rama, Haarathi Govinda, Harati Govinda, Arathi Govinda, Aarti Govinda, Rama Haarathi, Rama Harati, Rama Arathi, Rama Aarti, Haarathi Govinda Sree Rama, Haarathi Govinda Shree Rama, Haarathi Govinda Shri Rama, page 266, p266, Rama song, Sri Rama, Krishna song, Gopala, Aarti song, Harati song",
+      "notes": "",
+      "source": "managed"
+    },
+    {
+      "id": "user-287",
+      "name": "Ramachandraya Janaka",
+      "page": "267",
+      "aliases": "Ramachandraya Janakaraja, Ramachandraya Janaka Song, Rama Song, page 267, p267, Sri Rama, Shiva song, Mahadeva",
+      "notes": "",
+      "source": "managed"
+    },
+    {
+      "id": "user-288",
+      "name": "Seetha Rama Swamy",
+      "page": "268",
+      "aliases": "Sitha Rama Swamy, Sita Rama Swami, Rama Swamy, Sitha Rama Swami, Sita Rama Swamy, Seetha Rama Swami, Rama Swami, page 268, p268, Rama song, Sri Rama",
+      "notes": "",
+      "source": "managed"
+    },
+    {
+      "id": "user-289",
+      "name": "Neela Megha Shyamudu",
+      "page": "269",
+      "aliases": "Neela Megha Shyamudu Song, Neela Megha, Shyamudu, page 269, p269",
+      "notes": "",
+      "source": "managed"
+    },
+    {
+      "id": "user-290",
+      "name": "Ramachandrudu Naa Pai",
+      "page": "270",
+      "aliases": "Ramachandrudu Na Pai, Ramachandrudu, Naa Pai Song, page 270, p270, Rama song, Sri Rama",
+      "notes": "",
+      "source": "managed"
+    },
+    {
+      "id": "user-291",
+      "name": "Haarathi Jai Haarathi",
+      "page": "271",
+      "aliases": "Harati Jai Harati, Haarathi Jaya Haarathi, Arathi Song, Harathi Jai Harathi, Arathi Jai Arathi, Aarti Jai Aarti, Harathi Jaya Harathi, Harati Jaya Harati, Arathi Jaya Arathi, Aarti Jaya Aarti, Haarathi Song, Harathi Song, Harati Song, Aarti Song, page 271, p271",
+      "notes": "",
+      "source": "managed"
+    },
+    {
+      "id": "user-292",
+      "name": "Vara Pilupulo",
+      "page": "272",
+      "aliases": "Vara Pilupulo Song, Pilupulo, page 272, p272",
+      "notes": "",
+      "source": "managed"
+    },
+    {
+      "id": "user-293",
+      "name": "Charnamule Nammi",
+      "page": "265",
+      "aliases": "Charnamule Nammi Song, Charnamule, Nammi, page 265, p265",
+      "notes": "Note: Page sequence jumps in handwritten index",
+      "source": "managed"
+    },
+    {
+      "id": "user-294",
+      "name": "Namo Parvathi Pataye",
+      "page": "273",
+      "aliases": "Namo Parvathi Pathaye, Namo Parvati Pataye, Shiva Song, Siva Song, page 273, p273",
+      "notes": "",
+      "source": "managed"
+    },
+    {
+      "id": "user-295",
+      "name": "Ninnu Choodulara",
+      "page": "273",
+      "aliases": "Ninnu Chudulara, Ninnu Choodulara Song, Ninnu, page 273, p273",
+      "notes": "",
+      "source": "managed"
+    },
+    {
+      "id": "user-296",
+      "name": "Palanu Maragaka",
+      "page": "274",
+      "aliases": "Palanu Maragaka Song, Palanu, page 274, p274",
+      "notes": "",
+      "source": "managed"
+    },
+    {
+      "id": "user-297",
+      "name": "Kanugontini Sri Rama",
+      "page": "275",
+      "aliases": "Kanugontini Shree Rama, Kanugontini Sri Rama Song, Rama Song, Kanugontini Sree Rama, Kanugontini Shri Rama, Kanugontini Sree Rama Song, Kanugontini Shree Rama Song, Kanugontini Shri Rama Song, page 275, p275, Sri Rama",
+      "notes": "",
+      "source": "managed"
+    },
+    {
+      "id": "user-298",
+      "name": "Shivuni Meena Seema",
+      "page": "276",
+      "aliases": "Sivuni Meena Seema, Shivuni Meena, Meena Seema, page 276, p276",
+      "notes": "",
+      "source": "managed"
+    },
+    {
+      "id": "user-299",
+      "name": "Telugunapai Antey",
+      "page": "276",
+      "aliases": "Telugunapai Ante, Telugunapai, Antey Song, page 276, p276",
+      "notes": "",
+      "source": "managed"
+    },
+    {
+      "id": "user-300",
+      "name": "Praanavali Korite",
+      "page": "277",
+      "aliases": "Pranavali Korite, Praanavali Korithe, Pranavali, page 277, p277",
+      "notes": "",
+      "source": "managed"
+    },
+    {
+      "id": "user-301",
+      "name": "Rana Rajeshwari",
+      "page": "278",
+      "aliases": "Raja Rajeshwari, Rana Rajeswari, Devi Song, page 278, p278, Amma song",
+      "notes": "",
+      "source": "managed"
+    },
+    {
+      "id": "user-302",
+      "name": "Varanasi Vishweshwara",
+      "page": "279",
+      "aliases": "Varanasi Visweswara, Varanasi Vishweshwara Song, Kashi Shiva, Kashi Siva, page 279, p279",
+      "notes": "Lord Shiva of Kashi",
+      "source": "managed"
+    },
+    {
+      "id": "user-303",
+      "name": "Anandapu Puvvulu",
+      "page": "280",
+      "aliases": "Anandhapu Puvvulu, Anandapu Puvvulu Song, Puvvulu, page 280, p280",
+      "notes": "",
+      "source": "managed"
+    },
+    {
+      "id": "user-304",
+      "name": "Sameshya Shanivara",
+      "page": "280",
+      "aliases": "Sameshya Shanivara Song, Shanivara Song, Saturday Song, page 280, p280",
+      "notes": "",
+      "source": "managed"
+    },
+    {
+      "id": "user-305",
+      "name": "Bhogindra Shayanamu",
+      "page": "281",
+      "aliases": "Bhogindra Shayanam, Bhogindrashayanamu, Vishnu Song, page 281, p281",
+      "notes": "",
+      "source": "managed"
+    },
+    {
+      "id": "user-306",
+      "name": "Sri Mahalakshmi Srivara Lakshmi",
+      "page": "281",
+      "aliases": "Shree Mahalakshmi, Sri Vara Lakshmi, Lakshmi Song, Sri Mahalakshmi, Sree Mahalakshmi, Shri Mahalakshmi, Sree Vara Lakshmi, Shree Vara Lakshmi, Shri Vara Lakshmi, Sri Vara Laxmi, Sri Vara Laxmi Devi, Laxmi Song, Laxmi Devi Song, Sree Mahalakshmi Srivara Lakshmi, Shree Mahalakshmi Srivara Lakshmi, Shri Mahalakshmi Srivara Lakshmi, Sri Mahalakshmi Srivara Laxmi, Sri Mahalakshmi Srivara Laxmi Devi, page 281, p281, Mahalakshmi",
+      "notes": "",
+      "source": "managed"
+    },
+    {
+      "id": "user-307",
+      "name": "Shanti Kalyanam",
+      "page": "282",
+      "aliases": "Santhi Kalyanam, Shanti Kalyanam Song, Kalyanam, page 282, p282",
+      "notes": "",
+      "source": "managed"
+    },
+    {
+      "id": "user-308",
+      "name": "Kalyana Choodamu",
+      "page": "283",
+      "aliases": "Kalyana Chudamu, Kalyana Choodamu Song, Choodamu, page 283, p283",
+      "notes": "",
+      "source": "managed"
+    },
+    {
+      "id": "user-309",
+      "name": "Bhogi Panduga Choodamu",
+      "page": "284",
+      "aliases": "Bhogi Panduga Chudamu, Bhogi Panduga, Sankranti Song, page 284, p284",
+      "notes": "",
+      "source": "managed"
+    },
+    {
+      "id": "user-310",
+      "name": "Sri Rama Mana",
+      "page": "284",
+      "aliases": "Shree Rama Mana, Sri Rama Mana Song, Rama Mana, Sree Rama Mana, Shri Rama Mana, Sree Rama Mana Song, Shree Rama Mana Song, Shri Rama Mana Song, page 284, p284, Rama song, Sri Rama",
+      "notes": "",
+      "source": "managed"
+    },
+    {
+      "id": "user-311",
+      "name": "Haarathi Andukomma",
+      "page": "285",
+      "aliases": "Harati Andukomma, Haarathi Andukomma Song, Arathi, Harathi Andukomma, Arathi Andukomma, Aarti Andukomma, Harathi Andukomma Song, Harati Andukomma Song, Arathi Andukomma Song, Aarti Andukomma Song, Haarathi, Harathi, Harati, Aarti, page 285, p285, Aarti song, Harati song",
+      "notes": "",
+      "source": "managed"
+    },
+    {
+      "id": "user-312",
+      "name": "Chitti Chitti Chethulu",
+      "page": "286",
+      "aliases": "Chitti Chitti Chetulu, Chitti Chitti, Childrens Song, page 286, p286",
+      "notes": "",
+      "source": "managed"
+    },
+    {
+      "id": "user-313",
+      "name": "Vedamu Shivudu",
+      "page": "287",
+      "aliases": "Vedam Sivudu, Vedhamu Shivdu, Vedham Shivudu, Vedam Shivdu, page 287, p287",
+      "notes": "Final entry in photos",
+      "source": "managed"
+    }
+  ]
+}

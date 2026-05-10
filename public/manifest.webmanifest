@@ -1,0 +1,17 @@
+{
+  "name": "Vishala Geet",
+  "short_name": "Geet",
+  "description": "Vishala Geet, a searchable collection of favorite devotional songs.",
+  "start_url": ".",
+  "display": "standalone",
+  "background_color": "#f8f4fb",
+  "theme_color": "#7c2d6d",
+  "icons": [
+    {
+      "src": "assets/app-icon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ]
+}
