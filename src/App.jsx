@@ -18,6 +18,9 @@ import { bookLabel, cleanEntry, filterEntries, isValidEntry, makeId } from "./li
 import { readStoredSongs, removeStoredSongs, saveStoredSongs } from "./lib/storage.js";
 import { isSupabaseConfigured, supabase } from "./lib/supabaseClient.js";
 
+const DEFAULT_TOAST_MS = 2200;
+const AUTH_TOAST_MS = 5000;
+
 export default function App() {
   const [activeTab, setActiveTab] = useState("search");
   const [entries, setEntries] = useState([]);
@@ -47,10 +50,10 @@ export default function App() {
     dataVersionRef.current = dataVersion;
   }, [dataVersion]);
 
-  const showToast = useCallback((message) => {
+  const showToast = useCallback((message, durationMs = DEFAULT_TOAST_MS) => {
     clearTimeout(toastTimerRef.current);
     setToastMessage(message);
-    toastTimerRef.current = window.setTimeout(() => setToastMessage(""), 2200);
+    toastTimerRef.current = window.setTimeout(() => setToastMessage(""), durationMs);
   }, []);
 
   const cacheEntries = useCallback((nextEntries, nextDataVersion = dataVersionRef.current) => {
@@ -256,7 +259,7 @@ export default function App() {
     const message = backendEnabled
       ? `Sign in with an approved admin email to ${action}.`
       : "Backend is not configured yet. Add Supabase keys before editing shared songs.";
-    showToast(message);
+    showToast(message, AUTH_TOAST_MS);
     setActiveTab("about");
     return false;
   }
@@ -395,18 +398,18 @@ export default function App() {
   function validatedAdminEmail() {
     const email = authEmail.trim().toLowerCase();
     if (!email) {
-      showToast("Enter an admin email address.");
+      showToast("Enter an admin email address.", AUTH_TOAST_MS);
       return null;
     }
 
     const admin = adminForEmail(email);
     if (!admin) {
-      showToast("That email is not in the admin list.");
+      showToast("That email is not in the admin list.", AUTH_TOAST_MS);
       return null;
     }
 
     if (!supabase) {
-      showToast("Backend is not configured yet.");
+      showToast("Backend is not configured yet.", AUTH_TOAST_MS);
       return null;
     }
 
@@ -437,10 +440,10 @@ export default function App() {
       if (error) throw error;
       setAuthOtp("");
       setAuthStep("code");
-      showToast("OTP sent. Check your email.");
+      showToast("OTP sent. Check your email.", AUTH_TOAST_MS);
     } catch (error) {
       console.warn("Could not send admin OTP", error);
-      showToast(describeOtpSendError(error));
+      showToast(describeOtpSendError(error), AUTH_TOAST_MS);
     } finally {
       setAuthLoading(false);
     }
@@ -452,7 +455,7 @@ export default function App() {
 
     const token = authOtp.replace(/\D/g, "");
     if (token.length < 6 || token.length > 8) {
-      showToast("Enter the OTP code from your email.");
+      showToast("Enter the OTP code from your email.", AUTH_TOAST_MS);
       return;
     }
 
@@ -469,7 +472,7 @@ export default function App() {
       setAuthStep("email");
       showToast(`Signed in as ${result.admin.name}.`);
     } catch {
-      showToast("That OTP code did not work.");
+      showToast("That OTP code did not work.", AUTH_TOAST_MS);
     } finally {
       setAuthLoading(false);
     }
@@ -490,7 +493,7 @@ export default function App() {
       setAuthStep("email");
       showToast("Signed out.");
     } catch {
-      showToast("Could not sign out.");
+      showToast("Could not sign out.", AUTH_TOAST_MS);
     } finally {
       setAuthLoading(false);
     }
