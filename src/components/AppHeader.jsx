@@ -15,7 +15,7 @@ export default function AppHeader({ canInstall, onInstall }) {
             <path d="M34 44c2.5 0 4.4-1.3 4.4-3s-1.9-3-4.4-3-4.4 1.3-4.4 3 1.9 3 4.4 3Z" fill="#f7f5ef" />
           </svg>
         </div>
-        <div>
+        <div className="brand-copy">
           <h1>
             <span className="app-name-full">{APP_NAME}</span>
             <span className="app-name-short">Geet</span>

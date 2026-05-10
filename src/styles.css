@@ -115,6 +115,10 @@ button:disabled {
   height: 34px;
 }
 
+.brand-copy {
+  min-width: 0;
+}
+
 h1 {
   margin: 0;
   font-size: clamp(1.55rem, 5vw, 2.1rem);
@@ -493,6 +497,13 @@ textarea:focus {
   margin-top: 18px;
   padding-top: 14px;
   border-top: 1px solid var(--line);
+}
+
+.app-version-line {
+  margin: -4px 0 12px;
+  color: var(--muted);
+  font-size: 0.84rem;
+  font-weight: 700;
 }
 
 .admin-card {
