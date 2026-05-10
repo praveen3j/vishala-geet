@@ -4,15 +4,25 @@ export default function AuthPanel({
   adminProfile,
   authEmail,
   authLoading,
+  authOtp,
+  authStep,
   backendEnabled,
   onAuthEmailChange,
-  onSignIn,
+  onAuthOtpChange,
+  onRequestOtp,
   onSignOut,
+  onUseAnotherEmail,
+  onVerifyOtp,
   userEmail
 }) {
-  function handleSubmit(event) {
+  function handleEmailSubmit(event) {
     event.preventDefault();
-    onSignIn();
+    onRequestOtp();
+  }
+
+  function handleCodeSubmit(event) {
+    event.preventDefault();
+    onVerifyOtp();
   }
 
   return (
@@ -44,8 +54,8 @@ export default function AuthPanel({
           </button>
         </div>
       )}
-      {backendEnabled && !userEmail && (
-        <form className="admin-form" onSubmit={handleSubmit}>
+      {backendEnabled && !userEmail && authStep === "email" && (
+        <form className="admin-form" onSubmit={handleEmailSubmit}>
           <div className="field is-compact">
             <label htmlFor="adminEmail">Admin email</label>
             <input
@@ -59,8 +69,40 @@ export default function AuthPanel({
             />
           </div>
           <button className="primary" type="submit" disabled={authLoading}>
-            Send Sign-In Link
+            Send OTP Code
           </button>
+        </form>
+      )}
+      {backendEnabled && !userEmail && authStep === "code" && (
+        <form className="admin-otp-form" onSubmit={handleCodeSubmit}>
+          <p className="song-meta">Enter the 6-digit code sent to {authEmail.trim().toLowerCase()}.</p>
+          <div className="admin-form">
+            <div className="field is-compact">
+              <label htmlFor="adminOtp">OTP code</label>
+              <input
+                id="adminOtp"
+                type="text"
+                inputMode="numeric"
+                autoComplete="one-time-code"
+                maxLength="6"
+                pattern="[0-9]*"
+                placeholder="123456"
+                value={authOtp}
+                onChange={(event) => onAuthOtpChange(event.target.value.replace(/\D/g, "").slice(0, 6))}
+              />
+            </div>
+            <button className="primary" type="submit" disabled={authLoading}>
+              Verify Code
+            </button>
+          </div>
+          <div className="actions admin-auth-actions">
+            <button className="secondary" type="button" onClick={onRequestOtp} disabled={authLoading}>
+              Resend Code
+            </button>
+            <button className="quiet" type="button" onClick={onUseAnotherEmail} disabled={authLoading}>
+              Change Email
+            </button>
+          </div>
         </form>
       )}
     </div>
