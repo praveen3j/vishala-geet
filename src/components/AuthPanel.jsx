@@ -1,5 +1,3 @@
-import { ADMIN_USERS } from "../lib/admins.js";
-
 export default function AuthPanel({
   adminProfile,
   authEmail,
@@ -29,7 +27,7 @@ export default function AuthPanel({
     <div className="backup-tools">
       <h3 className="subsection-title">Admin Access</h3>
       <p className="song-meta">
-        Search is open to everyone. Only Praveen and Vishala can add, edit, or delete shared songs.
+        Search is open to everyone. Approved admins can add, edit, or delete shared songs.
       </p>
       {!backendEnabled && (
         <p className="notice">
@@ -63,7 +61,7 @@ export default function AuthPanel({
               type="email"
               inputMode="email"
               autoComplete="email"
-              placeholder={ADMIN_USERS.map((admin) => admin.email).join(" or ")}
+              placeholder="Enter approved admin email"
               value={authEmail}
               onChange={(event) => onAuthEmailChange(event.target.value)}
             />

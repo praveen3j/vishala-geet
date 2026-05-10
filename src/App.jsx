@@ -254,7 +254,7 @@ export default function App() {
   function requireAdmin(action) {
     if (canManage) return true;
     const message = backendEnabled
-      ? `Sign in as Praveen or Vishala to ${action}.`
+      ? `Sign in with an approved admin email to ${action}.`
       : "Backend is not configured yet. Add Supabase keys before editing shared songs.";
     showToast(message);
     setActiveTab("about");

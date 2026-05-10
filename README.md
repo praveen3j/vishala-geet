@@ -13,12 +13,7 @@ A phone-friendly web app for finding page numbers in Vishala Javvaji's devotiona
 
 ## Admins
 
-The app treats these emails as admins:
-
-- `praveenjav@outlook.com` - Praveen
-- `vishala1966@gmail.com` - Vishala
-
-The frontend checks these emails for showing admin controls. Supabase row-level security also checks the same emails through `public.admin_users`, so non-admins cannot write to the shared song table.
+The app supports an approved admin allowlist. Supabase row-level security checks `public.admin_users`, so non-admins cannot write to the shared song table.
 
 ## Project Structure
 
