@@ -440,8 +440,8 @@ export default function App() {
     if (!result) return;
 
     const token = authOtp.replace(/\D/g, "");
-    if (token.length !== 6) {
-      showToast("Enter the 6-digit OTP code.");
+    if (token.length < 6 || token.length > 8) {
+      showToast("Enter the OTP code from your email.");
       return;
     }
 

@@ -55,7 +55,7 @@ Without these variables, the app still builds and runs from the JSON fallback fi
 
 ## Admin OTP Email
 
-The admin login flow uses Supabase email OTP. In Supabase, go to **Authentication → Emails → Templates → Magic Link** and make sure the email body includes `{{ .Token }}` so admins receive a 6-digit code. A simple template can say:
+The admin login flow uses Supabase email OTP. In Supabase, go to **Authentication → Emails → Templates → Magic Link** and make sure the email body includes `{{ .Token }}` so admins receive a one-time code. A simple template can say:
 
 ```html
 <h2>Vishala Geet admin code</h2>
