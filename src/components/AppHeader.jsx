@@ -1,4 +1,4 @@
-import { APP_NAME } from "../constants.js";
+import { APP_NAME, APP_VERSION } from "../constants.js";
 
 export default function AppHeader({ canInstall, onInstall }) {
   return (
@@ -15,11 +15,16 @@ export default function AppHeader({ canInstall, onInstall }) {
             <path d="M34 44c2.5 0 4.4-1.3 4.4-3s-1.9-3-4.4-3-4.4 1.3-4.4 3 1.9 3 4.4 3Z" fill="#f7f5ef" />
           </svg>
         </div>
-        <div>
-          <h1>
-            <span className="app-name-full">{APP_NAME}</span>
-            <span className="app-name-short">Geet</span>
-          </h1>
+        <div className="brand-copy">
+          <div className="title-row">
+            <h1>
+              <span className="app-name-full">{APP_NAME}</span>
+              <span className="app-name-short">Geet</span>
+            </h1>
+            <span className="version-pill" aria-label={`App version ${APP_VERSION}`}>
+              v{APP_VERSION}
+            </span>
+          </div>
           <p className="subtitle">Mom&apos;s favorite songs.</p>
         </div>
       </div>

@@ -111,7 +111,13 @@ Push or merge to `release` to deploy through GitHub Pages. Keep `main` for devel
 
 Use Git tags to mark each stable release. Tags make it easy to inspect, compare, or restore an older app version even after `release` moves forward.
 
-After a PR is merged into `release` and the GitHub Pages deployment succeeds, create a version tag from the release branch:
+Before promoting a release, update the package metadata to the same version:
+
+```bash
+npm version 1.0.1 --no-git-tag-version
+```
+
+After that change is merged into `release` and the GitHub Pages deployment succeeds, create a version tag from the release branch:
 
 ```bash
 git fetch origin
