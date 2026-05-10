@@ -106,3 +106,24 @@ npm run build
 ```
 
 Push or merge to `release` to deploy through GitHub Pages. Keep `main` for development work, then promote stable changes to `release` when ready. The workflow in `.github/workflows/deploy.yml` builds the app and publishes `dist/`.
+
+## Release Versions
+
+Use Git tags to mark each stable release. Tags make it easy to inspect, compare, or restore an older app version even after `release` moves forward.
+
+After a PR is merged into `release` and the GitHub Pages deployment succeeds, create a version tag from the release branch:
+
+```bash
+git fetch origin
+git tag -a v1.0.1 origin/release -m "Vishala Geet v1.0.1"
+git push origin v1.0.1
+```
+
+Use semantic versioning:
+
+- Increase the patch number for small fixes, such as `v1.0.1`.
+- Increase the minor number for new features, such as `v1.1.0`.
+- Increase the major number only for breaking changes, such as `v2.0.0`.
+
+GitHub Pages serves the latest `release` branch. Older tags preserve the source code, but they do not create separate old app URLs unless a versioned Pages deployment is added later.
+
