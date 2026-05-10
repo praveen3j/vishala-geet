@@ -1,6 +1,6 @@
 import { bookLabel, songMeta } from "../lib/songs.js";
 
-export default function SongCard({ entry, onEdit }) {
+export default function SongCard({ canManage, entry, onDelete, onEdit }) {
   return (
     <article className="song-card">
       <div className="page-badge">
@@ -15,11 +15,16 @@ export default function SongCard({ entry, onEdit }) {
           {bookLabel(entry)}, Page {entry.page}
         </p>
         <p className="song-meta">{songMeta(entry)}</p>
-        <div className="actions">
-          <button className="mini-button" type="button" onClick={() => onEdit(entry)}>
-            Edit
-          </button>
-        </div>
+        {canManage && (
+          <div className="actions">
+            <button className="mini-button" type="button" onClick={() => onEdit(entry)}>
+              Edit
+            </button>
+            <button className="mini-button delete" type="button" onClick={() => onDelete(entry)}>
+              Delete
+            </button>
+          </div>
+        )}
       </div>
     </article>
   );

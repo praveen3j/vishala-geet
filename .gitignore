@@ -4,3 +4,6 @@ dist
 *.log
 .npmrc
 *.zip
+.env
+.env.local
+.env.*.local

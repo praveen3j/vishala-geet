@@ -6,9 +6,17 @@ import SearchPanel from "./components/SearchPanel.jsx";
 import Tabs from "./components/Tabs.jsx";
 import Toast from "./components/Toast.jsx";
 import { APP_NAME, BOOK_DATA_URLS } from "./constants.js";
+import { adminForEmail } from "./lib/admins.js";
 import { csvCell, downloadFile } from "./lib/downloads.js";
+import {
+  deleteSongFromBackend,
+  fetchSongsFromBackend,
+  insertSongInBackend,
+  updateSongInBackend
+} from "./lib/songRepository.js";
 import { bookLabel, cleanEntry, filterEntries, isValidEntry, makeId } from "./lib/songs.js";
 import { readStoredSongs, removeStoredSongs, saveStoredSongs } from "./lib/storage.js";
+import { isSupabaseConfigured, supabase } from "./lib/supabaseClient.js";
 
 export default function App() {
   const [activeTab, setActiveTab] = useState("search");
@@ -19,10 +27,19 @@ export default function App() {
   const [prefillName, setPrefillName] = useState("");
   const [toastMessage, setToastMessage] = useState("");
   const [deferredInstallPrompt, setDeferredInstallPrompt] = useState(null);
+  const [session, setSession] = useState(null);
+  const [authEmail, setAuthEmail] = useState("");
+  const [authLoading, setAuthLoading] = useState(false);
+  const [backendOnline, setBackendOnline] = useState(false);
 
   const dataVersionRef = useRef(0);
   const importInputRef = useRef(null);
   const toastTimerRef = useRef(0);
+
+  const userEmail = session?.user?.email || "";
+  const adminProfile = useMemo(() => adminForEmail(userEmail), [userEmail]);
+  const backendEnabled = isSupabaseConfigured;
+  const canManage = backendEnabled && Boolean(adminProfile);
 
   useEffect(() => {
     dataVersionRef.current = dataVersion;
@@ -34,15 +51,22 @@ export default function App() {
     toastTimerRef.current = window.setTimeout(() => setToastMessage(""), 2200);
   }, []);
 
-  const mergeManagedEntries = useCallback((managedEntries, nextDataVersion) => {
-    setEntries((currentEntries) => {
-      const localEntries = currentEntries.filter((entry) => entry.source !== "managed");
-      const nextEntries = [...managedEntries, ...localEntries];
-      saveStoredSongs(nextEntries, nextDataVersion);
-      return nextEntries;
-    });
-    setDataVersion(nextDataVersion);
+  const cacheEntries = useCallback((nextEntries, nextDataVersion = dataVersionRef.current) => {
+    saveStoredSongs(nextEntries, nextDataVersion);
   }, []);
+
+  const mergeManagedEntries = useCallback(
+    (managedEntries, nextDataVersion) => {
+      setEntries((currentEntries) => {
+        const localEntries = currentEntries.filter((entry) => entry.source !== "managed");
+        const nextEntries = [...managedEntries, ...localEntries];
+        cacheEntries(nextEntries, nextDataVersion);
+        return nextEntries;
+      });
+      setDataVersion(nextDataVersion);
+    },
+    [cacheEntries]
+  );
 
   const loadManagedData = useCallback(
     async (showMessage = false, currentDataVersion = dataVersionRef.current) => {
@@ -78,33 +102,108 @@ export default function App() {
     [mergeManagedEntries, showToast]
   );
 
-  useEffect(() => {
-    try {
-      const stored = readStoredSongs();
-      const parsed = stored.raw ? JSON.parse(stored.raw) : { entries: [], dataVersion: 0 };
-      const rawEntries = Array.isArray(parsed) ? parsed : parsed.entries;
-      const savedEntries = Array.isArray(rawEntries)
-        ? rawEntries.filter(isValidEntry).map((entry) => cleanEntry(entry))
-        : [];
-      const savedDataVersion = Array.isArray(parsed) ? 0 : Number(parsed.dataVersion || 0);
+  const loadBackendData = useCallback(
+    async (showMessage = false) => {
+      if (!backendEnabled) return false;
 
-      setEntries(savedEntries);
-      setDataVersion(savedDataVersion);
-      dataVersionRef.current = savedDataVersion;
-
-      if (stored.legacyKey) {
-        saveStoredSongs(savedEntries, savedDataVersion);
-        removeStoredSongs(stored.legacyKey);
+      try {
+        const backendEntries = await fetchSongsFromBackend();
+        setEntries(backendEntries);
+        setBackendOnline(true);
+        cacheEntries(backendEntries);
+        if (showMessage) showToast("Shared song list refreshed.");
+        return true;
+      } catch {
+        setBackendOnline(false);
+        if (showMessage) showToast("Could not reach the shared backend.");
+        return false;
       }
+    },
+    [backendEnabled, cacheEntries, showToast]
+  );
 
-      loadManagedData(false, savedDataVersion);
-    } catch {
-      setEntries([]);
-      setDataVersion(0);
-      showToast("Could not load saved songs.");
-      loadManagedData(false, 0);
+  useEffect(() => {
+    let cancelled = false;
+
+    async function loadInitialData() {
+      try {
+        const stored = readStoredSongs();
+        const parsed = stored.raw ? JSON.parse(stored.raw) : { entries: [], dataVersion: 0 };
+        const rawEntries = Array.isArray(parsed) ? parsed : parsed.entries;
+        const savedEntries = Array.isArray(rawEntries)
+          ? rawEntries.filter(isValidEntry).map((entry) => cleanEntry(entry))
+          : [];
+        const savedDataVersion = Array.isArray(parsed) ? 0 : Number(parsed.dataVersion || 0);
+
+        if (cancelled) return;
+
+        setEntries(savedEntries);
+        setDataVersion(savedDataVersion);
+        dataVersionRef.current = savedDataVersion;
+
+        if (stored.legacyKey) {
+          saveStoredSongs(savedEntries, savedDataVersion);
+          removeStoredSongs(stored.legacyKey);
+        }
+
+        if (backendEnabled) {
+          const loadedFromBackend = await loadBackendData(false);
+          if (!loadedFromBackend && !savedEntries.length) {
+            await loadManagedData(false, savedDataVersion);
+          }
+          return;
+        }
+
+        await loadManagedData(false, savedDataVersion);
+      } catch {
+        if (cancelled) return;
+        setEntries([]);
+        setDataVersion(0);
+        showToast("Could not load saved songs.");
+        await loadManagedData(false, 0);
+      }
     }
-  }, [loadManagedData, showToast]);
+
+    loadInitialData();
+    return () => {
+      cancelled = true;
+    };
+  }, [backendEnabled, loadBackendData, loadManagedData, showToast]);
+
+  useEffect(() => {
+    if (!backendEnabled || !supabase) return undefined;
+
+    let active = true;
+    setAuthLoading(true);
+
+    supabase.auth
+      .getSession()
+      .then(({ data }) => {
+        if (active) setSession(data.session || null);
+      })
+      .finally(() => {
+        if (active) setAuthLoading(false);
+      });
+
+    const {
+      data: { subscription }
+    } = supabase.auth.onAuthStateChange((_event, nextSession) => {
+      setSession(nextSession);
+    });
+
+    return () => {
+      active = false;
+      subscription.unsubscribe();
+    };
+  }, [backendEnabled]);
+
+  useEffect(() => {
+    if (activeTab === "add" && !canManage) {
+      setActiveTab("search");
+      setEditingEntry(null);
+      setPrefillName("");
+    }
+  }, [activeTab, canManage]);
 
   useEffect(() => {
     function handleBeforeInstallPrompt(event) {
@@ -125,14 +224,23 @@ export default function App() {
   const matches = useMemo(() => filterEntries(entries, query), [entries, query]);
 
   const dataStatus = useMemo(() => {
+    const bookCount = new Set(entries.map(bookLabel)).size;
+    const bookText = bookCount ? ` across ${bookCount} ${bookCount === 1 ? "book" : "books"}` : "";
+
+    if (backendEnabled) {
+      const backendText = backendOnline
+        ? "Shared backend"
+        : "Shared backend configured, currently using cached data";
+      const adminText = canManage ? "Admin editing is enabled." : "Sign in as an admin to manage songs.";
+      return `${backendText}. ${entries.length} shared ${entries.length === 1 ? "song" : "songs"}${bookText}. ${adminText}`;
+    }
+
     const managedCount = entries.filter((entry) => entry.source === "managed").length;
     const localCount = entries.length - managedCount;
     const versionText = dataVersion ? `Version ${dataVersion}` : "No maintained list loaded yet";
     const extra = localCount ? `, plus ${localCount} phone-added ${localCount === 1 ? "song" : "songs"}` : "";
-    const bookCount = new Set(entries.map(bookLabel)).size;
-    const bookText = bookCount ? ` across ${bookCount} ${bookCount === 1 ? "book" : "books"}` : "";
     return `${versionText}. ${managedCount} maintained ${managedCount === 1 ? "song" : "songs"}${bookText}${extra}.`;
-  }, [dataVersion, entries]);
+  }, [backendEnabled, backendOnline, canManage, dataVersion, entries]);
 
   async function installApp() {
     if (!deferredInstallPrompt) return;
@@ -141,19 +249,32 @@ export default function App() {
     setDeferredInstallPrompt(null);
   }
 
+  function requireAdmin(action) {
+    if (canManage) return true;
+    const message = backendEnabled
+      ? `Sign in as Praveen or Vishala to ${action}.`
+      : "Backend is not configured yet. Add Supabase keys before editing shared songs.";
+    showToast(message);
+    setActiveTab("about");
+    return false;
+  }
+
   function openAddPanel() {
+    if (!requireAdmin("add songs")) return;
     setEditingEntry(null);
     setPrefillName("");
     setActiveTab("add");
   }
 
   function addMissingSong() {
+    if (!requireAdmin("add songs")) return;
     setEditingEntry(null);
     setPrefillName(query);
     setActiveTab("add");
   }
 
   function editEntry(entry) {
+    if (!requireAdmin("edit songs")) return;
     setEditingEntry(entry);
     setPrefillName("");
     setActiveTab("add");
@@ -164,13 +285,48 @@ export default function App() {
     setPrefillName("");
   }
 
-  function saveSong(form) {
+  function finishSave(savedEntry, isUpdate) {
+    setEntries((currentEntries) => {
+      const existingIndex = currentEntries.findIndex((entry) => entry.id === savedEntry.id);
+      const nextEntries =
+        existingIndex >= 0
+          ? currentEntries.map((entry, index) => (index === existingIndex ? savedEntry : entry))
+          : [...currentEntries, savedEntry];
+      cacheEntries(nextEntries);
+      return nextEntries;
+    });
+
+    showToast(isUpdate ? "Song updated." : "Song saved.");
+    setEditingEntry(null);
+    setPrefillName("");
+    setQuery(savedEntry.name);
+    setActiveTab("search");
+  }
+
+  async function saveSong(form) {
     const songName = form.name.trim();
     const book = String(form.book || "Book 1").trim() || "Book 1";
     const page = form.page.trim();
 
     if (!songName || !page) {
       showToast("Song name and page number are required.");
+      return;
+    }
+
+    if (backendEnabled) {
+      if (!requireAdmin("save songs")) return;
+
+      setAuthLoading(true);
+      try {
+        const savedEntry = form.id
+          ? await updateSongInBackend(form.id, { ...form, name: songName, book, page })
+          : await insertSongInBackend({ ...form, name: songName, book, page });
+        finishSave(savedEntry, Boolean(form.id));
+      } catch {
+        showToast("Could not save to the shared backend.");
+      } finally {
+        setAuthLoading(false);
+      }
       return;
     }
 
@@ -207,6 +363,89 @@ export default function App() {
     setPrefillName("");
     setQuery(songName);
     setActiveTab("search");
+  }
+
+  async function deleteEntry(entry) {
+    if (!requireAdmin("delete songs")) return;
+
+    const confirmed = confirm(`Delete "${entry.name}" from ${bookLabel(entry)}, page ${entry.page}?`);
+    if (!confirmed) return;
+
+    setAuthLoading(true);
+    try {
+      if (backendEnabled) {
+        await deleteSongFromBackend(entry.id);
+      }
+
+      setEntries((currentEntries) => {
+        const nextEntries = currentEntries.filter((currentEntry) => currentEntry.id !== entry.id);
+        cacheEntries(nextEntries);
+        return nextEntries;
+      });
+      showToast("Song deleted.");
+    } catch {
+      showToast("Could not delete from the shared backend.");
+    } finally {
+      setAuthLoading(false);
+    }
+  }
+
+  async function signInAdmin() {
+    const email = authEmail.trim().toLowerCase();
+    if (!email) {
+      showToast("Enter an admin email address.");
+      return;
+    }
+
+    const admin = adminForEmail(email);
+    if (!admin) {
+      showToast("That email is not in the admin list.");
+      return;
+    }
+
+    if (!supabase) {
+      showToast("Backend is not configured yet.");
+      return;
+    }
+
+    setAuthLoading(true);
+    try {
+      const redirectTo = window.location.href.split(/[?#]/)[0];
+      const { error } = await supabase.auth.signInWithOtp({
+        email,
+        options: { emailRedirectTo: redirectTo }
+      });
+      if (error) throw error;
+      showToast(`Sign-in link sent to ${admin.name}.`);
+    } catch {
+      showToast("Could not send the sign-in link.");
+    } finally {
+      setAuthLoading(false);
+    }
+  }
+
+  async function signOutAdmin() {
+    if (!supabase) return;
+    setAuthLoading(true);
+    try {
+      await supabase.auth.signOut();
+      setSession(null);
+      showToast("Signed out.");
+    } catch {
+      showToast("Could not sign out.");
+    } finally {
+      setAuthLoading(false);
+    }
+  }
+
+  async function refreshData() {
+    if (backendEnabled) {
+      const loaded = await loadBackendData(true);
+      if (!loaded) await loadManagedData(false);
+      return;
+    }
+
+    await loadManagedData(true);
   }
 
   function exportJson() {
@@ -256,7 +495,9 @@ export default function App() {
           return;
         }
 
-        const confirmed = confirm(`Import ${cleaned.length} songs? This will replace the current list.`);
+        const confirmed = confirm(
+          `Import ${cleaned.length} songs? This will replace the current local list.`
+        );
         if (!confirmed) return;
 
         const nextDataVersion = Number(parsed.dataVersion || 0);
@@ -265,7 +506,7 @@ export default function App() {
         saveStoredSongs(cleaned, nextDataVersion);
         setQuery("");
         setActiveTab("search");
-        showToast("Backup imported.");
+        showToast("Backup imported locally.");
       } catch {
         showToast("Could not import that backup file.");
       } finally {
@@ -278,19 +519,21 @@ export default function App() {
   return (
     <main className="app">
       <AppHeader canInstall={Boolean(deferredInstallPrompt)} onInstall={installApp} />
-      <Tabs activeTab={activeTab} onChange={setActiveTab} />
+      <Tabs activeTab={activeTab} canManage={canManage} onChange={setActiveTab} />
       {activeTab === "search" && (
         <SearchPanel
+          canManage={canManage}
           entries={entries}
           matches={matches}
           onAddFirst={openAddPanel}
           onAddMissing={addMissingSong}
+          onDelete={deleteEntry}
           onEdit={editEntry}
           query={query}
           setQuery={setQuery}
         />
       )}
-      {activeTab === "add" && (
+      {activeTab === "add" && canManage && (
         <AddSongPanel
           editingEntry={editingEntry}
           isActive={activeTab === "add"}
@@ -301,13 +544,21 @@ export default function App() {
       )}
       {activeTab === "about" && (
         <AboutPanel
+          adminProfile={adminProfile}
+          authEmail={authEmail}
+          authLoading={authLoading}
+          backendEnabled={backendEnabled}
           dataStatus={dataStatus}
           importInputRef={importInputRef}
+          onAuthEmailChange={setAuthEmail}
           onExportCsv={exportCsv}
           onExportJson={exportJson}
           onImportClick={() => importInputRef.current?.click()}
           onImportFile={importJsonFile}
-          onRefreshData={() => loadManagedData(true)}
+          onRefreshData={refreshData}
+          onSignIn={signInAdmin}
+          onSignOut={signOutAdmin}
+          userEmail={userEmail}
         />
       )}
       <Toast message={toastMessage} />

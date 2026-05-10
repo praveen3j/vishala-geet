@@ -1,11 +1,21 @@
+import AuthPanel from "./AuthPanel.jsx";
+
 export default function AboutPanel({
+  adminProfile,
+  authEmail,
+  authLoading,
+  backendEnabled,
   dataStatus,
   importInputRef,
+  onAuthEmailChange,
   onExportCsv,
   onExportJson,
   onImportClick,
   onImportFile,
-  onRefreshData
+  onRefreshData,
+  onSignIn,
+  onSignOut,
+  userEmail
 }) {
   return (
     <section id="aboutPanel" className="panel is-active" aria-labelledby="aboutTitle">
@@ -21,8 +31,18 @@ export default function AboutPanel({
           yoga, follow a healthy diet, and like to maintain a healthy lifestyle. I also love volunteering at
           temples, especially for events connected with devotional music, kolatam, and veena.
         </p>
+        <AuthPanel
+          adminProfile={adminProfile}
+          authEmail={authEmail}
+          authLoading={authLoading}
+          backendEnabled={backendEnabled}
+          onAuthEmailChange={onAuthEmailChange}
+          onSignIn={onSignIn}
+          onSignOut={onSignOut}
+          userEmail={userEmail}
+        />
         <div className="backup-tools">
-          <h3 className="subsection-title">Backup Tools</h3>
+          <h3 className="subsection-title">Data Tools</h3>
           <p className="song-meta">{dataStatus}</p>
           <div className="backup-grid">
             <button className="primary" type="button" onClick={onRefreshData}>
