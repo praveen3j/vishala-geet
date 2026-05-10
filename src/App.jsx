@@ -413,6 +413,16 @@ export default function App() {
     return { admin, email };
   }
 
+  function describeOtpSendError(error) {
+    const errorText = `${error?.code || ""} ${error?.error_code || ""} ${error?.message || ""}`.toLowerCase();
+
+    if (errorText.includes("rate") || errorText.includes("429")) {
+      return "Too many OTP emails were requested. Please wait a few minutes and try again.";
+    }
+
+    return "Could not send the OTP code. Please try again.";
+  }
+
   async function requestAdminOtp() {
     const result = validatedAdminEmail();
     if (!result) return;
@@ -427,9 +437,10 @@ export default function App() {
       if (error) throw error;
       setAuthOtp("");
       setAuthStep("code");
-      showToast(`OTP sent to ${result.admin.name}.`);
-    } catch {
-      showToast("Could not send the OTP code.");
+      showToast("OTP sent. Check your email.");
+    } catch (error) {
+      console.warn("Could not send admin OTP", error);
+      showToast(describeOtpSendError(error));
     } finally {
       setAuthLoading(false);
     }
