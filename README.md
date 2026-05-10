@@ -87,7 +87,7 @@ Build for hosting:
 npm run build
 ```
 
-Push to `main` to deploy through GitHub Pages. The workflow in `.github/workflows/deploy.yml` builds the app and publishes `dist/`.
+Push or merge to `release` to deploy through GitHub Pages. Keep `main` for development work, then promote stable changes to `release` when ready. The workflow in `.github/workflows/deploy.yml` builds the app and publishes `dist/`.
 
 After the first workflow run, the public site should be available at:
 
