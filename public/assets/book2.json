@@ -1,8 +1,476 @@
 {
-  "version": 1,
+  "version": 2,
   "book": "Book 2",
-  "updatedAt": "2026-05-10",
+  "updatedAt": "2026-05-11",
   "entries": [
+    {
+      "id": "book-2-314",
+      "name": "Yedu Lokalu",
+      "book": "Book 2",
+      "page": "1",
+      "aliases": "Edu Lokalu, Yedulokalu, Edulokalu, page 1, p1, book 2 page 1, book 2 p1, b2 page 1, b2 p1",
+      "notes": "",
+      "source": "managed"
+    },
+    {
+      "id": "book-2-315",
+      "name": "Krishna Krishna Rave",
+      "book": "Book 2",
+      "page": "2",
+      "aliases": "Krushna Krushna Raave, Krsna Krsna Rave, Krishna Raave, page 2, p2, book 2 page 2, book 2 p2, b2 page 2, b2 p2",
+      "notes": "",
+      "source": "managed"
+    },
+    {
+      "id": "book-2-316",
+      "name": "Palaya Govinda",
+      "book": "Book 2",
+      "page": "2",
+      "aliases": "Paalaya Govinda, Palaya Govindha, page 2, p2, book 2 page 2, book 2 p2, b2 page 2, b2 p2",
+      "notes": "",
+      "source": "managed"
+    },
+    {
+      "id": "book-2-317",
+      "name": "Achyuta Ramakirti",
+      "book": "Book 2",
+      "page": "3",
+      "aliases": "Achyutha Rama Keerthi, Atchyuta Ramakirti, Rama Keerthi, page 3, p3, book 2 page 3, book 2 p3, b2 page 3, b2 p3",
+      "notes": "",
+      "source": "managed"
+    },
+    {
+      "id": "book-2-318",
+      "name": "Gajjelu Delu Mocha",
+      "book": "Book 2",
+      "page": "4",
+      "aliases": "Gajjelu Delu, Gajjelu, Gajjelu Song, page 4, p4, book 2 page 4, book 2 p4, b2 page 4, b2 p4",
+      "notes": "",
+      "source": "managed"
+    },
+    {
+      "id": "book-2-319",
+      "name": "Batukamma",
+      "book": "Book 2",
+      "page": "5",
+      "aliases": "Bathukamma, Batukamma Song, Bathukamma Paata, page 5, p5, book 2 page 5, book 2 p5, b2 page 5, b2 p5",
+      "notes": "Bathukamma festival song",
+      "source": "managed"
+    },
+    {
+      "id": "book-2-320",
+      "name": "Okkasari Rava",
+      "book": "Book 2",
+      "page": "6",
+      "aliases": "Okkasaari Raava, Vokkasari Rava, Okkasari, page 6, p6, book 2 page 6, book 2 p6, b2 page 6, b2 p6",
+      "notes": "",
+      "source": "managed"
+    },
+    {
+      "id": "book-2-321",
+      "name": "Adugu Kalipenu",
+      "book": "Book 2",
+      "page": "7",
+      "aliases": "Adugu Kalipenu Song, Adugu, Kalipenu, page 7, p7, book 2 page 7, book 2 p7, b2 page 7, b2 p7",
+      "notes": "",
+      "source": "managed"
+    },
+    {
+      "id": "book-2-322",
+      "name": "Sri Venkatesham",
+      "book": "Book 2",
+      "page": "8",
+      "aliases": "Shree Venkatesham, Sri Venkatesam, Venkateswara, page 8, p8, book 2 page 8, book 2 p8, b2 page 8, b2 p8",
+      "notes": "",
+      "source": "managed"
+    },
+    {
+      "id": "book-2-323",
+      "name": "Kodanda Ramudu",
+      "book": "Book 2",
+      "page": "9",
+      "aliases": "Kodandha Ramudu, Kodanda Ramudu Song, Rama, page 9, p9, book 2 page 9, book 2 p9, b2 page 9, b2 p9",
+      "notes": "",
+      "source": "managed"
+    },
+    {
+      "id": "book-2-324",
+      "name": "Kondala Chennamma",
+      "book": "Book 2",
+      "page": "10",
+      "aliases": "Kondala Chennama, Chennamma Song, page 10, p10, book 2 page 10, book 2 p10, b2 page 10, b2 p10",
+      "notes": "",
+      "source": "managed"
+    },
+    {
+      "id": "book-2-325",
+      "name": "Nagumomu",
+      "book": "Book 2",
+      "page": "11",
+      "aliases": "Nagumomu Ganaleni, Nagumomu Song, Thyagaraja Keerthana, page 11, p11, book 2 page 11, book 2 p11, b2 page 11, b2 p11",
+      "notes": "",
+      "source": "managed"
+    },
+    {
+      "id": "book-2-326",
+      "name": "Venkateshudu Ma",
+      "book": "Book 2",
+      "page": "12",
+      "aliases": "Venkatesudu Ma, Venkateswarudu, Venkateshudu, page 12, p12, book 2 page 12, book 2 p12, b2 page 12, b2 p12",
+      "notes": "",
+      "source": "managed"
+    },
+    {
+      "id": "book-2-327",
+      "name": "Rama Lali Neela",
+      "book": "Book 2",
+      "page": "13",
+      "aliases": "Rama Laali Neela, Rama Lali, Lali Song, page 13, p13, book 2 page 13, book 2 p13, b2 page 13, b2 p13",
+      "notes": "",
+      "source": "managed"
+    },
+    {
+      "id": "book-2-329",
+      "name": "Nanda Lali",
+      "book": "Book 2",
+      "page": "14",
+      "aliases": "Nandha Laali, Nanda Laali, Krishna Lali, page 14, p14, book 2 page 14, book 2 p14, b2 page 14, b2 p14",
+      "notes": "",
+      "source": "managed"
+    },
+    {
+      "id": "book-2-328",
+      "name": "Rama Bhajan",
+      "book": "Book 2",
+      "page": "14",
+      "aliases": "Rama Bhajana, Ram Bhajan, page 14, p14, book 2 page 14, book 2 p14, b2 page 14, b2 p14",
+      "notes": "",
+      "source": "managed"
+    },
+    {
+      "id": "book-2-330",
+      "name": "Ganapathi Talam",
+      "book": "Book 2",
+      "page": "15",
+      "aliases": "Ganapati Talam, Ganapathi Taalam, Ganesh Talam, page 15, p15, book 2 page 15, book 2 p15, b2 page 15, b2 p15",
+      "notes": "",
+      "source": "managed"
+    },
+    {
+      "id": "book-2-331",
+      "name": "Nanda Yashoda",
+      "book": "Book 2",
+      "page": "18",
+      "aliases": "Nandha Yashoda, Nanda Yasoda, Yashoda Krishna, page 18, p18, book 2 page 18, book 2 p18, b2 page 18, b2 p18",
+      "notes": "",
+      "source": "managed"
+    },
+    {
+      "id": "book-2-332",
+      "name": "Bala Tripura Sundari",
+      "book": "Book 2",
+      "page": "19",
+      "aliases": "Bala Thripura Sundari, Tripura Sundari, page 19, p19, book 2 page 19, book 2 p19, b2 page 19, b2 p19",
+      "notes": "",
+      "source": "managed"
+    },
+    {
+      "id": "book-2-333",
+      "name": "Rama Sita Rama",
+      "book": "Book 2",
+      "page": "19",
+      "aliases": "Rama Seetha Rama, Sita Rama, Seetha Rama, page 19, p19, book 2 page 19, book 2 p19, b2 page 19, b2 p19",
+      "notes": "",
+      "source": "managed"
+    },
+    {
+      "id": "book-2-334",
+      "name": "Sri Ramula Divya",
+      "book": "Book 2",
+      "page": "20",
+      "aliases": "Shree Ramula Divya, Sri Ramula Divya Namam, page 20, p20, book 2 page 20, book 2 p20, b2 page 20, b2 p20",
+      "notes": "",
+      "source": "managed"
+    },
+    {
+      "id": "book-2-335",
+      "name": "Sri Rama Namame Jihva",
+      "book": "Book 2",
+      "page": "21",
+      "aliases": "Sri Rama Namame Jihva, Rama Namame Jihva, page 21, p21, book 2 page 21, book 2 p21, b2 page 21, b2 p21",
+      "notes": "",
+      "source": "managed"
+    },
+    {
+      "id": "book-2-337",
+      "name": "Guruvayur Song",
+      "book": "Book 2",
+      "page": "22",
+      "aliases": "Guruvayoor Song, Guruvayurappa, page 22, p22, book 2 page 22, book 2 p22, b2 page 22, b2 p22",
+      "notes": "",
+      "source": "managed"
+    },
+    {
+      "id": "book-2-336",
+      "name": "Krishna Bhajan",
+      "book": "Book 2",
+      "page": "22",
+      "aliases": "Krushna Bhajan, Krishna Bhajana, page 22, p22, book 2 page 22, book 2 p22, b2 page 22, b2 p22",
+      "notes": "",
+      "source": "managed"
+    },
+    {
+      "id": "book-2-338",
+      "name": "Rama Rama Prarthana",
+      "book": "Book 2",
+      "page": "23",
+      "aliases": "Rama Rama Prardhana, Rama Prarthana, page 23, p23, book 2 page 23, book 2 p23, b2 page 23, b2 p23",
+      "notes": "",
+      "source": "managed"
+    },
+    {
+      "id": "book-2-339",
+      "name": "Ganapathi Katavaku",
+      "book": "Book 2",
+      "page": "24",
+      "aliases": "Ganapati Katavaku, Ganapathi Song, page 24, p24, book 2 page 24, book 2 p24, b2 page 24, b2 p24",
+      "notes": "",
+      "source": "managed"
+    },
+    {
+      "id": "book-2-340",
+      "name": "Aadi Shakti Nee",
+      "book": "Book 2",
+      "page": "25",
+      "aliases": "Adi Shakti Nee, Aadhi Shakthi Nee, Devi Song, page 25, p25, book 2 page 25, book 2 p25, b2 page 25, b2 p25",
+      "notes": "",
+      "source": "managed"
+    },
+    {
+      "id": "book-2-341",
+      "name": "Om Ganapathi",
+      "book": "Book 2",
+      "page": "26",
+      "aliases": "Om Ganapati, Om Ganesh, page 26, p26, book 2 page 26, book 2 p26, b2 page 26, b2 p26",
+      "notes": "",
+      "source": "managed"
+    },
+    {
+      "id": "book-2-343",
+      "name": "Sri Chakra Puramandhu",
+      "book": "Book 2",
+      "page": "27",
+      "aliases": "Shree Chakra Puramandu, Sri Chakra Puram, page 27, p27, book 2 page 27, book 2 p27, b2 page 27, b2 p27",
+      "notes": "",
+      "source": "managed"
+    },
+    {
+      "id": "book-2-342",
+      "name": "Sri Kari Shubhakari",
+      "book": "Book 2",
+      "page": "27",
+      "aliases": "Shree Kari Shubhakari, Sri Kari Subhakari, page 27, p27, book 2 page 27, book 2 p27, b2 page 27, b2 p27",
+      "notes": "",
+      "source": "managed"
+    },
+    {
+      "id": "book-2-344",
+      "name": "Sirisirimucca Sri",
+      "book": "Book 2",
+      "page": "28",
+      "aliases": "Siri Siri Mucca, Sirisirimucca, page 28, p28, book 2 page 28, book 2 p28, b2 page 28, b2 p28",
+      "notes": "",
+      "source": "managed"
+    },
+    {
+      "id": "book-2-345",
+      "name": "Naga Stuti",
+      "book": "Book 2",
+      "page": "30",
+      "aliases": "Naga Sthuthi, Nagula Chavithi Song, page 30, p30, book 2 page 30, book 2 p30, b2 page 30, b2 p30",
+      "notes": "",
+      "source": "managed"
+    },
+    {
+      "id": "book-2-346",
+      "name": "Mangalam Shambu",
+      "book": "Book 2",
+      "page": "31",
+      "aliases": "Mangalam Shambhu, Mangalam Shambo, Shiva Mangalam, page 31, p31, book 2 page 31, book 2 p31, b2 page 31, b2 p31",
+      "notes": "",
+      "source": "managed"
+    },
+    {
+      "id": "book-2-347",
+      "name": "Krishnam Vande Jagad",
+      "book": "Book 2",
+      "page": "32",
+      "aliases": "Krushnam Vande Jagadgurum, Krishnam Vande, page 32, p32, book 2 page 32, book 2 p32, b2 page 32, b2 p32",
+      "notes": "",
+      "source": "managed"
+    },
+    {
+      "id": "book-2-348",
+      "name": "Kamakshi Kalyani",
+      "book": "Book 2",
+      "page": "35",
+      "aliases": "Kamakshy Kalyani, Kamakshi Song, page 35, p35, book 2 page 35, book 2 p35, b2 page 35, b2 p35",
+      "notes": "",
+      "source": "managed"
+    },
+    {
+      "id": "book-2-349",
+      "name": "Om Sai Sri Sai",
+      "book": "Book 2",
+      "page": "35",
+      "aliases": "Om Sai Shree Sai, Sai Baba Song, page 35, p35, book 2 page 35, book 2 p35, b2 page 35, b2 p35",
+      "notes": "",
+      "source": "managed"
+    },
+    {
+      "id": "book-2-350",
+      "name": "Harati Gekonuma Saraswati",
+      "book": "Book 2",
+      "page": "36",
+      "aliases": "Haarathi Gekonuma Saraswathi, Saraswati Harati, page 36, p36, book 2 page 36, book 2 p36, b2 page 36, b2 p36",
+      "notes": "",
+      "source": "managed"
+    },
+    {
+      "id": "book-2-351",
+      "name": "Govardhan Giridhari",
+      "book": "Book 2",
+      "page": "37",
+      "aliases": "Govardhana Giridhari, Giridhari Song, page 37, p37, book 2 page 37, book 2 p37, b2 page 37, b2 p37",
+      "notes": "",
+      "source": "managed"
+    },
+    {
+      "id": "book-2-352",
+      "name": "Yedukula Talli Sri",
+      "book": "Book 2",
+      "page": "37",
+      "aliases": "Edukula Talli Sri, Yedukula Thalli, page 37, p37, book 2 page 37, book 2 p37, b2 page 37, b2 p37",
+      "notes": "",
+      "source": "managed"
+    },
+    {
+      "id": "book-2-354",
+      "name": "Ninnu Vidichi Unda",
+      "book": "Book 2",
+      "page": "38",
+      "aliases": "Ninnu Vidichi Undalenu, Ninnu Vidichi, page 38, p38, book 2 page 38, book 2 p38, b2 page 38, b2 p38",
+      "notes": "",
+      "source": "managed"
+    },
+    {
+      "id": "book-2-353",
+      "name": "Sri Vani Kala",
+      "book": "Book 2",
+      "page": "38",
+      "aliases": "Shree Vani Kala, Sri Vaani Kala, page 38, p38, book 2 page 38, book 2 p38, b2 page 38, b2 p38",
+      "notes": "",
+      "source": "managed"
+    },
+    {
+      "id": "book-2-355",
+      "name": "Nalla Nallani",
+      "book": "Book 2",
+      "page": "39",
+      "aliases": "Nala Nalani, Nalla Nallani Song, page 39, p39, book 2 page 39, book 2 p39, b2 page 39, b2 p39",
+      "notes": "",
+      "source": "managed"
+    },
+    {
+      "id": "book-2-356",
+      "name": "Vaibhavam Venkata",
+      "book": "Book 2",
+      "page": "40",
+      "aliases": "Vaibhavam Venkata, Venkata Vaibhavam, page 40, p40, book 2 page 40, book 2 p40, b2 page 40, b2 p40",
+      "notes": "",
+      "source": "managed"
+    },
+    {
+      "id": "book-2-357",
+      "name": "Andal Kanhayya",
+      "book": "Book 2",
+      "page": "41",
+      "aliases": "Aandal Kanhayya, Andal Kanaya, page 41, p41, book 2 page 41, book 2 p41, b2 page 41, b2 p41",
+      "notes": "",
+      "source": "managed"
+    },
+    {
+      "id": "book-2-359",
+      "name": "Uyyalaluguchunnadu",
+      "book": "Book 2",
+      "page": "41",
+      "aliases": "Uyyala Luguchunnadu, Uyyala Song, page 41, p41, book 2 page 41, book 2 p41, b2 page 41, b2 p41",
+      "notes": "",
+      "source": "managed"
+    },
+    {
+      "id": "book-2-358",
+      "name": "Krishna Krishna",
+      "book": "Book 2",
+      "page": "42",
+      "aliases": "Krushna Krushna, Krsna Krsna, page 42, p42, book 2 page 42, book 2 p42, b2 page 42, b2 p42",
+      "notes": "",
+      "source": "managed"
+    },
+    {
+      "id": "book-2-360",
+      "name": "Bhaktula Pujita Bharade",
+      "book": "Book 2",
+      "page": "43",
+      "aliases": "Bhaktula Poojitha Bharade, Bharade Song, page 43, p43, book 2 page 43, book 2 p43, b2 page 43, b2 p43",
+      "notes": "Also referenced on page 45",
+      "source": "managed"
+    },
+    {
+      "id": "book-2-361",
+      "name": "Chudi Kuduta",
+      "book": "Book 2",
+      "page": "44",
+      "aliases": "Choodi Kuduta, Chudi Kudutha, page 44, p44, book 2 page 44, book 2 p44, b2 page 44, b2 p44",
+      "notes": "",
+      "source": "managed"
+    },
+    {
+      "id": "book-2-362",
+      "name": "Tulasi Dalamata",
+      "book": "Book 2",
+      "page": "46",
+      "aliases": "Thulasi Dalamata, Tulasi Dalamatha, page 46, p46, book 2 page 46, book 2 p46, b2 page 46, b2 p46",
+      "notes": "",
+      "source": "managed"
+    },
+    {
+      "id": "book-2-363",
+      "name": "Bangar Kamala",
+      "book": "Book 2",
+      "page": "47",
+      "aliases": "Bangaru Kamala, Bangar Kamala, page 47, p47, book 2 page 47, book 2 p47, b2 page 47, b2 p47",
+      "notes": "",
+      "source": "managed"
+    },
+    {
+      "id": "book-2-365",
+      "name": "Kirtayya Gopal",
+      "book": "Book 2",
+      "page": "48",
+      "aliases": "Keertayya Gopal, Kirtayya Gopala, page 48, p48, book 2 page 48, book 2 p48, b2 page 48, b2 p48",
+      "notes": "",
+      "source": "managed"
+    },
+    {
+      "id": "book-2-364",
+      "name": "Ramudu Udbhavinchi",
+      "book": "Book 2",
+      "page": "48",
+      "aliases": "Ramudu Udbhavinchi, Rama Udbhavinchi, page 48, p48, book 2 page 48, book 2 p48, b2 page 48, b2 p48",
+      "notes": "",
+      "source": "managed"
+    },
     {
       "id": "book-2-220",
       "name": "Vakkasari",
@@ -49,20 +517,20 @@
       "source": "managed"
     },
     {
-      "id": "book-2-225",
-      "name": "Karuna Jalada",
-      "book": "Book 2",
-      "page": "56",
-      "aliases": "Karunajalada, Karuna Jaladha, page 56, p56, book 2 page 56, book 2 p56, b2 page 56, b2 p56",
-      "notes": "",
-      "source": "managed"
-    },
-    {
       "id": "book-2-226",
       "name": "Abhaya Kaveri",
       "book": "Book 2",
       "page": "56",
       "aliases": "Abhaya Kaaveri, Kaveri Abhaya, page 56, p56, book 2 page 56, book 2 p56, b2 page 56, b2 p56",
+      "notes": "",
+      "source": "managed"
+    },
+    {
+      "id": "book-2-225",
+      "name": "Karuna Jalada",
+      "book": "Book 2",
+      "page": "56",
+      "aliases": "Karunajalada, Karuna Jaladha, page 56, p56, book 2 page 56, book 2 p56, b2 page 56, b2 p56",
       "notes": "",
       "source": "managed"
     },
@@ -130,20 +598,20 @@
       "source": "managed"
     },
     {
-      "id": "book-2-234",
-      "name": "Srinivasa Prako",
-      "book": "Book 2",
-      "page": "68",
-      "aliases": "Shreenivasa Prako, Sri Nivasa Prako, page 68, p68, book 2 page 68, book 2 p68, b2 page 68, b2 p68",
-      "notes": "",
-      "source": "managed"
-    },
-    {
       "id": "book-2-235",
       "name": "Gayatri Mantram",
       "book": "Book 2",
       "page": "68",
       "aliases": "Gaayatri Mantram, Gayatri Manthram, page 68, p68, book 2 page 68, book 2 p68, b2 page 68, b2 p68",
+      "notes": "",
+      "source": "managed"
+    },
+    {
+      "id": "book-2-234",
+      "name": "Srinivasa Prako",
+      "book": "Book 2",
+      "page": "68",
+      "aliases": "Shreenivasa Prako, Sri Nivasa Prako, page 68, p68, book 2 page 68, book 2 p68, b2 page 68, b2 p68",
       "notes": "",
       "source": "managed"
     },
@@ -175,15 +643,6 @@
       "source": "managed"
     },
     {
-      "id": "book-2-239",
-      "name": "Raghukula Tilaka",
-      "book": "Book 2",
-      "page": "73",
-      "aliases": "Raghukula Thilaka, Raghukula Tilakam, page 73, p73, book 2 page 73, book 2 p73, b2 page 73, b2 p73",
-      "notes": "",
-      "source": "managed"
-    },
-    {
       "id": "book-2-240",
       "name": "Brindavana Mali",
       "book": "Book 2",
@@ -193,11 +652,11 @@
       "source": "managed"
     },
     {
-      "id": "book-2-241",
-      "name": "Rama Nama Tarakam",
+      "id": "book-2-239",
+      "name": "Raghukula Tilaka",
       "book": "Book 2",
-      "page": "75",
-      "aliases": "Rama Naama Tharakam, Rama Nama Taraka, page 75, p75, book 2 page 75, book 2 p75, b2 page 75, b2 p75",
+      "page": "73",
+      "aliases": "Raghukula Thilaka, Raghukula Tilakam, page 73, p73, book 2 page 73, book 2 p73, b2 page 73, b2 p73",
       "notes": "",
       "source": "managed"
     },
@@ -207,6 +666,15 @@
       "book": "Book 2",
       "page": "75",
       "aliases": "Mudhu Krishna, Muddu Krushna, page 75, p75, book 2 page 75, book 2 p75, b2 page 75, b2 p75",
+      "notes": "",
+      "source": "managed"
+    },
+    {
+      "id": "book-2-241",
+      "name": "Rama Nama Tarakam",
+      "book": "Book 2",
+      "page": "75",
+      "aliases": "Rama Naama Tharakam, Rama Nama Taraka, page 75, p75, book 2 page 75, book 2 p75, b2 page 75, b2 p75",
       "notes": "",
       "source": "managed"
     },
@@ -328,20 +796,20 @@
       "source": "managed"
     },
     {
-      "id": "book-2-256",
-      "name": "Ranga Baaro",
-      "book": "Book 2",
-      "page": "89",
-      "aliases": "Ranga Baro, Ranga Baaro Song, page 89, p89, book 2 page 89, book 2 p89, b2 page 89, b2 p89",
-      "notes": "",
-      "source": "managed"
-    },
-    {
       "id": "book-2-257",
       "name": "Giligiligilla",
       "book": "Book 2",
       "page": "89",
       "aliases": "Gili Gili Gilla, Gili Gili Gillaa, page 89, p89, book 2 page 89, book 2 p89, b2 page 89, b2 p89",
+      "notes": "",
+      "source": "managed"
+    },
+    {
+      "id": "book-2-256",
+      "name": "Ranga Baaro",
+      "book": "Book 2",
+      "page": "89",
+      "aliases": "Ranga Baro, Ranga Baaro Song, page 89, p89, book 2 page 89, book 2 p89, b2 page 89, b2 p89",
       "notes": "",
       "source": "managed"
     },
