@@ -1,0 +1,61 @@
+name: Supabase Keep-Alive
+
+# Pings the Supabase REST API once a week so the free-tier project is not
+# auto-paused after 7 days of inactivity. A single authenticated read against
+# the `songs` table counts as API activity.
+#
+# Requires the same repo variables the deploy workflow uses:
+#   VITE_SUPABASE_URL        e.g. https://<project-ref>.supabase.co
+#   VITE_SUPABASE_ANON_KEY   the browser-safe publishable key
+#
+# Scheduled workflows only run on the default branch. If the default branch
+# is `release`, keep this file there. You can also run it manually from the
+# Actions tab ("Run workflow") to do an immediate ping.
+
+on:
+  schedule:
+    # Every Monday at 03:17 UTC (off-minute, mid-week coverage stays clear of
+    # the 7-day pause window even if the run is delayed).
+    - cron: "17 3 * * 1"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  ping:
+    name: Ping Supabase
+    runs-on: ubuntu-latest
+    steps:
+      - name: Ping REST API
+        env:
+          SUPABASE_URL: ${{ vars.VITE_SUPABASE_URL }}
+          SUPABASE_KEY: ${{ vars.VITE_SUPABASE_ANON_KEY }}
+        run: |
+          if [ -z "$SUPABASE_URL" ] || [ -z "$SUPABASE_KEY" ]; then
+            echo "::error::VITE_SUPABASE_URL or VITE_SUPABASE_ANON_KEY repo variables are not set."
+            exit 1
+          fi
+
+          # Normalize the base URL (strip any trailing /rest/v1/ the env var may carry).
+          BASE_URL="${SUPABASE_URL%/}"
+          BASE_URL="${BASE_URL%/rest/v1}"
+
+          echo "Pinging $BASE_URL/rest/v1/songs?select=id&limit=1 ..."
+          HTTP_CODE=$(curl -s -o /dev/null -w "%{http_code}" \
+            -H "apikey: $SUPABASE_KEY" \
+            -H "Authorization: Bearer $SUPABASE_KEY" \
+            "${BASE_URL}/rest/v1/songs?select=id&limit=1")
+
+          echo "HTTP status: $HTTP_CODE"
+
+          # 2xx (or 401/403 from a misconfigured key) still proves the API
+          # endpoint and therefore the database responded. Treat only network
+          # errors as a failure.
+          case "$HTTP_CODE" in
+            [2-4]*) echo "Supabase responded — keep-alive OK." ;;
+            *)
+              echo "::error::Supabase did not respond (HTTP $HTTP_CODE)."
+              exit 1
+              ;;
+          esac
